@@ -1,3 +1,7 @@
+# hey welcome to this where i put all my krunker related stuff
+
+i have released a [mod](https://krunker.io/?mod=dj62ware), css, and that css looks optimal with [my settings](https://cdn.discordapp.com/attachments/628964831529140254/959173453460680704/dj62ware_settings.txt) (or similar settings, it's just about the charge bar and speed thing and medals etc etc)
+
 ## dj62ware css
 
 this css was made by me even tho i took some bits of code from other css's
@@ -15,5 +19,7 @@ this css aims at staying true to the original while still improving it, with cha
 ![main screen](https://cdn.discordapp.com/attachments/628964831529140254/959168301374775296/dj62ware_css_photo.png)
 ![menu](https://cdn.discordapp.com/attachments/628964831529140254/959168301609652254/dj62ware_css_photo_menu.png)
 
-import version:
-too stupid to know how this shit works i'll figure it out just bear with the normal thing it should be fine
+import/auto update version:
+too stupid to know how this shit works LMAO i'll figure it out just bear with the normal thing it should be fine but it should come one day 
+
+check releases tab for the css full version :)
