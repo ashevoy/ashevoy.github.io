@@ -2,6 +2,8 @@
 
 i have released a [mod](https://krunker.io/?mod=dj62ware), css, and that css looks optimal with [my settings](https://cdn.discordapp.com/attachments/628964831529140254/959173453460680704/dj62ware_settings.txt) (or similar settings, it's just about the charge bar and speed thing and medals etc etc)
 
+also [follow me on krunker hub](https://krunker.io/social.html?p=profile&q=dj62) pls ty :)
+
 ## dj62ware css
 
 this css was made by me even tho i took some bits of code from other css's
