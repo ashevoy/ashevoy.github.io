@@ -24,4 +24,4 @@ this css aims at staying true to the original while still improving it, with cha
 import/auto update version:
 too stupid to know how this shit works LMAO i'll figure it out just bear with the normal thing it should be fine but it should come one day 
 
-check releases tab for the css full version :)
+check the [releases tab](https://github.com/ashevoy/ashevoy.github.io/releases) for the full version of the css :)
