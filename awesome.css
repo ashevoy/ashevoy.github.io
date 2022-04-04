@@ -98,6 +98,22 @@
     to {opacity: 1}
   }
 
+
+/* container holding image and tha text */
+.container {
+  margin: 2% 0% 0% 0%;
+  position: relative;
+  text-align: center;
+  color: white;
+}
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  font-family: myFirstFont;
+  transform: translate(-50%, -50%);
+}
+
 /* body box. */
 
   .boxbodyyuh {
@@ -118,33 +134,15 @@
 
   h2 {
     color: black;
+    font-family: myFirstFont;
+    margin: 0% 2% 0% 2%;
+  }
+
+  h3 {
+    color: rgb(255, 255, 255);
+    text-shadow: 2px 0 0 #e32d9a, -2px 0 0 #e32d9a, 0 2px 0 #e32d9a, 0 -2px 0 #e32d9a, 1px 1px #e32d9a, -1px -1px 0 #e32d9a, 1px -1px 0 #e32d9a, -1px 1px 0 #e32d9a;
     font-size: 42px;
     font-family: myFirstFont;
     margin: 1% 2% 0% 2%;
-  }
-
-h3 {
-    color: black;
-    display: inline-block;
-    margin: 0% 2% 0% 2%;
-    font-size: 16px;
-    font-family: myFirstFont;
-  }
-
-h4 {
-    color: black;
-    display: under;
-    margin: 0% 2% 0% 2%;
-    word-wrap: break-word;
-    font-size: 20px;
-    font-family: myFirstFont;
-  }
-
-  h5 {
-    color: black;
-    display: under;
-    margin: 0% 2% 0% 2%;
-    word-wrap: break-word;
-    font-size: 8px;
-    font-family: myFirstFont;
+    text-align: center;
   }
