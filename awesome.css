@@ -132,6 +132,10 @@
   ;
   }
 
+  a:hover { 
+    cursor:pointer;  
+}
+
   h2 {
     color: black;
     font-family: myFirstFont;
