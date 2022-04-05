@@ -667,6 +667,10 @@ element.style {
     color: #fff;
 }
 
+.material-icons {
+  font-size: 0px !important;
+}
+
 #myScoreVal:before {
   visibility: visible!important;
   content: '+'!important;
