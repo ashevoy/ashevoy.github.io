@@ -576,7 +576,7 @@ element.style {
 
 #healthValue {
     font-size: 32px !important;
-    text-shadow: 2px 2px 2px #000;
+    text-shadow: 2px 0 0 #000000, -2px 0 0 #000000, 0 2px 0 #000000, 0 -2px 0 #000000, 1px 1px #000000, -1px -1px 0 #000000, 1px -1px 0 #000000, -1px 1px 0 #000000 !important;
 }
 
 #maxHP {
@@ -618,7 +618,7 @@ element.style {
 #ammoVal {
     font-size: 32px;
     color: var(--accent);
-    text-shadow: 2px 2px 2px #000 !important;
+    text-shadow: 2px 0 0 #000000, -2px 0 0 #000000, 0 2px 0 #000000, 0 -2px 0 #000000, 1px 1px #000000, -1px -1px 0 #000000, 1px -1px 0 #000000, -1px 1px 0 #000000 !important;
 }
 
 #ammoMax {
@@ -657,7 +657,7 @@ element.style {
     color: #fff;
     text-shadow: 2px 2px 0 #000;
     font-size: 16px;
-}
+  }
 
 #killsIcon, #deathsIcon, #streakIcon, #kdIcon {
     visibility: hidden!important;
@@ -665,6 +665,11 @@ element.style {
 
 #killsVal, #deathsVal, #streakVal, #myScoreVal, #kdVal {
     color: #fff;
+}
+
+#myScoreVal:before {
+  visibility: visible!important;
+  content: '+'!important;
 }
 
 #killsVal:after {
