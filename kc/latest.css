@@ -667,8 +667,9 @@ element.style {
     color: #fff;
 }
 
-.material-icons {
-  font-size: 0px !important;
+.countIcon .material-icons {
+  font-size: 28px !important;
+  visibility: hidden!important;
 }
 
 #myScoreVal:before {
