@@ -686,7 +686,7 @@ element.style {
 .countIcon {
     background-color: transparent;
     color: #fff;
-    text-shadow: 2px 2px 0 #000;
+    text-shadow: 2px 0 0 #000000, -2px 0 0 #000000, 0 2px 0 #000000, 0 -2px 0 #000000, 1px 1px #000000, -1px -1px 0 #000000, 1px -1px 0 #000000, -1px 1px 0 #000000 !important;
     font-size: 16px;
   }
 
