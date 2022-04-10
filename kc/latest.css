@@ -18,54 +18,56 @@ div#voiceDisplay,
   display: none !important;
 }
 
-
+a {
+  color: var(--linkd);
+}
 
 element.style {
-    border: 6 px solid #302c29 !important;
+    border: 6 px solid var(--mainc) !important;
     height: 40 px;
-    background-color: rgb(48 44 41);
+    background-color: var(--mainc);
 }
 
 .buttonP {
-    border: 4px solid #302c29!important;
-    background-color: #302c29!important;
-    box-shadow: inset 0 -7px 0 0 #302c29!important;
+    border: 4px solid var(--mainc)!important;
+    background-color: var(--mainc)!important;
+    box-shadow: inset 0 -7px 0 0 var(--mainc)!important;
 }
 
 .buttonR {
-    border: 4px solid #302c29!important;
-    background-color: #302c29!important;
-    box-shadow: inset 0 -7px 0 0 #302c29!important;
+    border: 4px solid var(--mainc)!important;
+    background-color: var(--mainc)!important;
+    box-shadow: inset 0 -7px 0 0 var(--mainc)!important;
 }
 
 .buttonPI {
-    border: 4px solid #302c29!important;
-    background-color: #302c29!important;
-    box-shadow: inset 0 -7px 0 0 #302c29!important;
+    border: 4px solid var(--mainc)!important;
+    background-color: var(--mainc)!important;
+    box-shadow: inset 0 -7px 0 0 var(--mainc)!important;
 }
 
 .buttonG {
-    border: 4px solid #302c29!important;
-    background-color: #302c29!important;
-    box-shadow: inset 0 -7px 0 0 #302c29!important;
+    border: 4px solid var(--mainc)!important;
+    background-color: var(--mainc)!important;
+    box-shadow: inset 0 -7px 0 0 var(--mainc)!important;
 }
 
 .buttonB {
-    border: 4px solid #302c29!important;
-    background-color: #302c29!important;
-    box-shadow: inset 0 -7px 0 0 #302c29!important;
+    border: 4px solid var(--mainc)!important;
+    background-color: var(--mainc)!important;
+    box-shadow: inset 0 -7px 0 0 var(--mainc)!important;
 }
 
 .buttonO {
-    border: 4px solid #302c29!important;
-    background-color: #302c29!important;
-    box-shadow: inset 0 -7px 0 0 #302c29!important;
+    border: 4px solid var(--mainc)!important;
+    background-color: var(--mainc)!important;
+    box-shadow: inset 0 -7px 0 0 var(--mainc)!important;
 }
 
 * {
     outline: none;
     font-family: gamefont;
-    color: #ffffff;
+    color: var(--textc);
     -webkit-touch-callout: none;
     -webkit-user-select: none;
     -khtml-user-select: none;
@@ -81,7 +83,7 @@ element.style {
 #chatInputHolder::before{
     content: "annoy people";
     position: absolute;
-    color: #fff;
+    color: var(--textc);
     bottom: 17px;
     left: 70px;
     opacity: 0.5;
@@ -125,12 +127,12 @@ element.style {
   margin-right   : 10px;
   padding        : 5px;
   border-radius  : 10px;
-  border         : 3px solid #302c29;
+  border         : 3px solid var(--mainc);
 }
 
 #menuClassPicker0[onclick="selectClass(0)"]:hover {
   cursor: pointer;
-  filter: drop-shadow(0 0 10px var(#302c29));
+  filter: drop-shadow(0 0 10px var(--mainc));
 }
 
 #menuClassPicker1[onclick="selectClass(1)"] {
@@ -143,12 +145,12 @@ element.style {
   margin-right   : 10px;
   padding        : 5px;
   border-radius  : 10px;
-  border         : 3px solid #302c29;
+  border         : 3px solid var(--mainc);
 }
 
 #menuClassPicker1[onclick="selectClass(1)"]:hover {
   cursor: pointer;
-  filter: drop-shadow(0 0 10px var(#302c29));
+  filter: drop-shadow(0 0 10px var(--mainc));
 }
 
 #menuClassPicker2[onclick="selectClass(2)"] {
@@ -161,12 +163,12 @@ element.style {
   margin-right   : 10px;
   padding        : 5px;
   border-radius  : 10px;
-  border         : 3px solid #302c29;
+  border         : 3px solid var(--mainc);
 }
 
 #menuClassPicker2[onclick="selectClass(2)"]:hover {
   cursor: pointer;
-  filter: drop-shadow(0 0 10px var(#302c29));
+  filter: drop-shadow(0 0 10px var(--mainc));
 }
 
 #menuClassPicker3[onclick="selectClass(3)"] {
@@ -179,12 +181,12 @@ element.style {
   margin-right   : 10px;
   padding        : 5px;
   border-radius  : 10px;
-  border         : 3px solid #302c29;
+  border         : 3px solid var(--mainc);
 }
 
 #menuClassPicker3[onclick="selectClass(3)"]:hover {
   cursor: pointer;
-  filter: drop-shadow(0 0 10px var(#302c29));
+  filter: drop-shadow(0 0 10px var(--mainc));
 }
 
 #menuClassPicker4[onclick="selectClass(4)"] {
@@ -197,12 +199,12 @@ element.style {
   margin-right   : 10px;
   padding        : 5px;
   border-radius  : 10px;
-  border         : 3px solid #302c29;
+  border         : 3px solid var(--mainc);
 }
 
 #menuClassPicker4[onclick="selectClass(4)"]:hover {
   cursor: pointer;
-  filter: drop-shadow(0 0 10px var(#302c29));
+  filter: drop-shadow(0 0 10px var(--mainc));
 }
 
 #menuClassPicker5[onclick="selectClass(5)"] {
@@ -215,12 +217,12 @@ element.style {
   margin-right   : 10px;
   padding        : 5px;
   border-radius  : 10px;
-  border         : 3px solid #302c29;
+  border         : 3px solid var(--mainc);
 }
 
 #menuClassPicker5[onclick="selectClass(5)"]:hover {
   cursor: pointer;
-  filter: drop-shadow(0 0 10px var(#302c29));
+  filter: drop-shadow(0 0 10px var(--mainc));
 }
 
 #menuClassPicker6[onclick="selectClass(6)"] {
@@ -233,12 +235,12 @@ element.style {
   margin-right   : 10px;
   padding        : 5px;
   border-radius  : 10px;
-  border         : 3px solid #302c29;
+  border         : 3px solid var(--mainc);
 }
 
 #menuClassPicker6[onclick="selectClass(6)"]:hover {
   cursor: pointer;
-  filter: drop-shadow(0 0 10px var(#302c29));
+  filter: drop-shadow(0 0 10px var(--mainc));
 }
 
 #menuClassPicker7[onclick="selectClass(7)"] {
@@ -251,12 +253,12 @@ element.style {
   margin-right   : 10px;
   padding        : 5px;
   border-radius  : 10px;
-  border         : 3px solid #302c29;
+  border         : 3px solid var(--mainc);
 }
 
 #menuClassPicker7[onclick="selectClass(7)"]:hover {
   cursor: pointer;
-  filter: drop-shadow(0 0 10px var(#302c29));
+  filter: drop-shadow(0 0 10px var(--mainc));
 }
 
 #menuClassPicker8[onclick="selectClass(8)"] {
@@ -269,12 +271,12 @@ element.style {
   margin-right   : 10px;
   padding        : 5px;
   border-radius  : 10px;
-  border         : 3px solid #302c29;
+  border         : 3px solid var(--mainc);
 }
 
 #menuClassPicker8[onclick="selectClass(8)"]:hover {
   cursor: pointer;
-  filter: drop-shadow(0 0 10px var(#302c29));
+  filter: drop-shadow(0 0 10px var(--mainc));
 }
 
 #menuClassPicker9[onclick="selectClass(9)"] {
@@ -287,12 +289,12 @@ element.style {
   margin-right   : 10px;
   padding        : 5px;
   border-radius  : 10px;
-  border         : 3px solid #302c29;
+  border         : 3px solid var(--mainc);
 }
 
 #menuClassPicker9[onclick="selectClass(9)"]:hover {
   cursor: pointer;
-  filter: drop-shadow(0 0 10px var(#302c29));
+  filter: drop-shadow(0 0 10px var(--mainc));
 }
 
 #menuClassPicker10[onclick="selectClass(10)"] {
@@ -305,12 +307,12 @@ element.style {
   margin-right   : 10px;
   padding        : 5px;
   border-radius  : 10px;
-  border         : 3px solid #302c29;
+  border         : 3px solid var(--mainc);
 }
 
 #menuClassPicker10[onclick="selectClass(10)"]:hover {
   cursor: pointer;
-  filter: drop-shadow(0 0 10px var(#302c29));
+  filter: drop-shadow(0 0 10px var(--mainc));
 }
 
 #menuClassPicker11[onclick="selectClass(11)"] {
@@ -323,12 +325,12 @@ element.style {
   margin-right   : 10px;
   padding        : 5px;
   border-radius  : 10px;
-  border         : 3px solid #302c29;
+  border         : 3px solid var(--mainc);
 }
 
 #menuClassPicker11[onclick="selectClass(11)"]:hover {
   cursor: pointer;
-  filter: drop-shadow(0 0 10px var(#302c29));
+  filter: drop-shadow(0 0 10px var(--mainc));
 }
 
 #menuClassPicker12[onclick="selectClass(12)"] {
@@ -341,12 +343,12 @@ element.style {
   margin-right   : 10px;
   padding        : 5px;
   border-radius  : 10px;
-  border         : 3px solid #302c29;
+  border         : 3px solid var(--mainc);
 }
 
 #menuClassPicker12[onclick="selectClass(12)"]:hover {
   cursor: pointer;
-  filter: drop-shadow(0 0 10px var(#302c29));
+  filter: drop-shadow(0 0 10px var(--mainc));
 }
 
 #menuClassPicker13[onclick="selectClass(13)"] {
@@ -359,12 +361,12 @@ element.style {
   margin-right   : 10px;
   padding        : 5px;
   border-radius  : 10px;
-  border         : 3px solid #302c29;
+  border         : 3px solid var(--mainc);
 }
 
 #menuClassPicker13[onclick="selectClass(13)"]:hover {
   cursor: pointer;
-  filter: drop-shadow(0 0 10px var(#302c29));
+  filter: drop-shadow(0 0 10px var(--mainc));
 }
 
 #menuClassPicker14[onclick="selectClass(14)"] {
@@ -377,12 +379,12 @@ element.style {
   margin-right   : 10px;
   padding        : 5px;
   border-radius  : 10px;
-  border         : 3px solid #302c29;
+  border         : 3px solid var(--mainc);
 }
 
 #menuClassPicker14[onclick="selectClass(14)"]:hover {
   cursor: pointer;
-  filter: drop-shadow(0 0 10px var(#302c29));
+  filter: drop-shadow(0 0 10px var(--mainc));
 }
 
 #uiBase.onMenu #spectateUI {
@@ -452,7 +454,7 @@ element.style {
 
 .inputGrey2 {
     border: none;
-    background: #302c29;
+    background: var(--mainc);
     padding: 6px;
     padding-bottom: 6px;
     float: right;
@@ -462,7 +464,7 @@ element.style {
 }
 
 #menuWindow.dark {
-    background-color: #302c29;
+    background-color: var(--mainc);
     -webkit-box-shadow: none;
     -moz-box-shadow: none;
     box-shadow: 2px 2px 8px rgb(0 0 0 / 50%);

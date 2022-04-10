@@ -1,3 +1,19 @@
-/* download instructions: do ctrl + s on this page and put it in your resource swapper */
+/* download instructions: do ctrl + s on this page and put it in your resource swapper. if you need more help there are many tutorials online */
 
 @import url(https://ashevoy.github.io/kc/latest.css);
+
+/* customization under */
+
+:root {
+    --mainc: #302c29;
+    /* main color (backgrounds etc,). default: 302c29 */
+    
+    --borderstext: #000;
+    /*default is 000*/
+
+    --textc: #ffffff;
+    /* default is ffffff */
+
+    --linkd: #e32d9a;
+    /* link color, default is e32d9a */
+}
