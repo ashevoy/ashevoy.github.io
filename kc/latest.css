@@ -1,4 +1,6 @@
-/* Deletes */
+/* hi */
+
+/* 1: deletes */
 
 ::-webkit-scrollbar {
   display: none;
@@ -21,6 +23,8 @@ div#voiceDisplay,
 a {
   color: var(--linkd);
 }
+
+/* 2: dark theme */
 
 element.style {
     border: 6 px solid var(--mainc) !important;
@@ -94,8 +98,7 @@ element.style {
     opacity: 0;
 }
 
-
-/* Class Picker */
+/* 3: class picker */
 
 #aHolder,
 #onetrust-consent-sdk {
@@ -387,6 +390,8 @@ element.style {
   filter: drop-shadow(0 0 10px var(--mainc));
 }
 
+/* spectator stuff and menu timer and settings and just a bunch of things */
+
 #uiBase.onMenu #spectateUI {
   display: block!important;
   position: fixed;
@@ -532,7 +537,7 @@ element.style {
 }
 
 #menuPingDisplay .material-icons {
-    color: rgb(158, 235, 86);
+    color: var(--text2c);
     vertical-align: bottom;
     font-size: 20px;
 }
@@ -584,6 +589,7 @@ element.style {
 
 #ingameFPS {
     visibility:visible;
+    color: var(--text2c) !important;
 }
 #ingameFPS:after {
     content:' fps';
@@ -666,12 +672,11 @@ element.style {
     visibility: hidden!important;
 }
 
-
-
-/*Top Left*/
+/*top left*/
 
 #pingDisplay .material-icons, #ingressDisplay .material-icons, #egressDisplay .material-icons {
     font-size: 24px;
+    color: var(--accent)
 }
 
 #pingIcon {
@@ -683,7 +688,29 @@ element.style {
     display: none;
 }
 
-/*Top Right*/
+/*top right*/
+
+#leaderDisplay {
+  background-color: var(--mainc);
+  border-radius: 0;
+}
+
+.leaderItem {
+  font-size: 24px;
+}
+
+.leaderName {
+  color: var(--textc);
+}
+
+.leaderCounter, .leaderNameM, .leaderScore {
+  color: var(--text2c);
+}
+
+.leaderNameF {
+  color: var(--text2c);
+  opacity: 0.5;
+}
 
 .countIcon {
     background-color: transparent;

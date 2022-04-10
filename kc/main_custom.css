@@ -16,4 +16,7 @@
 
     --linkd: #ff4fb9;
     /* link color, default is ff4fb9 */
+
+    --text2c: #ff4fb9;
+    /* text such as fps, ping etc */
 }
