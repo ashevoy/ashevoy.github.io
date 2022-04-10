@@ -2,7 +2,7 @@
 
 @import url(https://ashevoy.github.io/kc/latest.css);
 
-/* customization under */
+/* customization under, note that this is work in progress */
 
 :root {
     --mainc: #302c29;
@@ -14,6 +14,6 @@
     --textc: #ffffff;
     /* default is ffffff */
 
-    --linkd: #e32d9a;
-    /* link color, default is e32d9a */
+    --linkd: #ff4fb9;
+    /* link color, default is ff4fb9 */
 }
