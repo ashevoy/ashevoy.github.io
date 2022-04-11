@@ -695,10 +695,6 @@ element.style {
   border-radius: 0;
 }
 
-.leaderItem {
-  font-size: 24px;
-}
-
 .leaderName {
   color: var(--textc);
 }
