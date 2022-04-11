@@ -690,11 +690,6 @@ element.style {
 
 /*top right*/
 
-#leaderDisplay {
-  background-color: var(--mainc);
-  border-radius: 0;
-}
-
 .leaderName {
   color: var(--textc);
 }
