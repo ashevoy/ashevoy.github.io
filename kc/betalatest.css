@@ -109,6 +109,16 @@
     margin-bottom: -2px;
     margin-right: 6px;
     max-width: 340px;
+    background-color: transparent !important;
+}
+
+
+.chatMsg[style="color:#fc03ec"] {
+    color: var(--text2c) !important;
+}
+
+.chatMsg span[style*="#9eeb56"] {
+    color: var(--textc) !important;
 }
   
   /* 3: class picker */
