@@ -1,9 +1,4 @@
-/* download instructions: do ctrl + s on this page and put it in your resource swapper. if you need more help there are many tutorials online */
-
 @import url(https://ashevoy.github.io/kc/latest.css);
-
-/* customization under, note that this is work in progress */
-
 :root {
     --mainc: #302c29;
     /* main color (backgrounds etc,). default: 302c29 */
@@ -20,6 +15,6 @@
     --text2c: #ff4fb9;
     /* text such as fps, ping etc */
 
-    --hide: 50%;
+    --hide: -50%;
     /* put -50% if u wanna hide the menu timer */
 }

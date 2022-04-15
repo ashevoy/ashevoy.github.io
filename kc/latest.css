@@ -397,7 +397,7 @@ element.style {
   position: fixed;
   bottom: 48.5%;
   top: unset;
-  left: 50%;
+  left: var(--hide);
   right: unset;
   transform: translate(-50%, 50%);
   z-index: 1;
