@@ -103,7 +103,7 @@
 }
 
 .chatItem {
-    border-radius: 0px;
+    border-radius: 0px; 
     margin-left: 8px;
     margin-top: -2px;
     margin-bottom: -2px;
@@ -112,13 +112,19 @@
     background-color: transparent !important;
 }
 
+.chatMsg[style="color:#fff"] {
+    color: var(--text2c) !important;
+    background-color: transparent !important;
+}
 
 .chatMsg[style="color:#fc03ec"] {
     color: var(--text2c) !important;
+    background-color: transparent !important;
 }
 
 .chatMsg span[style*="#9eeb56"] {
     color: var(--textc) !important;
+    background-color: transparent !important;
 }
   
   /* 3: class picker */
