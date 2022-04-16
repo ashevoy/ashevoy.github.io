@@ -737,6 +737,7 @@
   
   .leaderName {
     color: var(--textc);
+    opacity: 0.5;
   }
   
   .leaderCounter, .leaderNameM, .leaderScore {
@@ -746,6 +747,7 @@
   
   .leaderNameF {
     color: var(--text2c);
+    opacity: 0.5;
   }
   
   .countIcon {
@@ -753,14 +755,17 @@
       color: var(--textc);
       text-shadow: 2px 0 0 #000000, -2px 0 0 #000000, 0 2px 0 #000000, 0 -2px 0 #000000, 1px 1px #000000, -1px -1px 0 #000000, 1px -1px 0 #000000, -1px 1px 0 #000000 !important;
       font-size: 16px;
+      transform: scale(0);
     }
   
   #killsIcon, #deathsIcon, #streakIcon, #kdIcon {
       visibility: hidden!important;
+      transform: scale(0);
   }
   
   #killsVal, #deathsVal, #streakVal, #myScoreVal, #kdVal {
-      color: var(--textc);;
+      color: var(--textc);
+      opacity: 0.5;
   }
   
   .countIcon .material-icons {
