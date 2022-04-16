@@ -83,7 +83,6 @@
   .chatItem {
     background-color: transparent !important;
     color: var(--text2c);
-    font-size: 20px;
     border-radius: 0px;
     padding: -4px 16px;
     margin-left: 0;
@@ -92,27 +91,31 @@
 }
 
 #uiBase.onMenu .chatItem {
+    background-color: transparent !important;
     box-shadow: none;
 }
 
 .chatMsg {
+    background-color: transparent !important;
     color: var(--textc);
 }
 
 .chatMsg span[style*="#fff"] {
+    background-color: transparent !important;
     color: var(--textc) !important;
 }
 
 .chatMsg span[style*="#9eeb56"] {
+    background-color: transparent !important;
     color: var(--textc) !important;
 }
 
 .chatMsg[style="color:#fc03ec"] {
+    background-color: transparent !important;
     color: var(--text2c) !important;
 }
 
 #chatInputHolder {
-    background-color: transparent;
     border: none;
 }
 
@@ -120,7 +123,7 @@
     color: #fff;
     background-color: transparent;
     border-radius: 0px;
-    transform: scale(0);
+    transform: scale(1);
     height: 0;
     padding: 0;
     transition-duration: 0.25s;
