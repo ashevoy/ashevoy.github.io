@@ -84,7 +84,7 @@
     background-color: transparent !important;
     color: var(--text2c);
     border-radius: 0px;
-    padding: -4px 16px;
+    padding: 8px -2px;
     margin-left: 0;
     margin-right: 6px;
     max-width: 280px;
