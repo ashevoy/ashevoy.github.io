@@ -80,51 +80,61 @@
       user-select: none;
   }
   
-  #chatInput::placeholder{
-      color: transparent;
-  }
-  
-  #chatInputHolder::before{
-      content: "annoy people";
-      position: absolute;
-      color: var(--textc);
-      bottom: 17px;
-      left: 70px;
-      opacity: 0.5;
-      pointer-events: none;
-  }
-  
-  #chatHolder:focus-within #chatInputHolder::before{
-      opacity: 0;
-  }
-
-  #voiceDisplay {
-    display: none;
-}
-
-.chatItem {
-    border-radius: 0px; 
-    margin-left: 8px;
-    margin-top: -2px;
-    margin-bottom: -2px;
+  .chatItem {
+    background-color: transparent !important;
+    color: var(--text2c);
+    font-size: 20px;
+    border-radius: 0px;
+    padding: -4px 16px;
+    margin-left: 0;
     margin-right: 6px;
-    max-width: 340px;
-    background-color: transparent !important;
+    max-width: 280px;
 }
 
-.chatMsg[style="color:#fff"] {
-    color: var(--text2c) !important;
-    background-color: transparent !important;
+#uiBase.onMenu .chatItem {
+    box-shadow: none;
 }
 
-.chatMsg[style="color:#fc03ec"] {
-    color: var(--text2c) !important;
-    background-color: transparent !important;
+.chatMsg {
+    color: var(--textc);
+}
+
+.chatMsg span[style*="#fff"] {
+    color: var(--textc) !important;
 }
 
 .chatMsg span[style*="#9eeb56"] {
     color: var(--textc) !important;
-    background-color: transparent !important;
+}
+
+.chatMsg[style="color:#fc03ec"] {
+    color: var(--text2c) !important;
+}
+
+#chatInputHolder {
+    background-color: transparent;
+    border: none;
+}
+
+#chatInput {
+    color: #fff;
+    background-color: transparent;
+    border-radius: 0px;
+    transform: scale(0);
+    height: 0;
+    padding: 0;
+    transition-duration: 0.25s;
+    font-size: 16px;
+}
+
+#chatInput:focus {
+    height: 100%;
+    padding: 8px 16px;
+    transform: scale(1);
+}
+
+#chatInput::placeholder {
+    color: #fff;
 }
   
   /* 3: class picker */
