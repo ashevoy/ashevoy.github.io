@@ -107,10 +107,14 @@
 
 .chatMsg span[style*="#9eeb56"] {
     background-color: transparent !important;
-    color: var(--textc) !important;
+    color: var(--text2c) !important;
 }
 
 .chatMsg[style="color:#fc03ec"] {
+    background-color: transparent !important;
+    color: var(--textc) !important;
+}
+.chatMsg[style="color:#eb5656"] {
     background-color: transparent !important;
     color: var(--textc) !important;
 }
@@ -737,11 +741,11 @@
   
   .leaderCounter, .leaderNameM, .leaderScore {
     color: var(--text2c);
+    opacity: 0.5;
   }
   
   .leaderNameF {
     color: var(--text2c);
-    opacity: 0.5;
   }
   
   .countIcon {
