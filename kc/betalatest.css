@@ -112,7 +112,7 @@
 
 .chatMsg[style="color:#fc03ec"] {
     background-color: transparent !important;
-    color: var(--text2c) !important;
+    color: var(--textc) !important;
 }
 
 #chatInputHolder {
