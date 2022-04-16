@@ -108,11 +108,13 @@
 .chatMsg span[style*="#9eeb56"] {
     background-color: transparent !important;
     color: var(--text2c) !important;
+    opacity: 0.7;
 }
 
 .chatMsg[style="color:#fc03ec"] {
     background-color: transparent !important;
     color: var(--textc) !important;
+    opacity: 0.5;
 }
 .chatMsg[style="color:#eb5656"] {
     background-color: transparent !important;
