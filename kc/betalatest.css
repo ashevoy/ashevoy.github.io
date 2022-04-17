@@ -766,7 +766,6 @@
   
   #killsIcon, #deathsIcon, #streakIcon, #kdIcon {
       visibility: hidden!important;
-      transform: scale(0);
   }
   
   #killsVal, #deathsVal, #streakVal, #myScoreVal, #kdVal {
