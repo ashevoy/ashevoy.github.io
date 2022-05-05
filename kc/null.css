@@ -1,4 +1,5 @@
 @import url(https://ashevoy.github.io/kc/latest.css);
+
 :root {
     --mainc: #302c29;
     /* main color (backgrounds etc,). default: 302c29 */
@@ -18,3 +19,8 @@
     --hide: -50%;
     /* put -50% if u wanna hide the menu timer */
 }
+
+@font-face {
+    font-family: gamefont;
+    src: url(Montserrat-Medium.ttf);
+  }

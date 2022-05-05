@@ -20,6 +20,10 @@ div#voiceDisplay,
   display: none !important;
 }
 
+* {
+  font-family: gamefont;
+}
+
 a {
   color: var(--linkd);
 }
