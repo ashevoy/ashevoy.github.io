@@ -701,6 +701,11 @@ element.style {
   visibility: hidden!important;
 }
 
+#kCInfo[style="color:#292929"] {
+  text-shadow: 2px 0 0 #9a9a9a, -2px 0 0 #9a9a9a, 0 2px 0 #9a9a9a, 0 -2px 0 #9a9a9a, 1px 1px #9a9a9a, -1px -1px 0 #9a9a9a, 1px -1px 0 #9a9a9a, -1px 1px 0 #9a9a9a !important;
+
+}
+
 /*top left*/
 
 #pingDisplay .material-icons, #ingressDisplay .material-icons, #egressDisplay .material-icons {
