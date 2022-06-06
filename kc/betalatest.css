@@ -18,7 +18,10 @@
   /* put -50% if u wanna hide the menu timer */
 }
 
-
+@font-face {
+  font-family: gamefont;
+  src: url(https://ashevoy.github.io/Montserrat-Light.ttf);
+}
 
 /* hi */
 
@@ -663,27 +666,27 @@ element.style {
 /*Ammo*/
 
 #ammoDisplay {
-    background-color: transparent !important;
-    background-image: linear-gradient(90deg, var(--accent), var(--accent));
-    background-position-y: 92px;
-    border-radius: 0px;
-    padding: 0;
-    padding-bottom: 32px;
-    padding-top: 0;
-    padding-left: 0;
-    padding-right: 0 !important;
-    position: fixed;
-    bottom:6%;
-    left: 56.5%;
-    justify-content: center;
-    text-align: center;
-    transform: translateX(-50%);
+  background-color: transparent!important;
+  background-position-y: 92px;
+  border-radius: 0px;
+  padding: 0;
+  padding-bottom: 32px;
+  padding-top: 0;
+  padding-left: 0;
+  padding-right: 0 !important;
+  position: fixed;
+  bottom: 4.5%;
+  left: 56.5%;
+  justify-content: center;
+  text-align: center;
+  transform: translateX(-50%);
 }
 
+
 #ammoVal {
-    font-size: 32px;
-    color: var(--accent);
-    text-shadow: 2px 0 0 #000000, -2px 0 0 #000000, 0 2px 0 #000000, 0 -2px 0 #000000, 1px 1px #000000, -1px -1px 0 #000000, 1px -1px 0 #000000, -1px 1px 0 #000000 !important;
+  font-size: 32px;
+  color: var(--accent);
+  text-shadow: 2px 0 0 #000000, -2px 0 0 #000000, 0 2px 0 #000000, 0 -2px 0 #000000, 1px 1px #000000, -1px -1px 0 #000000, 1px -1px 0 #000000, -1px 1px 0 #000000 !important;
 }
 
 #ammoMax {
@@ -695,7 +698,7 @@ element.style {
 }
 
 #reloadMsg {
-    visibility: hidden!important;
+  visibility: hidden!important;
 }
 
 /*top left*/
