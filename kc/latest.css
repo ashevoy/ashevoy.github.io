@@ -1,3 +1,25 @@
+:root {
+  --mainc: #302c29;
+  /* main color (backgrounds etc,). default: 302c29 */
+  
+  --borderstext: #000;
+  /*default is 000*/
+
+  --textc: #ffffff;
+  /* default is ffffff */
+
+  --linkd: #ff4fb9;
+  /* link color, default is ff4fb9 */
+
+  --text2c: #ff4fb9;
+  /* text such as fps, ping etc */
+
+  --hide: -50%;
+  /* put -50% if u wanna hide the menu timer */
+}
+
+
+
 /* hi */
 
 /* 1: deletes */
@@ -551,9 +573,13 @@ element.style {
 
 }
 
+#weapDisplay {
+	bottom: 5%;
+  right: 5%;
+	transform: translateX(50%);
+}
 
 #healthBar {
-    display:inline-flex;
     width:400px;
 }
 
@@ -601,10 +627,6 @@ element.style {
 
 #pingText:after {
     content:' ping';
-}
-
-#hudClassIcon {
-    display: none;
 }
 
 #healthValueHolder {
