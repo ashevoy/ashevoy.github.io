@@ -16,7 +16,7 @@
     --text2c: #ff4fb9;
     /* text such as fps, ping etc */
 
-    --hide: -50%;
+    --hide: 50%;
     /* put -50% if u wanna hide the menu timer */
 
     --chatholder: 'annoy people';
