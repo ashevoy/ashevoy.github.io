@@ -16,6 +16,12 @@
   
     --hide: -50%;
     /* put -50% if u wanna hide the menu timer */
+
+    --chatholder: 'annoy people';
+    /* replace this with any custom chat holder message you want 2 add, keep the apostrophes */
+
+    --customreload: ' ';
+    /* replace this with a custom reload message, keep the apostrophes */
   }
   
   @font-face {
@@ -114,7 +120,7 @@
   }
   
   #chatInputHolder::before{
-      content: "annoy people";
+      content: var(--chatholder);
       position: absolute;
       color: var(--textc);
       bottom: 17px;
@@ -405,6 +411,14 @@
   
   /* spectator stuff and menu timer and settings and just a bunch of things */
   
+  #uiBase.onMenu #spectButton {
+    position: absolute;
+    top: 7%;
+    left: 97%;
+    text-align: center;
+    align-content: center;
+}
+
   #uiBase.onMenu #spectateUI {
     display: block!important;
     position: fixed;
@@ -681,9 +695,21 @@
       display: none !important;
   }
   
-  #reloadMsg {
-    visibility: hidden!important;
-  }
+  #reloadMsg{
+    border: transparent;
+    background: transparent;
+    font-size: 0;
+    top: 52%;
+}
+
+#reloadMsg::before{
+    content: var(--customreload);
+    font-size: 20px;
+    left: 50%;
+    top: 52%;
+    color: var(--text2c);
+    text-shadow: 1px 1px black, -1px -1px black, -1px 1px black, 1px -1px black;   
+}
   
   /*top left*/
   
