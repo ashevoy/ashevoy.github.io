@@ -1,8 +1,8 @@
-/* download instructions: do ctrl + s on this page and put it in your resource swapper. if you need more help there are many tutorials online */
+/* download instructions: do ctrl + s on THIS page and put it in your resource swapper. if you need more help there are many tutorials online */
 
 @import url(https://ashevoy.github.io/kc/latest.css);
 
-/* customization under, note that this is work in progress */
+/* customization under */
 
 :root {
     --mainc: #302c29;
@@ -10,16 +10,22 @@
     
     --borderstext: #000;
     /*default is 000*/
-
+  
     --textc: #ffffff;
     /* default is ffffff */
-
+  
     --linkd: #ff4fb9;
     /* link color, default is ff4fb9 */
-
+  
     --text2c: #ff4fb9;
     /* text such as fps, ping etc */
-
-    --hide: 50%;
+  
+    --hide: -50%;
     /* put -50% if u wanna hide the menu timer */
-}
+
+    --chatholder: 'annoy people';
+    /* replace this with any custom chat holder message you want 2 add, keep the apostrophes */
+
+    --customreload: ' ';
+    /* replace this with a custom reload message, keep the apostrophes */
+  }
