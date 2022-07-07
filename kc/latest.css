@@ -1,4 +1,5 @@
-/* this css was made by ashevoy/dj62. ashevoy.github.io for more info abt this atrocity. love u all <3 */
+/* this css was made by ashevoy/dj62. ashevoy.github.io for more info abt this atrocity. love u all <3
+   if you like this css make sure to share it to more people it'd be so appreciated really :) */
 
 :root {
     --mainc: #302c29;
@@ -22,7 +23,7 @@
     --chatholder: 'annoy people';
     /* replace this with any custom chat holder message you want 2 add, keep the apostrophes */
 
-    --customreload: ' ';
+    --customreload: 'test';
     /* replace this with a custom reload message, keep the apostrophes */
 }
 
@@ -34,6 +35,10 @@
 /* hi */
 
 /* 1: deletes */
+
+#braveWarning {
+  display: none !important
+}
 
 ::-webkit-scrollbar {
   display: none;
@@ -428,6 +433,21 @@ element.style {
   z-index: 1;
   width: 10px;
   height: 10px;
+}
+
+#mapInfo {
+  position: fixed;
+  top: 9%;
+  right: 0.4%;
+}
+
+#mapInfoHolder::before {
+  content: 'Ephemeral CSS by ashevoy';
+  font-size: 12px;
+  color: rgba(255,255,255,.6);
+  position: absolute;
+  bottom: 1%;
+  right: 0%;
 }
 
 #uiBase.onMenu #spectateHUD {
