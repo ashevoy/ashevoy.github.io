@@ -23,7 +23,7 @@
     --chatholder: 'annoy people';
     /* replace this with any custom chat holder message you want 2 add, keep the apostrophes */
 
-    --customreload: '';
+    --customreload: ' ';
     /* replace this with a custom reload message, keep the apostrophes */
 }
 
@@ -513,6 +513,8 @@ element.style {
     border-radius: 4px;
 }
 
+/* i love krunker rule 34 */
+
 #menuWindow.dark {
     background-color: var(--mainc);
     -webkit-box-shadow: none;
@@ -814,6 +816,13 @@ element.style {
 #kdVal:after {
     visibility: visible!important;
     content: 'kdr'!important;
+}
+
+.endChalCard {
+  transform: scale(0.8);
+  position: fixed;
+  right: -1.75%;
+  top: -0.5%;
 }
 
 .endTableN[style="color: var(--textc)"]:before {
