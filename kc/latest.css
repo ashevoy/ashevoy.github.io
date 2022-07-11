@@ -14,8 +14,8 @@
     --linkd: #ff4fb9;
     /* link color, default is ff4fb9 */
 
-    --hpval: #89FFFF;
-    --amval: #9D76B3;
+    --hpval: #FFF;
+    --amval: #fff;
     /* hp and ammo val, default fff */
 
     --hpbaropacity: 0;
