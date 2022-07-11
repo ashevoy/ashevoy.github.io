@@ -5,17 +5,21 @@
     --mainc: #302c29;
     /* main color (backgrounds etc,). default: 302c29 */
 
-    --borderstext: #000;
-    /*default is 000*/
-
     --textc: #ffffff;
     /* default is ffffff */
+
+    --text2c: #ff4fb9;
+    /* text such as fps, ping etc */
 
     --linkd: #ff4fb9;
     /* link color, default is ff4fb9 */
 
-    --text2c: #ff4fb9;
-    /* text such as fps, ping etc */
+    --hpval: #89FFFF;
+    --amval: #9D76B3;
+    /* hp and ammo val, default fff */
+
+    --hpbaropacity: 0;
+    /* hp bar opacity, 0 for hidden 1 for shown */
 
     --hide: 50%;
     /* put -50% if u wanna hide the menu timer */
@@ -27,14 +31,21 @@
     /* replace this with a custom reload message, keep the apostrophes */
 }
 
-@font-face {
-  font-family: gamefont;
-  src: url(https://ashevoy.github.io/Montserrat-Medium.ttf);
+#loadTipsHolder {
+    color: var(--text-color);
+    font-size: 0;
 }
 
-/* hi */
+#loadTipsHolder::before {
+    content: "css by ashevoy!";
+    display: block;
+    font-size: 24px;
+}
 
-/* 1: deletes */
+#loadTipsHolder::after {
+    content: "update 11/07 - main_custom.css was updated, please redownload from my gh <3";
+    font-size: 16px;
+}
 
 #braveWarning {
   display: none !important
@@ -66,7 +77,21 @@ a {
   color: var(--linkd);
 }
 
-/* 2: dark theme */
+.lC-cube {
+    display: none;
+}
+
+#lC-cont::before {
+    content: " ";
+    display: block;
+    width: 128px;
+    height: 119px;
+    background-color: transparent;
+    background-image: url(https://cdn.discordapp.com/attachments/628964831529140254/995845829392875581/LOOK_AT_THIS_FUCKING_CAT.gif);
+    background-size: 75%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
 
 element.style {
     border: 6 px solid var(--mainc) !important;
@@ -139,9 +164,6 @@ element.style {
 #chatHolder:focus-within #chatInputHolder::before{
     opacity: 0;
 }
-
-
-/* 3: class picker */
 
 #aHolder,
 #onetrust-consent-sdk {
@@ -441,8 +463,9 @@ element.style {
   right: 0.4%;
 }
 
+/* useless atm but might come in handy one day so keeping it lol */
 #mapInfoHolder::before {
-  content: 'Ephemeral CSS by ashevoy';
+  content: ' ';
   font-size: 12px;
   color: rgba(255,255,255,.6);
   position: absolute;
@@ -512,8 +535,6 @@ element.style {
     font-size: 15px;
     border-radius: 4px;
 }
-
-/* i love krunker rule 34 */
 
 #menuWindow.dark {
     background-color: var(--mainc);
@@ -596,23 +617,37 @@ element.style {
 
 #weapDisplay {
 	bottom: 5%;
-  right: 5%;
+    right: 5%;
 	transform: translateX(50%);
 }
 
 #healthBar {
-    width:400px;
+    width: 240px;
+    height: 8px;
+    display: inline-flex;
+    justify-content: center;
+    background-color: rgba(0,0,0,0.4);
+    border-radius: 0;
+    position: fixed;
+    left: calc(50% - 120px);
+    bottom: 40px;
+    opacity: var(--hpbaropacity);
 }
 
 .healthBarSeg {
-    width:-webkit-fill-available;
-    margin-right:-1px;
-    border-radius:0;
+    width: -webkit-fill-available;
+    margin: 0 -1px;
+    border-radius: 0;
+    background-color: transparent;
 }
 
 .hpBSeg {
-    border-radius:0;
-    box-shadow:none;
+    border-radius: 0;
+    box-shadow: none;
+}
+
+.hpBSeg[style*="#cd3732"] {
+    background-color: var(--text2c) !important;
 }
 
 .healthBarSeg:last-child,.healthBarSeg:last-child .hpBSeg {
@@ -623,6 +658,26 @@ element.style {
 .healthBarSeg:first-child,.healthBarSeg:first-child .hpBSeg {
     border-top-left-radius:25px;
     border-bottom-left-radius:25px;
+}
+
+#healthValueHolder {
+    background-color: transparent;
+    padding: 0 !important;
+    margin: 0 !important;
+    bottom: 9%;
+    right: 56.5%;
+    transform: translateX(50%);
+    position: fixed;
+}
+
+#healthValue {
+    font-size: 32px !important;
+    text-shadow: 2px 0 0 #000000, -2px 0 0 #000000, 0 2px 0 #000000, 0 -2px 0 #000000, 1px 1px #000000, -1px -1px 0 #000000, 1px -1px 0 #000000, -1px 1px 0 #000000 !important;
+    color: var(--hpval);
+}
+
+#maxHP {
+    display: none;
 }
 
 .cardActions {
@@ -650,38 +705,9 @@ element.style {
     content:' ping';
 }
 
-#healthValueHolder {
-    background-color: transparent;
-    padding: 0 !important;
-    margin: 0 !important;
-    bottom: 9%;
-    right: 56.5%;
-    transform: translateX(50%);
-    position: fixed;
-}
-
-#healthValue {
-    font-size: 32px !important;
-    text-shadow: 2px 0 0 #000000, -2px 0 0 #000000, 0 2px 0 #000000, 0 -2px 0 #000000, 1px 1px #000000, -1px -1px 0 #000000, 1px -1px 0 #000000, -1px 1px 0 #000000 !important;
-}
-
-#maxHP {
-    display: none;
-}
-
-#healthBar {
-    display: none;
-}
-
-.hpBSeg, .healthBarSeg {
-    display: none;
-}
-
 #challIcon {
     display: none !important;
 }
-
-/*Ammo*/
 
 #ammoDisplay {
   background-color: transparent!important;
@@ -700,10 +726,9 @@ element.style {
   transform: translateX(-50%);
 }
 
-
 #ammoVal {
   font-size: 32px;
-  color: var(--accent);
+  color: var(--amval);
   text-shadow: 2px 0 0 #000000, -2px 0 0 #000000, 0 2px 0 #000000, 0 -2px 0 #000000, 1px 1px #000000, -1px -1px 0 #000000, 1px -1px 0 #000000, -1px 1px 0 #000000 !important;
 }
 
@@ -733,10 +758,7 @@ element.style {
 
 #kCInfo[style="color:#292929"] {
   text-shadow: 2px 0 0 #9a9a9a, -2px 0 0 #9a9a9a, 0 2px 0 #9a9a9a, 0 -2px 0 #9a9a9a, 1px 1px #9a9a9a, -1px -1px 0 #9a9a9a, 1px -1px 0 #9a9a9a, -1px 1px 0 #9a9a9a !important;
-
 }
-
-/*top left*/
 
 #pingDisplay .material-icons, #ingressDisplay .material-icons, #egressDisplay .material-icons {
     font-size: 24px;
@@ -747,12 +769,9 @@ element.style {
     color: var(--accent) !important;
 }
 
-
 #timerIcon {
     display: none;
 }
-
-/*top right*/
 
 .leaderName {
   color: var(--textc);
@@ -829,6 +848,16 @@ element.style {
     content:"\2192";
     font-size:25px;
     margin-right:10px;
+}
+
+.reportBut {
+    color: var(--linkd);
+    text-shadow: none;
+}
+
+.shareBut {
+    color: var(--linkd) !important;
+    text-shadow: none;
 }
 
 #seasonLabel:after {
