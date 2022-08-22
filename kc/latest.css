@@ -14,8 +14,8 @@
     --linkd: #ff4fb9;
     /* link color, default is ff4fb9 */
 
-    --hpval: #FFF;
-    --amval: #fff;
+    --hpval: #89FFFF;
+    --amval: #9D76B3;
     /* hp and ammo val, default fff */
 
     --hpbaropacity: 0;
@@ -29,6 +29,9 @@
 
     --customreload: ' ';
     /* replace this with a custom reload message, keep the apostrophes */
+
+    --curgameinf: " "
+    /* replace this with a custom message to put at the top left */
 }
 
 #loadTipsHolder {
@@ -43,8 +46,12 @@
 }
 
 #loadTipsHolder::after {
-    content: "update 11/07 - main_custom.css was updated, please redownload from my gh <3";
+    content: "NEW UPDATE 22/08 - main_custom.css was updated, please redownload it from my github <3";
     font-size: 16px;
+}
+
+#loadTipsHolder span {
+    display: none;
 }
 
 #braveWarning {
@@ -163,6 +170,15 @@ element.style {
 
 #chatHolder:focus-within #chatInputHolder::before{
     opacity: 0;
+}
+
+#menuJNKCount span {
+  display: none;
+}
+
+#menuJNKCount::after {
+    content: ' JN';
+    color: #cc51f8;
 }
 
 #aHolder,
@@ -754,6 +770,16 @@ element.style {
     top: 52%;
     color: var(--text2c);
     text-shadow: 1px 1px black, -1px -1px black, -1px 1px black, 1px -1px black;
+}
+
+#curGameInfo {
+    font-size: 0;
+}
+
+#curGameInfo::before {
+    content: var(--curgameinf);
+    font-size: 20px;
+    color: var(--text2c);
 }
 
 #kCInfo[style="color:#292929"] {
