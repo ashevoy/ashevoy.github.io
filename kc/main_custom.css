@@ -34,6 +34,9 @@
 
     --customreload: ' ';
     /* replace this with a custom reload message, keep the apostrophes */
+   
+    --curgameinf: " "
+    /* replace this with a custom message to put at the top left */
 }
 
 /* font change stuff, do not touch the font-family value */
