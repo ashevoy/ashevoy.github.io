@@ -14,29 +14,32 @@
     /* default is ffffff */
 
     --text2c: #ff4fb9;
-    /* text such as fps, ping etc, default ff4fb9 */
+    /* text such as fps, ping etc */
 
     --linkd: #ff4fb9;
     /* link color, default is ff4fb9 */
 
-    --hpval: #fff;
-    --amval: #fff;
+    --hpval: #89FFFF;
+    --amval: #9D76B3;
     /* hp and ammo val, default fff */
 
     --hpbaropacity: 0;
     /* hp bar opacity, 0 for hidden 1 for shown */
-
-    --hide: 50%;
-    /* put -50% if u wanna hide the menu timer */
 
     --chatholder: 'annoy people';
     /* replace this with any custom chat holder message you want 2 add, keep the apostrophes */
 
     --customreload: ' ';
     /* replace this with a custom reload message, keep the apostrophes */
-   
-    --curgameinf: " "
+
+    --curgameinf: " ";
     /* replace this with a custom message to put at the top left */
+
+    --Name: 'name';
+    --Clan: " [clan]";
+    --color: #ffabe7;
+    /* lets you gave a local custom display name and clan. if you dont want anything special just retype your ign and clan
+       color only changes the colour of the clan btw.*/
 }
 
 /* font change stuff, do not touch the font-family value */
