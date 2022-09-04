@@ -958,8 +958,8 @@ element.style {
 
 #killStreakHolder {
   position: absolute;
-  bottom:calc(38%-40px);
-  right:calc(50%+70px);
+  bottom:calc(38% - 40px);
+  right:calc(50% + 70px);
 }
 
 #myScoreVal:before {
