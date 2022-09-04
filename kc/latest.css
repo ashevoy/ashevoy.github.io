@@ -956,6 +956,12 @@ element.style {
   display: none;
 }
 
+#killStreakHolder {
+  position: absolute;
+  bottom:calc(38%-40px);
+  right:calc(50%+70px);
+}
+
 #myScoreVal:before {
   visibility: visible!important;
   content: '+'!important;
