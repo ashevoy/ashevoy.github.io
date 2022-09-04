@@ -820,7 +820,7 @@ element.style {
 
 #bottomRight {
     position: fixed;
-    bottom: 11.11%;
+    bottom: 12.22%;
     right: 43.5%;
     z-index: 3;
 }
@@ -960,6 +960,10 @@ element.style {
   position: absolute;
   bottom:calc(38% - 40px);
   right:calc(50% + 70px);
+}
+
+#krTagHolder {
+  display: none;
 }
 
 #myScoreVal:before {
