@@ -34,12 +34,6 @@
 
     --curgameinf: " ";
     /* replace this with a custom message to put at the top left */
-
-    --Name: 'name';
-    --Clan: " [clan]";
-    --color: #ffabe7;
-    /* lets you gave a local custom display name and clan. if you dont want anything special just retype your ign and clan
-       color only changes the colour of the clan btw.*/
 }
 
 /* font change stuff, do not touch the font-family value */
