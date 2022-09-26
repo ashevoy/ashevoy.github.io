@@ -1,0 +1,48 @@
+/* download instructions: do ctrl + s on this page you are currently on and put it in your resource swapper. if you need more help there are many tutorials online */
+
+/* this css was made by ashevoy/dj62. ashevoy.github.io for more info abt this atrocity. love u all <3
+   if you like this css make sure to share it to more people it'd be so appreciated really :)
+   dont mess with this url its to auto update the css */
+@import url(https://ashevoy.github.io/kc/latest.css);
+
+/* customization options under */
+:root {
+    --mainc: #302c29;
+    /* main color (backgrounds etc,). default: 302c29 */
+
+    --textc: #ffffff;
+    /* default is ffffff */
+
+    --text2c: #ff4fb9;
+    /* text such as fps, ping etc */
+
+    --linkd: #ff4fb9;
+    /* link color, default is ff4fb9 */
+
+    --hpval: #fff;
+    --amval: #fff;
+    /* hp and ammo val, default fff */
+
+    --hpbaropacity: 0;
+    /* hp bar opacity, 0 for hidden 1 for shown */
+
+    --chatholder: 'annoy people';
+    /* replace this with any custom chat holder message you want 2 add, keep the apostrophes */
+
+    --customreload: ' ';
+    /* replace this with a custom reload message, keep the apostrophes */
+
+    --curgameinf: " ";
+    /* replace this with a custom message to put at the top left */
+  
+    --Name: 'name';
+    --Clan: " [clan]";
+    --color: #ffabe7;
+    /* lets you gave a local custom display name and clan. */
+}
+
+/* font change stuff, do not touch the font-family value */
+@font-face {
+  font-family: gamefont;
+  src: url(https://ashevoy.github.io/Montserrat-Medium.ttf);
+}
