@@ -29,11 +29,6 @@
 
     --curgameinf: " ";
     /* replace this with a custom message to put at the top left */
-
-    --Name: 'update main_custom';
-    --Clan: " [clan]";
-    --color: #ffabe7;
-    /* lets you gave a local custom display name and clan. if you dont want anything special just retype your ign and clan */
 }
 
 #loadTipsHolder {
@@ -217,41 +212,6 @@ element.style {
 #aHolder,
 #onetrust-consent-sdk {
   display: none !important;
-}
-
-
-.menuClassPlayerName { font-size: 0 }
-.menuClassPlayerName::before {
-    content: var(--Name);
-    font-size: 19px !important;
-    vertical-align: middle;
-    color:white !important;
-}
-
-.menuClassPlayerClan { font-size: 0; }
-.menuClassPlayerClan::before {
-    content: var(--Clan);
-    font-size: 19px !important;
-    vertical-align: middle;
-    color: var(--color) !important;
-}
-
-.leaderNameM:before {
-    content: var(--Name) !important;
-    font-size:18px !important;
-    visibility: visible !important;
-    color:white !important;
-}
-.leaderNameM span:after {
-    visibility:visible !important;
-    content: var(--Clan) !important;
-    font-size:18px !important;
-    color: var(--color) !important;
-}
-
-.leaderNameM,.leaderNameM span {
-    font-size:0px !important;
-    visibility:hidden;
 }
 
 #hiddenClasses {
@@ -995,35 +955,6 @@ element.style {
     visibility: visible!important;
     content: 'kdr'!important;
 }
-
-.leaderNameM, .leaderNameM span { font-size: 0 }
-.leaderNameM::before {
-    content: var(--Name);
-    font-size: 18px;
-    color: white;
-}
-
-#menuAccountUsername{ font-size: 0px; }
-#menuAccountUsername::before {
-    content: var(--Name);
-    font-size: 18px;
-}
-
-.menuClassPlayerName{ font-size: 0px; }
-.menuClassPlayerName::before {
-    content: var(--Name);
-    font-size: 18px;
-
-
-.leaderNameM span::after {
-    content: "7";
-    font-size: 18px;
-}
-
-.menuClassPlayerName{ font-size: 0px; }
-.menuClassPlayerName::before {
-    content: var(--Name);
-    font-size: 18px;
 
 .endChalCard {
   transform: scale(0.8);
