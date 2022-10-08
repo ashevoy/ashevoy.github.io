@@ -40,11 +40,13 @@
     content: "css by ashevoy!";
     display: block;
     font-size: 24px;
+  text-shadow: 2px 0 0 black, -2px 0 0 black, 0 2px 0 black, 0 -2px 0 black, 1px 1px black, -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black !important;
 }
 
 #loadTipsHolder::after {
-    content: "UPDATE 4/09 - main_custom.css was (yet again) updated, please re-dl it from my github <3";
+    content: "new update - 8 oct 2022 - redownload main_custom.css from ashevoy.github.io for customisable loading screen background winkwink new features lets go";
     font-size: 16px;
+    text-shadow: 2px 0 0 black, -2px 0 0 black, 0 2px 0 black, 0 -2px 0 black, 1px 1px black, -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black !important;
 }
 
 ::-webkit-scrollbar {
@@ -72,8 +74,6 @@ div#voiceDisplay,
   display: none !important;
 }
 
-
-
 .UIB,
 .leftUIB {
     background-color: transparent !important
@@ -94,6 +94,10 @@ a {
 }
 
 .lC-cube {
+    display: none;
+}
+
+#loadEditrBtn {
     display: none;
 }
 
