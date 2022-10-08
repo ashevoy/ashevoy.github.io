@@ -36,6 +36,13 @@
     /* replace this with a custom message to put at the top left */
 }
 
+#initLoader {
+  background-image: url(https://cdn.discordapp.com/attachments/727526422381461514/1016047361224613918/STYLIZED_BUNDLE_mi0_ENVIRONMENT_CINEMATIC.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+/* custom background for loading screen - credit to zbg for that image */
+
 /* font change stuff, do not touch the font-family value */
 @font-face {
   font-family: gamefont;
