@@ -64,7 +64,6 @@
 #uiBase.onMenu #voiceDisplay,
 div#voiceDisplay,
 .setSugBox2,
-#tlInfHold,
 #newsHolder,
 .endAHolder,
 #endAContainer,
@@ -167,6 +166,17 @@ element.style {
     -moz-user-select: none;
     -ms-user-select: none;
     user-select: none;
+}
+
+#tlInfHold:hover{
+    opacity: 1;
+    transition-duration: 0.1747s;
+}
+
+#tlInfHold{
+    opacity: 0;
+    transition-duration: 0.1747s;
+    transition-delay: 0.1747s;
 }
 
 #chatInput::placeholder{
@@ -280,11 +290,13 @@ element.style {
   image-rendering: pixelated;
   margin-right: 10px;
   padding: 5px;
+  transition-duration: 0.0747s;
 }
 
 #menuClassPicker0[onclick="selectClass(0)"]:hover {
   cursor: pointer;
   transform: scale(1.25);
+  transition-duration: 0.0747s;
 }
 
 #menuClassPicker1[onclick="selectClass(1)"] {
@@ -297,11 +309,13 @@ element.style {
   image-rendering: pixelated;
   margin-right: 10px;
   padding: 5px;
+  transition-duration: 0.0747s;
 }
 
 #menuClassPicker1[onclick="selectClass(1)"]:hover {
   cursor: pointer;
   transform: scale(1.25);
+  transition-duration: 0.0747s;
 }
 
 #menuClassPicker2[onclick="selectClass(2)"] {
@@ -314,11 +328,13 @@ element.style {
   image-rendering: pixelated;
   margin-right: 10px;
   padding: 5px;
+  transition-duration: 0.0747s;
 }
 
 #menuClassPicker2[onclick="selectClass(2)"]:hover {
   cursor: pointer;
   transform: scale(1.25);
+  transition-duration: 0.0747s;
 }
 
 #menuClassPicker3[onclick="selectClass(3)"] {
@@ -331,11 +347,13 @@ element.style {
   image-rendering: pixelated;
   margin-right: 10px;
   padding: 5px;
+  transition-duration: 0.0747s;
 }
 
 #menuClassPicker3[onclick="selectClass(3)"]:hover {
   cursor: pointer;
   transform: scale(1.25);
+  transition-duration: 0.0747s;
 }
 
 #menuClassPicker4[onclick="selectClass(4)"] {
@@ -348,11 +366,13 @@ element.style {
   image-rendering: pixelated;
   margin-right: 10px;
   padding: 5px;
+  transition-duration: 0.0747s;
 }
 
 #menuClassPicker4[onclick="selectClass(4)"]:hover {
   cursor: pointer;
   transform: scale(1.25);
+  transition-duration: 0.0747s;
 }
 
 #menuClassPicker5[onclick="selectClass(5)"] {
@@ -365,11 +385,13 @@ element.style {
   image-rendering: pixelated;
   margin-right: 10px;
   padding: 5px;
+  transition-duration: 0.0747s;
 }
 
 #menuClassPicker5[onclick="selectClass(5)"]:hover {
   cursor: pointer;
   transform: scale(1.25);
+  transition-duration: 0.0747s;
 }
 
 #menuClassPicker6[onclick="selectClass(6)"] {
@@ -382,11 +404,13 @@ element.style {
   image-rendering: pixelated;
   margin-right: 10px;
   padding: 5px;
+  transition-duration: 0.0747s;
 }
 
 #menuClassPicker6[onclick="selectClass(6)"]:hover {
   cursor: pointer;
   transform: scale(1.25);
+  transition-duration: 0.0747s;
 }
 
 #menuClassPicker7[onclick="selectClass(7)"] {
@@ -399,11 +423,13 @@ element.style {
   image-rendering: pixelated;
   margin-right: 10px;
   padding: 5px;
+  transition-duration: 0.0747s;
 }
 
 #menuClassPicker7[onclick="selectClass(7)"]:hover {
   cursor: pointer;
   transform: scale(1.25);
+  transition-duration: 0.0747s;
 }
 
   #menuClassPicker8[onclick="selectClass(8)"] {
@@ -416,11 +442,13 @@ element.style {
   image-rendering: pixelated;
   margin-right: 10px;
   padding: 5px;
+  transition-duration: 0.0747s;
 }
 
 #menuClassPicker8[onclick="selectClass(8)"]:hover {
   cursor: pointer;
   transform: scale(1.25);
+  transition-duration: 0.0747s;
 }
 
 #menuClassPicker9[onclick="selectClass(9)"] {
@@ -433,11 +461,13 @@ element.style {
   image-rendering: pixelated;
   margin-right: 10px;
   padding: 5px;
+  transition-duration: 0.0747s;
 }
 
 #menuClassPicker9[onclick="selectClass(9)"]:hover {
   cursor: pointer;
   transform: scale(1.25);
+  transition-duration: 0.0747s;
 }
 
 #menuClassPicker10[onclick="selectClass(10)"] {
@@ -449,11 +479,13 @@ element.style {
   image-rendering: pixelated;
   margin-right   : 10px;
   padding        : 5px;
+  transition-duration: 0.0747s;
 }
 
 #menuClassPicker10[onclick="selectClass(10)"]:hover {
   cursor: pointer;
   transform: scale(1.25);
+  transition-duration: 0.0747s;
 }
 
 #menuClassPicker11[onclick="selectClass(11)"] {
@@ -466,11 +498,13 @@ element.style {
   image-rendering: pixelated;
   margin-right: 10px;
   padding: 5px;
+  transition-duration: 0.0747s;
 }
 
 #menuClassPicker11[onclick="selectClass(11)"]:hover {
   cursor: pointer;
   transform: scale(1.25);
+  transition-duration: 0.0747s;
 }
 
 #menuClassPicker12[onclick="selectClass(12)"] {
@@ -483,11 +517,13 @@ element.style {
   image-rendering: pixelated;
   margin-right: 10px;
   padding: 5px;
+  transition-duration: 0.0747s;
 }
 
 #menuClassPicker12[onclick="selectClass(12)"]:hover {
   cursor: pointer;
   transform: scale(1.25);
+  transition-duration: 0.0747s;
 }
 
 #menuClassPicker13[onclick="selectClass(13)"] {
@@ -500,11 +536,13 @@ element.style {
   image-rendering: pixelated;
   margin-right: 10px;
   padding: 5px;
+  transition-duration: 0.0747s;
 }
 
 #menuClassPicker13[onclick="selectClass(13)"]:hover {
   cursor: pointer;
   transform: scale(1.25);
+  transition-duration: 0.0747s;
 }
 
 #menuClassPicker14[onclick="selectClass(14)"] {
@@ -517,6 +555,13 @@ element.style {
   image-rendering: pixelated;
   margin-right: 10px;
   padding: 5px;
+  transition-duration: 0.0747s;
+}
+
+#menuClassPicker14[onclick="selectClass(14)"]:hover {
+  cursor: pointer;
+  transform: scale(1.25);
+  transition-duration: 0.0747s;
 }
 
 /* spectator stuff and menu timer and settings and just a bunch of things */
