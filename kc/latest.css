@@ -112,6 +112,10 @@ a {
     background-position: center;
 }
 
+.adsbygoogle.adsbygoogle-noablate {
+    display: none !important;
+}
+
 element.style {
     border: 6 px solid var(--mainc) !important;
     height: 40 px;
