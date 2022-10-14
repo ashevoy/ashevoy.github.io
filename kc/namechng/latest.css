@@ -77,8 +77,6 @@ div#voiceDisplay,
   display: none !important;
 }
 
-
-
 .UIB,
 .leftUIB {
     background-color: transparent !important
@@ -112,6 +110,10 @@ a {
     background-size: 75%;
     background-repeat: no-repeat;
     background-position: center;
+}
+
+.adsbygoogle.adsbygoogle-noablate {
+    display: none !important;
 }
 
 element.style {
