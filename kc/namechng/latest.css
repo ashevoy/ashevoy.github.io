@@ -909,13 +909,15 @@ element.style {
   position: fixed;
   transform: rotateZ(-90deg) translate(-12px, -22px);
   font-size: 12px;
-  color: var(--text2c)
+  color: var(--text2c);
+  text-shadow: 0.7px 0 0 black, -0.7px 0 0 black, 0 0.7px 0 black, 0 -0.7px 0 black, 0.45px 0.45px black, -0.45px -0.45px 0 black, 0.45px -0.45px 0 black, -0.45px 0.45px 0 black !important;
 }
 
 #timerDisplay {
     position: fixed;
     left: 140px;
-    bottom: 75px
+    bottom: 75px;
+    text-shadow: 1px 0 0 black, -1px 0 0 black, 0 1px 0 black, 0 -1px 0 black, 0.7px 0.7px black, -0.7px -0.7px 0 black, 0.7px -0.7px 0 black, -0.7px 0.7px 0 black !important;
 }
 
 .leaderName {
