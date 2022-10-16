@@ -23,7 +23,7 @@
     --amval: #fff;
     /* hp and ammo val, default fff */
 
-    --hpbaropacity: 0;
+    --hpbaropacity: 1;
     /* hp bar opacity, 0 for hidden 1 for shown */
 
     --chatholder: 'annoy people';
