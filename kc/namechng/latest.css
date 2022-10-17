@@ -768,6 +768,10 @@ element.style {
     height: 280px;
 }
 
+.newLeaderContainer {
+  background-color: rgba(0,0,0,.0747)
+}
+
 .weapIcon {
     transform: translate(-50%, -50%);
     position:fixed;
