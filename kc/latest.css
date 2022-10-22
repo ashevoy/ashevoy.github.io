@@ -1015,13 +1015,6 @@ element.style {
     content: 'kdr'!important;
 }
 
-.endChalCard {
-  transform: scale(0.8);
-  position: fixed;
-  right: -1.75%;
-  top: -0.5%;
-}
-
 .endTableN[style="color: var(--textc)"]:before {
     content:"\2192";
     font-size:25px;
