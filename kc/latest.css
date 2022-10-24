@@ -795,7 +795,7 @@ element.style {
     border-radius: 0px;
     position: fixed;
     left: calc(50% - 120px);
-    bottom: 60px;
+    bottom: calc(7% - 5px);
     opacity: var(--hpbaropacity);
     outline: 2px solid black;
 }
@@ -820,7 +820,7 @@ element.style {
     background-color: transparent;
     padding: 0 !important;
     margin: 0 !important;
-    bottom: calc(11.11% - 25px);
+    bottom: 10.747%;
     right: 56.5%;
     transform: translateX(50%);
     position: fixed;
@@ -867,7 +867,7 @@ element.style {
 
 #bottomRight {
     position: fixed;
-    bottom: 12.22%;
+    bottom: calc(59px + 10.747%);
     right: 43.5%;
     z-index: 3;
 }
