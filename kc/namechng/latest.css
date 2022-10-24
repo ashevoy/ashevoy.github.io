@@ -902,14 +902,14 @@ element.style {
 
 #bottomRight {
     position: fixed;
-    bottom: calc(59px + 10.747%);
+    bottom: calc(43px + 10.747%);
     right: 43.5%;
     z-index: 3;
 }
 
 #ammoDisplay {
   background-color: transparent!important;
-  background-position-y: 92px;
+  background-position-y: -15px;
   border-radius: 0px;
   padding: 0;
   padding-bottom: 32px;
