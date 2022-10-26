@@ -873,7 +873,7 @@ element.style {
 }
 
 #bhHolder {
-  display: none
+  display: none!important;
 }
 
 #ammoDisplay {
