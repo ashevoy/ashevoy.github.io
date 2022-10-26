@@ -907,6 +907,10 @@ element.style {
     z-index: 3;
 }
 
+#bhHolder {
+  display: none
+}
+
 #ammoDisplay {
   background-color: transparent!important;
   background-position-y: -15px;
