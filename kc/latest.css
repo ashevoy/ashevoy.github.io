@@ -867,7 +867,7 @@ element.style {
 #bottomRight {
     position: fixed;
     bottom: calc(43px + 10.747%);
-    right: 43.5%;
+    right: 43.747%;
     z-index: 3;
 }
 
@@ -880,6 +880,7 @@ element.style {
   background-position-y: -15px;
   border-radius: 0px;
   padding: 0;
+  letter-spacing: 0px;
   padding-bottom: 32px;
   padding-top: 0;
   padding-left: 0;
