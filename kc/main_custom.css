@@ -26,7 +26,7 @@
     --classpickeropacity: 0;
     --idleclassopacity: 0.5;
     /* classpickeropacity: the class picker on the right of the menu's opacity. it'll still show when hovering above it. default is 0 (hidden) */
-    /* idleclassopacity: the classes you aren't hovering over's opacities. default is 0.5 */
+    /* idleclassopacity: the classes you aren't hovering over's opacities. default is 0.5 - i recommend setting this to 1 if classpicker is also at 1 */
     --customreload: ' ';
     /* customreload: replace this with a custom reload message, keep the apostrophes */
     --curgameinf: " ";
