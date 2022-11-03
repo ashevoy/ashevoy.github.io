@@ -11,27 +11,27 @@
     /* mainc: backgrounds colour - default: 302c29 */
     --textc: #ffffff;
     /* textc: basic text colour - default is ffffff */
-    --text2c: #3dccee;
+    --text2c: #ff4fb9;
     /* text2c: special text such as fps etc */
-    --linkd: #3dccee;
+    --linkd: #ff4fb9;
     /* linkd: link colour, default is ff4fb9 */
-    --hpval: #fd08bd;
-    --amval: #fd08bd;
+    --hpval: #89FFFF;
+    --amval: #9D76B3;
     /* hp and ammo val colour, default fff */
     --hpheight: 0px;
     --ammoheight: 0px;
-    /* hp/ammoheight: bring up the height of the hp and ammo (adds pixels) both defaults are 0. this is mainly a fix for the font issue.*/
+    /* change the height of the hp and ammo (adds pixels) */
     --hpbaropacity: 1;
     /* hpbaropacity: hp bar opacity, 0 for hidden 1 for shown */
     --classpickeropacity: 0;
     --idleclassopacity: 0.5;
     /* classpickeropacity: the class picker on the right of the menu's opacity. it'll still show when hovering above it. default is 0 (hidden) */
-    /* idleclassopacity: the classes you aren't hovering over's opacities. default is 0.5. if you put the class picker opacity to 1 i recommend making this 1 as well. */
-    --customreload: '<3';
+    /* idleclassopacity: the classes you aren't hovering over's opacities. default is 0.5 - i recommend 1 if you use classpicker at 1. */
+    --customreload: ' ';
     /* customreload: replace this with a custom reload message, keep the apostrophes */
-    --curgameinf: "bakuretsu bakuretsu la la la";
+    --curgameinf: " ";
     /* curgameinf: replace this with a custom message to put at the top left keep quote marks */
-    --chatholder: 'rixaaaa <3';
+    --chatholder: 'annoy people';
     /* chatholder: replace this with any custom chat holder message you want 2 add, keep the apostrophes */
     --Name: 'name';
     --Clan: " [clan]";
