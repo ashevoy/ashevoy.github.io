@@ -8,33 +8,31 @@
 /* customization options under */
 :root {
     --mainc: #302c29;
-    /* main color (backgrounds etc,). default: 302c29 */
-
+    /* mainc: backgrounds colour - default: 302c29 */
     --textc: #ffffff;
-    /* default is ffffff */
-
-    --text2c: #ff4fb9;
-    /* text such as fps, ping etc */
-
-    --linkd: #ff4fb9;
-    /* link color, default is ff4fb9 */
-
-    --hpval: #fff;
-    --amval: #fff;
-    /* hp and ammo val, default fff */
-
+    /* textc: basic text colour - default is ffffff */
+    --text2c: #3dccee;
+    /* text2c: special text such as fps etc */
+    --linkd: #3dccee;
+    /* linkd: link colour, default is ff4fb9 */
+    --hpval: #fd08bd;
+    --amval: #fd08bd;
+    /* hp and ammo val colour, default fff */
+    --hpheight: 0px;
+    --ammoheight: 0px;
+    /* hp/ammoheight: bring up the height of the hp and ammo (adds pixels) both defaults are 0. this is mainly a fix for the font issue.*/
     --hpbaropacity: 1;
-    /* hp bar opacity, 0 for hidden 1 for shown */
-
-    --chatholder: 'annoy people';
-    /* replace this with any custom chat holder message you want 2 add, keep the apostrophes */
-
-    --customreload: ' ';
-    /* replace this with a custom reload message, keep the apostrophes */
-
-    --curgameinf: " ";
-    /* replace this with a custom message to put at the top left */
-  
+    /* hpbaropacity: hp bar opacity, 0 for hidden 1 for shown */
+    --classpickeropacity: 0;
+    --idleclassopacity: 0.5;
+    /* classpickeropacity: the class picker on the right of the menu's opacity. it'll still show when hovering above it. default is 0 (hidden) */
+    /* idleclassopacity: the classes you aren't hovering over's opacities. default is 0.5. if you put the class picker opacity to 1 i recommend making this 1 as well. */
+    --customreload: '<3';
+    /* customreload: replace this with a custom reload message, keep the apostrophes */
+    --curgameinf: "bakuretsu bakuretsu la la la";
+    /* curgameinf: replace this with a custom message to put at the top left keep quote marks */
+    --chatholder: 'rixaaaa <3';
+    /* chatholder: replace this with any custom chat holder message you want 2 add, keep the apostrophes */
     --Name: 'name';
     --Clan: " [clan]";
     --color: #fff;
