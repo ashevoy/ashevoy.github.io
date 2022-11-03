@@ -3,32 +3,31 @@
 
 :root {
     --mainc: #302c29;
-    /* main color (backgrounds etc,). default: 302c29 */
-
+    /* mainc: backgrounds colour - default: 302c29 */
     --textc: #ffffff;
-    /* default is ffffff */
-
+    /* textc: basic text colour - default is ffffff */
     --text2c: #ff4fb9;
-    /* text such as fps, ping etc */
-
+    /* text2c: special text such as fps etc */
     --linkd: #ff4fb9;
-    /* link color, default is ff4fb9 */
-
+    /* linkd: link colour, default is ff4fb9 */
     --hpval: #89FFFF;
     --amval: #9D76B3;
-    /* hp and ammo val, default fff */
-
-    --hpbaropacity: 0;
-    /* hp bar opacity, 0 for hidden 1 for shown */
-
-    --chatholder: 'annoy people';
-    /* replace this with any custom chat holder message you want 2 add, keep the apostrophes */
-
+    /* hp and ammo val colour, default fff */
+    --hpheight: 0px;
+    --ammoheight: 0px;
+    /* change the height of the hp and ammo (adds pixels) */
+    --hpbaropacity: 1;
+    /* hpbaropacity: hp bar opacity, 0 for hidden 1 for shown */
+    --classpickeropacity: 1;
+    --idleclassopacity: 1;
+    /* classpickeropacity: the class picker on the right of the menu's opacity. it'll still show when hovering above it. default is 1 (shown) */
+    /* idleclassopacity: the classes you aren't hovering over's opacities. default is 0.5 */
     --customreload: ' ';
-    /* replace this with a custom reload message, keep the apostrophes */
-
+    /* customreload: replace this with a custom reload message, keep the apostrophes */
     --curgameinf: " ";
-    /* replace this with a custom message to put at the top left */
+    /* curgameinf: replace this with a custom message to put at the top left keep quote marks */
+    --chatholder: 'annoy people';
+    /* chatholder: replace this with any custom chat holder message you want 2 add, keep the apostrophes */
 }
 
 #loadTipsHolder {
@@ -44,7 +43,7 @@
 }
 
 #loadTipsHolder::after {
-    content: "new update - 8 oct 2022 - redownload main_custom.css from ashevoy.github.io for customisable loading screen background winkwink new features lets go";
+    content: "new update - 3 nov 2022 - redownload main_custom.css from ashevoy.github.io for class picker options and ammo / hp customisable heights";
     font-size: 16px;
     text-shadow: 2px 0 0 black, -2px 0 0 black, 0 2px 0 black, 0 -2px 0 black, 1px 1px black, -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black !important;
 }
@@ -213,6 +212,7 @@ element.style {
 }
 
 #chatList{
+    overflow: hidden;
     border-radius: 0;
     background: transparent
 }
@@ -262,18 +262,26 @@ element.style {
 }
 
 #hiddenClasses {
-  display        : flex !important;
-  flex-direction : column;
-  position       : fixed;
-  right          : 0px;
-  top            : unset;
-  height         : calc(100% - 100px);
-  bottom         : 50%;
-  transform      : translate(0, 50%);
-  margin-right   : 10px;
-  width          : unset;
-  align-items    : center;
+  display: flex !important;
+  flex-direction: column;
+  position: fixed;
+  right: 0px;
+  top: unset;
+  height: calc(100% - 100px);
+  bottom: 50%;
+  transform: translate(0, 50%);
+  margin-right: 10px;
+  width: unset;
+  align-items: center;
   justify-content: center;
+  opacity: var(--classpickeropacity);
+  transition-duration: 0.2747s;
+}
+
+#hiddenClasses:hover {
+  opacity: 1;
+  transition-delay: 0.1747s;
+  transition-duration: 0.0747s;
 }
 
 #menuClassPicker0[onclick="selectClass(0)"] {
@@ -287,12 +295,14 @@ element.style {
   margin-right: 10px;
   padding: 5px;
   transition-duration: 0.0747s;
+  opacity: var(--idleclassopacity);
 }
 
 #menuClassPicker0[onclick="selectClass(0)"]:hover {
   cursor: pointer;
   transform: scale(1.25);
   transition-duration: 0.0747s;
+  opacity: 1;
 }
 
 #menuClassPicker1[onclick="selectClass(1)"] {
@@ -306,12 +316,14 @@ element.style {
   margin-right: 10px;
   padding: 5px;
   transition-duration: 0.0747s;
+  opacity: var(--idleclassopacity);
 }
 
 #menuClassPicker1[onclick="selectClass(1)"]:hover {
   cursor: pointer;
   transform: scale(1.25);
   transition-duration: 0.0747s;
+  opacity: 1;
 }
 
 #menuClassPicker2[onclick="selectClass(2)"] {
@@ -325,12 +337,14 @@ element.style {
   margin-right: 10px;
   padding: 5px;
   transition-duration: 0.0747s;
+  opacity: var(--idleclassopacity);
 }
 
 #menuClassPicker2[onclick="selectClass(2)"]:hover {
   cursor: pointer;
   transform: scale(1.25);
   transition-duration: 0.0747s;
+  opacity: 1;
 }
 
 #menuClassPicker3[onclick="selectClass(3)"] {
@@ -344,12 +358,14 @@ element.style {
   margin-right: 10px;
   padding: 5px;
   transition-duration: 0.0747s;
+  opacity: var(--idleclassopacity);
 }
 
 #menuClassPicker3[onclick="selectClass(3)"]:hover {
   cursor: pointer;
   transform: scale(1.25);
   transition-duration: 0.0747s;
+  opacity: 1;
 }
 
 #menuClassPicker4[onclick="selectClass(4)"] {
@@ -363,12 +379,14 @@ element.style {
   margin-right: 10px;
   padding: 5px;
   transition-duration: 0.0747s;
+  opacity: var(--idleclassopacity);
 }
 
 #menuClassPicker4[onclick="selectClass(4)"]:hover {
   cursor: pointer;
   transform: scale(1.25);
   transition-duration: 0.0747s;
+  opacity: 1;
 }
 
 #menuClassPicker5[onclick="selectClass(5)"] {
@@ -382,12 +400,14 @@ element.style {
   margin-right: 10px;
   padding: 5px;
   transition-duration: 0.0747s;
+  opacity: var(--idleclassopacity);
 }
 
 #menuClassPicker5[onclick="selectClass(5)"]:hover {
   cursor: pointer;
   transform: scale(1.25);
   transition-duration: 0.0747s;
+  opacity: 1;
 }
 
 #menuClassPicker6[onclick="selectClass(6)"] {
@@ -401,12 +421,14 @@ element.style {
   margin-right: 10px;
   padding: 5px;
   transition-duration: 0.0747s;
+  opacity: var(--idleclassopacity);
 }
 
 #menuClassPicker6[onclick="selectClass(6)"]:hover {
   cursor: pointer;
   transform: scale(1.25);
   transition-duration: 0.0747s;
+  opacity: 1;
 }
 
 #menuClassPicker7[onclick="selectClass(7)"] {
@@ -420,12 +442,14 @@ element.style {
   margin-right: 10px;
   padding: 5px;
   transition-duration: 0.0747s;
+  opacity: var(--idleclassopacity);
 }
 
 #menuClassPicker7[onclick="selectClass(7)"]:hover {
   cursor: pointer;
   transform: scale(1.25);
   transition-duration: 0.0747s;
+  opacity: 1;
 }
 
   #menuClassPicker8[onclick="selectClass(8)"] {
@@ -439,12 +463,14 @@ element.style {
   margin-right: 10px;
   padding: 5px;
   transition-duration: 0.0747s;
+  opacity: var(--idleclassopacity);
 }
 
 #menuClassPicker8[onclick="selectClass(8)"]:hover {
   cursor: pointer;
   transform: scale(1.25);
   transition-duration: 0.0747s;
+  opacity: 1;
 }
 
 #menuClassPicker9[onclick="selectClass(9)"] {
@@ -458,12 +484,14 @@ element.style {
   margin-right: 10px;
   padding: 5px;
   transition-duration: 0.0747s;
+  opacity: var(--idleclassopacity);
 }
 
 #menuClassPicker9[onclick="selectClass(9)"]:hover {
   cursor: pointer;
   transform: scale(1.25);
   transition-duration: 0.0747s;
+  opacity: 1;
 }
 
 #menuClassPicker10[onclick="selectClass(10)"] {
@@ -476,12 +504,14 @@ element.style {
   margin-right   : 10px;
   padding        : 5px;
   transition-duration: 0.0747s;
+  opacity: var(--idleclassopacity);
 }
 
 #menuClassPicker10[onclick="selectClass(10)"]:hover {
   cursor: pointer;
   transform: scale(1.25);
   transition-duration: 0.0747s;
+  opacity: 1;
 }
 
 #menuClassPicker11[onclick="selectClass(11)"] {
@@ -495,12 +525,14 @@ element.style {
   margin-right: 10px;
   padding: 5px;
   transition-duration: 0.0747s;
+  opacity: var(--idleclassopacity);
 }
 
 #menuClassPicker11[onclick="selectClass(11)"]:hover {
   cursor: pointer;
   transform: scale(1.25);
   transition-duration: 0.0747s;
+  opacity: 1;
 }
 
 #menuClassPicker12[onclick="selectClass(12)"] {
@@ -514,12 +546,14 @@ element.style {
   margin-right: 10px;
   padding: 5px;
   transition-duration: 0.0747s;
+  opacity: var(--idleclassopacity);
 }
 
 #menuClassPicker12[onclick="selectClass(12)"]:hover {
   cursor: pointer;
   transform: scale(1.25);
   transition-duration: 0.0747s;
+  opacity: 1;
 }
 
 #menuClassPicker13[onclick="selectClass(13)"] {
@@ -533,12 +567,14 @@ element.style {
   margin-right: 10px;
   padding: 5px;
   transition-duration: 0.0747s;
+  opacity: var(--idleclassopacity);
 }
 
 #menuClassPicker13[onclick="selectClass(13)"]:hover {
   cursor: pointer;
   transform: scale(1.25);
   transition-duration: 0.0747s;
+  opacity: 1;
 }
 
 #menuClassPicker14[onclick="selectClass(14)"] {
@@ -552,12 +588,14 @@ element.style {
   margin-right: 10px;
   padding: 5px;
   transition-duration: 0.0747s;
+  opacity: var(--idleclassopacity);
 }
 
 #menuClassPicker14[onclick="selectClass(14)"]:hover {
   cursor: pointer;
   transform: scale(1.25);
   transition-duration: 0.0747s;
+  opacity: 1;
 }
 
 /* spectator stuff and menu timer and settings and just a bunch of things */
@@ -766,6 +804,8 @@ element.style {
   background-color: rgba(0,0,0,.0747)
 }
 
+/* c s s   b y   a s h e v o y   i g n : d j 6 2 */
+
 .weapIcon {
     transform: translate(-50%, -50%);
     position:fixed;
@@ -819,7 +859,7 @@ element.style {
     background-color: transparent;
     padding: 0 !important;
     margin: 0 !important;
-    bottom: 10.747%;
+    bottom: calc(10.747% + var(--hpheight));
     right: 56.5%;
     transform: translateX(50%);
     position: fixed;
@@ -866,8 +906,8 @@ element.style {
 
 #bottomRight {
     position: fixed;
-    bottom: calc(43px + 10.747%);
-    right: 43.747%;
+    bottom: calc(39px + 10.747% + var(--ammoheight));
+    right: 43.5%;
     z-index: 3;
 }
 
@@ -877,11 +917,10 @@ element.style {
 
 #ammoDisplay {
   background-color: transparent!important;
-  background-position-y: -15px;
+  background-position-y: -20px;
   border-radius: 0px;
   padding: 0;
-  letter-spacing: 0px;
-  padding-bottom: 32px;
+  padding-bottom: 12px;
   padding-top: 0;
   padding-left: 0;
   padding-right: 0 !important;
@@ -895,6 +934,7 @@ element.style {
   font-size: 32px;
   color: var(--amval);
   text-shadow: 2px 0 0 #000000, -2px 0 0 #000000, 0 2px 0 #000000, 0 -2px 0 #000000, 1px 1px #000000, -1px -1px 0 #000000, 1px -1px 0 #000000, -1px 1px 0 #000000 !important;
+  display: flex!important;
 }
 
 #ammoMax {
