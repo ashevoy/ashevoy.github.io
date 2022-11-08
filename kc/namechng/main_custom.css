@@ -21,16 +21,21 @@
     --hpheight: 0px;
     --ammoheight: 0px;
     /* change the height of the hp and ammo (adds pixels) */
+    --hpbarheight: 16px;
+    --hpbarwidth: 240px;
+    --hpbarx: 50%;
+    --hpbary: 7%;
+    --hpbaroutlinewidth: 1px;
     --hpbaropacity: 1;
-    /* hpbaropacity: hp bar opacity, 0 for hidden 1 for shown */
-    --classpickeropacity: 0;
-    --idleclassopacity: 0.5;
-    /* classpickeropacity: the class picker on the right of the menu's opacity. it'll still show when hovering above it. default is 0 (hidden) */
-    /* idleclassopacity: the classes you aren't hovering over's opacities. default is 0.5 - i recommend 1 if you use classpicker at 1. */
+    /* hpbar(element): self explanatory. */
+    --classpickeropacity: 1;
+    --idleclassopacity: 1;
+    /* classpickeropacity: the class picker on the right of the menu's opacity. it'll still show when hovering above it. default is 1 (shown) */
+    /* idleclassopacity: the classes you aren't hovering over's opacities. default is 0.5 */
     --customreload: ' ';
     /* customreload: replace this with a custom reload message, keep the apostrophes */
     --curgameinf: " ";
-    /* curgameinf: replace this with a custom message to put at the top left keep quote marks */
+    /* curgameinf: replace this with a custom message to put at the top left, keep quote marks */
     --chatholder: 'annoy people';
     /* chatholder: replace this with any custom chat holder message you want 2 add, keep the apostrophes */
     --Name: 'name';
@@ -45,12 +50,15 @@
 }
 /* change the url for a custom pfp without premium >:) */
 
-#initLoader {
-  background-image: url(https://cdn.discordapp.com/attachments/727526422381461514/1016047361224613918/STYLIZED_BUNDLE_mi0_ENVIRONMENT_CINEMATIC.png);
-  background-size: cover;
-  background-repeat: no-repeat;
+#lC-cont::before {
+    background-image: url(https://cdn.discordapp.com/emojis/881682452341465109.gif?size=60&size=40);
 }
-/* custom background for loading screen */
+/* custom loading gif/image (look at this fuckin cat) */
+
+#initLoader {
+  background-image: url(https://cdn.discordapp.com/attachments/638413644329254912/1037844964438192249/x2vt9x5vwfs51.webp);
+}
+/* custom background for loading screen - credit to zbg for that image */
 
 /* font change stuff, do not touch the font-family value */
 @font-face {
