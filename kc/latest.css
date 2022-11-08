@@ -48,7 +48,7 @@
 }
 
 #loadTipsHolder::after {
-    content: "new update - 3 nov 2022 - redownload main_custom.css from ashevoy.github.io for class picker options and ammo / hp customisable heights";
+    content: "NEW UPDATE - 8 nov 2022 - rd main_custom for lots of customisation for hp bar. ashevoy.github.io";
     font-size: 16px;
     text-shadow: 2px 0 0 black, -2px 0 0 black, 0 2px 0 black, 0 -2px 0 black, 1px 1px black, -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black !important;
 }
