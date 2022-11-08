@@ -16,8 +16,13 @@
     --hpheight: 0px;
     --ammoheight: 0px;
     /* change the height of the hp and ammo (adds pixels) */
+    --hpbarheight: 16px;
+    --hpbarwidth: 240px;
+    --hpbarx: 50%;
+    --hpbary: 7%;
+    --hpbaroutlinewidth: 1px;
     --hpbaropacity: 1;
-    /* hpbaropacity: hp bar opacity, 0 for hidden 1 for shown */
+    /* hpbar(element): self explanatory. */
     --classpickeropacity: 1;
     --idleclassopacity: 1;
     /* classpickeropacity: the class picker on the right of the menu's opacity. it'll still show when hovering above it. default is 1 (shown) */
@@ -25,13 +30,9 @@
     --customreload: ' ';
     /* customreload: replace this with a custom reload message, keep the apostrophes */
     --curgameinf: " ";
-    /* curgameinf: replace this with a custom message to put at the top left keep quote marks */
+    /* curgameinf: replace this with a custom message to put at the top left, keep quote marks */
     --chatholder: 'annoy people';
     /* chatholder: replace this with any custom chat holder message you want 2 add, keep the apostrophes */
-    --Name: 'update main_custom';
-    --Clan: " [clan]";
-    --color: #ffabe7;
-    /* lets you gave a local custom display name and clan. if you dont want anything special just retype your ign and clan */
 }
 
 #loadTipsHolder {
@@ -43,10 +44,11 @@
     content: "css by ashevoy!";
     display: block;
     font-size: 24px;
+  text-shadow: 2px 0 0 black, -2px 0 0 black, 0 2px 0 black, 0 -2px 0 black, 1px 1px black, -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black !important;
 }
 
 #loadTipsHolder::after {
-    content: "new update - 8 oct 2022 - redownload main_custom.css from ashevoy.github.io for customisable loading screen background winkwink new features lets go";
+    content: "new update - 3 nov 2022 - redownload main_custom.css from ashevoy.github.io for class picker options and ammo / hp customisable heights";
     font-size: 16px;
     text-shadow: 2px 0 0 black, -2px 0 0 black, 0 2px 0 black, 0 -2px 0 black, 1px 1px black, -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black !important;
 }
@@ -98,6 +100,10 @@ a {
     display: none;
 }
 
+#loadEditrBtn {
+    display: none;
+}
+
 #lC-cont::before {
     content: " ";
     display: block;
@@ -108,6 +114,12 @@ a {
     background-size: 75%;
     background-repeat: no-repeat;
     background-position: center;
+}
+
+#initLoader {
+  background-image: url(https://cdn.discordapp.com/attachments/727526422381461514/1016047361224613918/STYLIZED_BUNDLE_mi0_ENVIRONMENT_CINEMATIC.png);
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .adsbygoogle.adsbygoogle-noablate {
@@ -259,7 +271,6 @@ element.style {
   display: none !important;
 }
 
-
 .menuClassPlayerName { font-size: 0 }
 .menuClassPlayerName::before {
     content: var(--Name);
@@ -322,7 +333,7 @@ element.style {
   width: 40px;
   height: 40px;
   transform: scale(1);
-  content: url(https://assets.krunker.io/textures/classes/icon_0.png);
+  content: url(https://storage.googleapis.com/assets.krunker.io/textures/classes/icon_0.png);
   pointer-events: auto;
   image-rendering: pixelated;
   margin-right: 10px;
@@ -343,7 +354,7 @@ element.style {
   width: 40px;
   height: 40px;
   transform: scale(1);
-  content: url(https://assets.krunker.io/textures/classes/icon_1.png);
+  content: url(https://storage.googleapis.com/assets.krunker.io/textures/classes/icon_1.png);
   pointer-events: auto;
   image-rendering: pixelated;
   margin-right: 10px;
@@ -364,7 +375,7 @@ element.style {
   width: 40px;
   height: 40px;
   transform: scale(1);
-  content: url(https://assets.krunker.io/textures/classes/icon_2.png);
+  content: url(https://storage.googleapis.com/assets.krunker.io/textures/classes/icon_2.png);
   pointer-events: auto;
   image-rendering: pixelated;
   margin-right: 10px;
@@ -385,7 +396,7 @@ element.style {
   width: 40px;
   height: 40px;
   transform: scale(1);
-  content: url(https://assets.krunker.io/textures/classes/icon_3.png);
+  content: url(https://storage.googleapis.com/assets.krunker.io/textures/classes/icon_3.png);
   pointer-events: auto;
   image-rendering: pixelated;
   margin-right: 10px;
@@ -406,7 +417,7 @@ element.style {
   width: 40px;
   height: 40px;
   transform: scale(1);
-  content: url(https://assets.krunker.io/textures/classes/icon_4.png);
+  content: url(https://storage.googleapis.com/assets.krunker.io/textures/classes/icon_4.png);
   pointer-events: auto;
   image-rendering: pixelated;
   margin-right: 10px;
@@ -427,7 +438,7 @@ element.style {
   width: 40px;
   height: 40px;
   transform: scale(1);
-  content: url(https://assets.krunker.io/textures/classes/icon_5.png);
+  content: url(https://storage.googleapis.com/assets.krunker.io/textures/classes/icon_5.png);
   pointer-events: auto;
   image-rendering: pixelated;
   margin-right: 10px;
@@ -448,7 +459,7 @@ element.style {
    width: 40px;
   height: 40px;
   transform: scale(1);
-  content: url(https://assets.krunker.io/textures/classes/icon_6.png);
+  content: url(https://storage.googleapis.com/assets.krunker.io/textures/classes/icon_6.png);
   pointer-events: auto;
   image-rendering: pixelated;
   margin-right: 10px;
@@ -469,7 +480,7 @@ element.style {
   width: 40px;
   height: 40px;
   transform: scale(1);
-  content: url(https://assets.krunker.io/textures/classes/icon_7.png);
+  content: url(https://storage.googleapis.com/assets.krunker.io/textures/classes/icon_7.png);
   pointer-events: auto;
   image-rendering: pixelated;
   margin-right: 10px;
@@ -490,7 +501,7 @@ element.style {
   width: 40px;
   height: 40px;
   transform: scale(1);
-  content: url(https://assets.krunker.io/textures/classes/icon_8.png);
+  content: url(https://storage.googleapis.com/assets.krunker.io/textures/classes/icon_8.png);
   pointer-events: auto;
   image-rendering: pixelated;
   margin-right: 10px;
@@ -511,7 +522,7 @@ element.style {
   width: 40px;
   height: 40px;
   transform: scale(1);
-  content: url(https://assets.krunker.io/textures/classes/icon_9.png);
+  content: url(https://storage.googleapis.com/assets.krunker.io/textures/classes/icon_9.png);
   pointer-events: auto;
   image-rendering: pixelated;
   margin-right: 10px;
@@ -528,14 +539,14 @@ element.style {
 }
 
 #menuClassPicker10[onclick="selectClass(10)"] {
-  display        : block;
-  width          : 40px;
-  height         : 40px;
-  content        : url(https://assets.krunker.io/textures/classes/icon_10.png);
-  pointer-events : auto;
+  display: block;
+  width: 40px;
+  height: 40px;
+  content: url(https://storage.googleapis.com/assets.krunker.io/textures/classes/icon_10.png);
+  pointer-events: auto;
   image-rendering: pixelated;
-  margin-right   : 10px;
-  padding        : 5px;
+  margin-right: 10px;
+  padding: 5px;
   transition-duration: 0.0747s;
   opacity: var(--idleclassopacity);
 }
@@ -552,7 +563,7 @@ element.style {
   width: 40px;
   height: 40px;
   transform: scale(1);
-  content: url(https://assets.krunker.io/textures/classes/icon_11.png);
+  content: url(https://storage.googleapis.com/assets.krunker.io/textures/classes/icon_11.png);
   pointer-events: auto;
   image-rendering: pixelated;
   margin-right: 10px;
@@ -573,7 +584,7 @@ element.style {
   width: 40px;
   height: 40px;
   transform: scale(1);
-  content: url(https://assets.krunker.io/textures/classes/icon_12.png);
+  content: url(https://storage.googleapis.com/assets.krunker.io/textures/classes/icon_12.png);
   pointer-events: auto;
   image-rendering: pixelated;
   margin-right: 10px;
@@ -594,7 +605,7 @@ element.style {
   width: 40px;
   height: 40px;
   transform: scale(1);
-  content: url(https://assets.krunker.io/textures/classes/icon_13.png);
+  content: url(https://storage.googleapis.com/assets.krunker.io/textures/classes/icon_13.png);
   pointer-events: auto;
   image-rendering: pixelated;
   margin-right: 10px;
@@ -615,7 +626,7 @@ element.style {
   width: 40px;
   height: 40px;
   transform: scale(1);
-  content: url(https://assets.krunker.io/textures/classes/icon_14.png);
+  content: url(https://storage.googleapis.com/assets.krunker.io/textures/classes/icon_14.png);
   pointer-events: auto;
   image-rendering: pixelated;
   margin-right: 10px;
@@ -625,6 +636,27 @@ element.style {
 }
 
 #menuClassPicker14[onclick="selectClass(14)"]:hover {
+  cursor: pointer;
+  transform: scale(1.25);
+  transition-duration: 0.0747s;
+  opacity: 1;
+}
+
+#menuClassPicker15[onclick="selectClass(15)"] {
+  display: block;
+  width: 40px;
+  height: 40px;
+  transform: scale(1);
+  content: url(https://storage.googleapis.com/assets.krunker.io/textures/classes/icon_15.png);
+  pointer-events: auto;
+  image-rendering: pixelated;
+  margin-right: 10px;
+  padding: 5px;
+  transition-duration: 0.0747s;
+  opacity: var(--idleclassopacity);
+}
+
+#menuClassPicker15[onclick="selectClass(15)"]:hover {
   cursor: pointer;
   transform: scale(1.25);
   transition-duration: 0.0747s;
@@ -837,6 +869,8 @@ element.style {
   background-color: rgba(0,0,0,.0747)
 }
 
+/* c s s   b y   a s h e v o y   i g n : d j 6 2 */
+
 .weapIcon {
     transform: translate(-50%, -50%);
     position:fixed;
@@ -857,17 +891,17 @@ element.style {
 }
 
 #healthBar {
-    width: 240px;
-    height: 16px;
+    width: var(--hpbarwidth);
+    height: var(--hpbarheight);
     display: inline-flex;
     justify-content: center;
     background-color: rgba(0,0,0,0.3);
     border-radius: 0px;
     position: fixed;
-    left: calc(50% - 120px);
-    bottom: calc(7% - 5px);
+    left: calc(var(--hpbarx) - 120px);
+    bottom: calc(var(--hpbary) - 5px);
     opacity: var(--hpbaropacity);
-    outline: 2px solid black;
+    outline: var(--hpbaroutlinewidth) solid var(--mainc);
 }
 
 .healthBarSeg {
@@ -948,11 +982,10 @@ element.style {
 
 #ammoDisplay {
   background-color: transparent!important;
-  background-position-y: -15px;
+  background-position-y: -20px;
   border-radius: 0px;
-  letter-spacing: 0px;
   padding: 0;
-  padding-bottom: 32px;
+  padding-bottom: 12px;
   padding-top: 0;
   padding-left: 0;
   padding-right: 0 !important;
@@ -966,6 +999,7 @@ element.style {
   font-size: 32px;
   color: var(--amval);
   text-shadow: 2px 0 0 #000000, -2px 0 0 #000000, 0 2px 0 #000000, 0 -2px 0 #000000, 1px 1px #000000, -1px -1px 0 #000000, 1px -1px 0 #000000, -1px 1px 0 #000000 !important;
+  display: flex!important;
 }
 
 #ammoMax {
@@ -1120,6 +1154,30 @@ element.style {
     content: 'kdr'!important;
 }
 
+.endTableN[style="color: var(--textc)"]:before {
+    content:"\2192";
+    font-size:25px;
+    margin-right:10px;
+}
+
+.reportBut {
+    color: var(--linkd);
+    text-shadow: none;
+}
+
+.shareBut {
+    color: var(--linkd) !important;
+    text-shadow: none;
+}
+
+#seasonLabel:after {
+    visibility: visible!important;
+    content: ''!important;
+}
+
+/* MARKING DOWN THE NAME CHANGER STUFF FOR EDITS AND STUFF WOAOAOAOOA */
+/* MARKING DOWN THE NAME CHANGER STUFF FOR EDITS AND STUFF WOAOAOAOOA */
+
 .leaderNameM, .leaderNameM span { font-size: 0 }
 .leaderNameM::before {
     content: var(--Name);
@@ -1148,24 +1206,3 @@ element.style {
 .menuClassPlayerName::before {
     content: var(--Name);
     font-size: 18px;
-
-.endTableN[style="color: var(--textc)"]:before {
-    content:"\2192";
-    font-size:25px;
-    margin-right:10px;
-}
-
-.reportBut {
-    color: var(--linkd);
-    text-shadow: none;
-}
-
-.shareBut {
-    color: var(--linkd) !important;
-    text-shadow: none;
-}
-
-#seasonLabel:after {
-    visibility: visible!important;
-    content: ''!important;
-}
