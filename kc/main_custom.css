@@ -11,34 +11,43 @@
     /* mainc: backgrounds colour - default: 302c29 */
     --textc: #ffffff;
     /* textc: basic text colour - default is ffffff */
-    --text2c: #ff4fb9;
+    --text2c: #3dccee;
     /* text2c: special text such as fps etc */
-    --linkd: #ff4fb9;
+    --linkd: #3dccee;
     /* linkd: link colour, default is ff4fb9 */
-    --hpval: #89FFFF;
-    --amval: #9D76B3;
+    --hpval: #fd08bd;
+    --amval: #fd08bd;
     /* hp and ammo val colour, default fff */
     --hpheight: 0px;
     --ammoheight: 0px;
     /* change the height of the hp and ammo (adds pixels) */
+    --hpbarheight: 16px;
+    --hpbarwidth: 240px;
+    --hpbarx: 50%;
+    --hpbary: 7%;
+    --hpbaropacity: 1;
+    /* hpbar(element): self explanatory. */
     --hpbaropacity: 1;
     /* hpbaropacity: hp bar opacity, 0 for hidden 1 for shown */
     --classpickeropacity: 0;
     --idleclassopacity: 0.5;
     /* classpickeropacity: the class picker on the right of the menu's opacity. it'll still show when hovering above it. default is 0 (hidden) */
-    /* idleclassopacity: the classes you aren't hovering over's opacities. default is 0.5 - i recommend setting this to 1 if classpicker is also at 1 */
-    --customreload: ' ';
+    /* idleclassopacity: the classes you aren't hovering over's opacities. default is 0.5. if you put the class picker opacity to 1 i recommend making this 1 as well. */
+    --customreload: '<3';
     /* customreload: replace this with a custom reload message, keep the apostrophes */
-    --curgameinf: " ";
-    /* curgameinf: replace this with a custom message to put at the top left keep quote marks */
-    --chatholder: 'annoy people';
+    --curgameinf: "bakuretsu bakuretsu la la la";
+    /* curgameinf: replace this with a custom message to put at the top left, keep quote marks */
+    --chatholder: 'rixaaaa <3';
     /* chatholder: replace this with any custom chat holder message you want 2 add, keep the apostrophes */
 }
 
+#lC-cont::before {
+    background-image: url(https://cdn.discordapp.com/attachments/628964831529140254/995845829392875581/LOOK_AT_THIS_FUCKING_CAT.gif);
+}
+/* custom loading gif/image (look at this fuckin cat) */
+
 #initLoader {
   background-image: url(https://cdn.discordapp.com/attachments/727526422381461514/1016047361224613918/STYLIZED_BUNDLE_mi0_ENVIRONMENT_CINEMATIC.png);
-  background-size: cover;
-  background-repeat: no-repeat;
 }
 /* custom background for loading screen - credit to zbg for that image */
 
