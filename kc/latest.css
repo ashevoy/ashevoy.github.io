@@ -212,7 +212,6 @@ element.style {
 }
 
 #chatList{
-    overflow: hidden;
     border-radius: 0;
     background: transparent
 }
