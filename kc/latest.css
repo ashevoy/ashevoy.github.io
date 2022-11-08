@@ -16,8 +16,13 @@
     --hpheight: 0px;
     --ammoheight: 0px;
     /* change the height of the hp and ammo (adds pixels) */
+    --hpbarheight: 16px;
+    --hpbarwidth: 240px;
+    --hpbarx: 50%;
+    --hpbary: 7%;
+    --hpbaroutlinewidth: 1px;
     --hpbaropacity: 1;
-    /* hpbaropacity: hp bar opacity, 0 for hidden 1 for shown */
+    /* hpbar(element): self explanatory. */
     --classpickeropacity: 1;
     --idleclassopacity: 1;
     /* classpickeropacity: the class picker on the right of the menu's opacity. it'll still show when hovering above it. default is 1 (shown) */
@@ -25,7 +30,7 @@
     --customreload: ' ';
     /* customreload: replace this with a custom reload message, keep the apostrophes */
     --curgameinf: " ";
-    /* curgameinf: replace this with a custom message to put at the top left keep quote marks */
+    /* curgameinf: replace this with a custom message to put at the top left, keep quote marks */
     --chatholder: 'annoy people';
     /* chatholder: replace this with any custom chat holder message you want 2 add, keep the apostrophes */
 }
@@ -109,6 +114,12 @@ a {
     background-size: 75%;
     background-repeat: no-repeat;
     background-position: center;
+}
+
+#initLoader {
+  background-image: url(https://cdn.discordapp.com/attachments/727526422381461514/1016047361224613918/STYLIZED_BUNDLE_mi0_ENVIRONMENT_CINEMATIC.png);
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .adsbygoogle.adsbygoogle-noablate {
@@ -288,7 +299,7 @@ element.style {
   width: 40px;
   height: 40px;
   transform: scale(1);
-  content: url(https://assets.krunker.io/textures/classes/icon_0.png);
+  content: url(https://storage.googleapis.com/assets.krunker.io/textures/classes/icon_0.png);
   pointer-events: auto;
   image-rendering: pixelated;
   margin-right: 10px;
@@ -309,7 +320,7 @@ element.style {
   width: 40px;
   height: 40px;
   transform: scale(1);
-  content: url(https://assets.krunker.io/textures/classes/icon_1.png);
+  content: url(https://storage.googleapis.com/assets.krunker.io/textures/classes/icon_1.png);
   pointer-events: auto;
   image-rendering: pixelated;
   margin-right: 10px;
@@ -330,7 +341,7 @@ element.style {
   width: 40px;
   height: 40px;
   transform: scale(1);
-  content: url(https://assets.krunker.io/textures/classes/icon_2.png);
+  content: url(https://storage.googleapis.com/assets.krunker.io/textures/classes/icon_2.png);
   pointer-events: auto;
   image-rendering: pixelated;
   margin-right: 10px;
@@ -351,7 +362,7 @@ element.style {
   width: 40px;
   height: 40px;
   transform: scale(1);
-  content: url(https://assets.krunker.io/textures/classes/icon_3.png);
+  content: url(https://storage.googleapis.com/assets.krunker.io/textures/classes/icon_3.png);
   pointer-events: auto;
   image-rendering: pixelated;
   margin-right: 10px;
@@ -372,7 +383,7 @@ element.style {
   width: 40px;
   height: 40px;
   transform: scale(1);
-  content: url(https://assets.krunker.io/textures/classes/icon_4.png);
+  content: url(https://storage.googleapis.com/assets.krunker.io/textures/classes/icon_4.png);
   pointer-events: auto;
   image-rendering: pixelated;
   margin-right: 10px;
@@ -393,7 +404,7 @@ element.style {
   width: 40px;
   height: 40px;
   transform: scale(1);
-  content: url(https://assets.krunker.io/textures/classes/icon_5.png);
+  content: url(https://storage.googleapis.com/assets.krunker.io/textures/classes/icon_5.png);
   pointer-events: auto;
   image-rendering: pixelated;
   margin-right: 10px;
@@ -414,7 +425,7 @@ element.style {
    width: 40px;
   height: 40px;
   transform: scale(1);
-  content: url(https://assets.krunker.io/textures/classes/icon_6.png);
+  content: url(https://storage.googleapis.com/assets.krunker.io/textures/classes/icon_6.png);
   pointer-events: auto;
   image-rendering: pixelated;
   margin-right: 10px;
@@ -435,7 +446,7 @@ element.style {
   width: 40px;
   height: 40px;
   transform: scale(1);
-  content: url(https://assets.krunker.io/textures/classes/icon_7.png);
+  content: url(https://storage.googleapis.com/assets.krunker.io/textures/classes/icon_7.png);
   pointer-events: auto;
   image-rendering: pixelated;
   margin-right: 10px;
@@ -456,7 +467,7 @@ element.style {
   width: 40px;
   height: 40px;
   transform: scale(1);
-  content: url(https://assets.krunker.io/textures/classes/icon_8.png);
+  content: url(https://storage.googleapis.com/assets.krunker.io/textures/classes/icon_8.png);
   pointer-events: auto;
   image-rendering: pixelated;
   margin-right: 10px;
@@ -477,7 +488,7 @@ element.style {
   width: 40px;
   height: 40px;
   transform: scale(1);
-  content: url(https://assets.krunker.io/textures/classes/icon_9.png);
+  content: url(https://storage.googleapis.com/assets.krunker.io/textures/classes/icon_9.png);
   pointer-events: auto;
   image-rendering: pixelated;
   margin-right: 10px;
@@ -494,14 +505,14 @@ element.style {
 }
 
 #menuClassPicker10[onclick="selectClass(10)"] {
-  display        : block;
-  width          : 40px;
-  height         : 40px;
-  content        : url(https://assets.krunker.io/textures/classes/icon_10.png);
-  pointer-events : auto;
+  display: block;
+  width: 40px;
+  height: 40px;
+  content: url(https://storage.googleapis.com/assets.krunker.io/textures/classes/icon_10.png);
+  pointer-events: auto;
   image-rendering: pixelated;
-  margin-right   : 10px;
-  padding        : 5px;
+  margin-right: 10px;
+  padding: 5px;
   transition-duration: 0.0747s;
   opacity: var(--idleclassopacity);
 }
@@ -518,7 +529,7 @@ element.style {
   width: 40px;
   height: 40px;
   transform: scale(1);
-  content: url(https://assets.krunker.io/textures/classes/icon_11.png);
+  content: url(https://storage.googleapis.com/assets.krunker.io/textures/classes/icon_11.png);
   pointer-events: auto;
   image-rendering: pixelated;
   margin-right: 10px;
@@ -539,7 +550,7 @@ element.style {
   width: 40px;
   height: 40px;
   transform: scale(1);
-  content: url(https://assets.krunker.io/textures/classes/icon_12.png);
+  content: url(https://storage.googleapis.com/assets.krunker.io/textures/classes/icon_12.png);
   pointer-events: auto;
   image-rendering: pixelated;
   margin-right: 10px;
@@ -560,7 +571,7 @@ element.style {
   width: 40px;
   height: 40px;
   transform: scale(1);
-  content: url(https://assets.krunker.io/textures/classes/icon_13.png);
+  content: url(https://storage.googleapis.com/assets.krunker.io/textures/classes/icon_13.png);
   pointer-events: auto;
   image-rendering: pixelated;
   margin-right: 10px;
@@ -581,7 +592,7 @@ element.style {
   width: 40px;
   height: 40px;
   transform: scale(1);
-  content: url(https://assets.krunker.io/textures/classes/icon_14.png);
+  content: url(https://storage.googleapis.com/assets.krunker.io/textures/classes/icon_14.png);
   pointer-events: auto;
   image-rendering: pixelated;
   margin-right: 10px;
@@ -591,6 +602,27 @@ element.style {
 }
 
 #menuClassPicker14[onclick="selectClass(14)"]:hover {
+  cursor: pointer;
+  transform: scale(1.25);
+  transition-duration: 0.0747s;
+  opacity: 1;
+}
+
+#menuClassPicker15[onclick="selectClass(15)"] {
+  display: block;
+  width: 40px;
+  height: 40px;
+  transform: scale(1);
+  content: url(https://storage.googleapis.com/assets.krunker.io/textures/classes/icon_15.png);
+  pointer-events: auto;
+  image-rendering: pixelated;
+  margin-right: 10px;
+  padding: 5px;
+  transition-duration: 0.0747s;
+  opacity: var(--idleclassopacity);
+}
+
+#menuClassPicker15[onclick="selectClass(15)"]:hover {
   cursor: pointer;
   transform: scale(1.25);
   transition-duration: 0.0747s;
@@ -825,17 +857,17 @@ element.style {
 }
 
 #healthBar {
-    width: 240px;
-    height: 16px;
+    width: var(--hpbarwidth);
+    height: var(--hpbarheight);
     display: inline-flex;
     justify-content: center;
     background-color: rgba(0,0,0,0.3);
     border-radius: 0px;
     position: fixed;
-    left: calc(50% - 120px);
-    bottom: calc(7% - 5px);
+    left: calc(var(--hpbarx) - 120px);
+    bottom: calc(var(--hpbary) - 5px);
     opacity: var(--hpbaropacity);
-    outline: 2px solid black;
+    outline: var(--hpbaroutlinewidth) solid var(--mainc);
 }
 
 .healthBarSeg {
