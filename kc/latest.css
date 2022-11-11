@@ -1132,19 +1132,17 @@ i#voiceIcon.material-icons.voiceOff {
     vertical-align: middle;
     display: block;
     margin-right: -747px;
-    margin-bottom: 40px;.killStreakItem {
-    background-color: transparent!important;
-}
-
-.killStreakCnt {
-    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000, 0px 0px 20px #fbc02d;
-    font-size: 166%;
+    margin-bottom: 40px;
     position: fixed;
     bottom: 0.30747%;
     left: 11.20747%;
     background: transparent;
 }
 
+.killStreakCnt {
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000, 0px 0px 20px #fbc02d;
+    font-size: 166%;
+}
 .killStreakItem {
     background-color: transparent!important;
 }
