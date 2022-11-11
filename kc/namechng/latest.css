@@ -61,8 +61,6 @@
 #loadTipsHolder span,
 .bigMFeatHold,
 #braveWarning,
-#uiBase.onMenu #voiceDisplay,
-div#voiceDisplay,
 .setSugBox2,
 #newsHolder,
 .endAHolder,
@@ -183,7 +181,7 @@ element.style {
 #tlInfHold:hover{
     opacity: 1;
     transition-duration: 0.1747s;
-}
+}chatlist
 
 #tlInfHold{
     opacity: 0;
@@ -225,6 +223,21 @@ element.style {
 #chatList{
     border-radius: 0;
     background: transparent
+}
+
+div#voiceDisplay {
+    background: transparent;
+    border: 0;
+    /* position: relative; */
+    transform: scale(0.6) translate(-40px, 6px)!important;
+}
+
+#recTimer {
+    display: none;
+}
+
+i#voiceIcon.material-icons.voiceOff {
+    display: none;
 }
 
 #menuJNKCount span {
@@ -1121,7 +1134,11 @@ element.style {
 }
 
 #krTagHolder {
-  display: none;
+    vertical-align: top;
+    display: block;
+    margin-right: -747px;
+    margin-bottom: 40px;
+    transform: translate(150px, 200px);
 }
 
 #myScoreVal:before {
