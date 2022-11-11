@@ -168,6 +168,15 @@ element.style {
     box-shadow: inset 0 -7px 0 0 var(--mainc)!important;
 }
 
+#policeButton {
+    opacity: 0;
+}
+
+#policeButton:hover {
+    opacity: 1;
+    transition-duration: 0.1747s;
+}
+
 * {
     outline: none;
     font-family: gamefont;
@@ -284,6 +293,24 @@ i#voiceIcon.material-icons.voiceOff {
 #aHolder,
 #onetrust-consent-sdk {
   display: none !important;
+}
+
+#mLevelContV:before {
+    content: "lvl ";
+    font-size: 15px;
+}
+
+.progressBarInner {
+    background-image: linear-gradient(to right,var(--text2c),var(--text2c),94%,white);
+}
+
+#mailList {
+    font-size: 0px;
+}
+
+#mailList::after {
+    font-size: 22px;
+    content: "nothing in here apart from ur good old cat friend ᓚᘏᗢ"
 }
 
 #hiddenClasses {
@@ -1102,11 +1129,24 @@ i#voiceIcon.material-icons.voiceOff {
 }
 
 #krTagHolder {
-    vertical-align: top;
+    vertical-align: middle;
     display: block;
     margin-right: -747px;
-    margin-bottom: 40px;
-    transform: translate(150px, 200px);
+    margin-bottom: 40px;.killStreakItem {
+    background-color: transparent!important;
+}
+
+.killStreakCnt {
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000, 0px 0px 20px #fbc02d;
+    font-size: 166%;
+    position: fixed;
+    bottom: 0.30747%;
+    left: 11.20747%;
+    background: transparent;
+}
+
+.killStreakItem {
+    background-color: transparent!important;
 }
 
 #myScoreVal:before {
