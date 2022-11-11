@@ -25,7 +25,7 @@
     --hpbarwidth: 240px;
     --hpbarx: 50%;
     --hpbary: 7%;
-    --hpbaropacity: 1;
+    --hpbaroutlinewidth: 2px;
     /* hpbar(element): self explanatory. */
     --hpbaropacity: 1;
     /* hpbaropacity: hp bar opacity, 0 for hidden 1 for shown */
