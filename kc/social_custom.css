@@ -1,0 +1,48 @@
+/* ephemeral social. ashevoy.github.io */
+
+@font-face {
+  font-family: gamefont;
+  src: url(https://ashevoy.github.io/Montserrat-Medium.ttf);
+}
+
+* {
+  font-family: gamefont;
+}
+
+.marketCard {
+    background-color: #ff4fb927;
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000, -2px -2px 0px #ccc, 2px 2px 0px #ccc, -2px 2px 0px #ccc, 2px -2px 0px #ccc, -2px -2px 10px #ccc, 2px 2px 10px #ccc, -2px 2px 10px #ccc, 2px -2px 10px #ccc
+}
+
+.cardEst span {
+  color: #fbc02d;
+}
+
+#profileKR span {
+  color: #fbc02d;
+}
+
+#o_in::before {
+    content: "Your items are on the left!";
+    color: #fff;
+}
+
+#marketSearchB {
+    background-color: #ff4fb9!important;
+}
+
+#invSortB {
+    background-color: #ff4fb9!important;
+}
+
+#hubBox {
+    background-colour: #ff4fb9!important;
+}
+
+#itemsListNav>select {
+    background-color: #ccc;
+}
+
+#itemsListNav>input {
+    background-color: #ccc;
+}
