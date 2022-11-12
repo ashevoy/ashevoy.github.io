@@ -46,3 +46,7 @@
 #itemsListNav>input {
     background-color: #ccc;
 }
+
+#aContainer {
+  transform: scale(0);
+}
