@@ -304,6 +304,12 @@ i#voiceIcon.material-icons.voiceOff {
     background-image: linear-gradient(to right,var(--text2c),var(--text2c),94%,white);
 }
 
+#mailList::after {
+    content: "Here's ur bud wyatt ᓚᘏᗢ. He chillin waiting for more messages.";
+    margin-top: 4px;
+    display: inherit;
+}
+
 #hiddenClasses {
   display: flex !important;
   flex-direction: column;
