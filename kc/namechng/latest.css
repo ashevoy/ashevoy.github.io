@@ -329,6 +329,22 @@ i#voiceIcon.material-icons.voiceOff {
     visibility:hidden;
 }
 
+
+#mLevelContV:before {
+    content: "lvl ";
+    font-size: 15px;
+}
+
+.progressBarInner {
+    background-image: linear-gradient(to right,var(--text2c),var(--text2c),94%,white);
+}
+
+#mailList::after {
+    content: "Here's ur bud wyatt ᓚᘏᗢ. He chillin waiting for more messages.";
+    margin-top: 4px;
+    display: inherit;
+}
+
 #hiddenClasses {
   display: flex !important;
   flex-direction: column;
@@ -465,7 +481,21 @@ i#voiceIcon.material-icons.voiceOff {
   content: url(https://storage.googleapis.com/assets.krunker.io/textures/classes/icon_5.png);
   pointer-events: auto;
   image-rendering: pixelated;
-  margin-right: 10px;
+  margin-righ
+#mLevelContV:before {
+    content: "lvl ";
+    font-size: 15px;
+}
+
+.progressBarInner {
+    background-image: linear-gradient(to right,var(--text2c),var(--text2c),94%,white);
+}
+
+#mailList::after {
+    content: "Here's ur bud wyatt ᓚᘏᗢ. He chillin waiting for more messages.";
+    margin-top: 4px;
+    display: inherit;
+}t: 10px;
   padding: 5px;
   transition-duration: 0.0747s;
   opacity: var(--idleclassopacity);
