@@ -936,11 +936,11 @@ i#voiceIcon.material-icons.voiceOff {
     transform: scaleX(-1) scale(0.747);
 }
 
-.weapIcon[style*="opacity: 1;"] {
+.weapIcon[style*="1"] {
     opacity: 1 !important;
 }
 
-.weapIcon[style*="opacity: 0.7;"] {
+.weapIcon[style*="0.7"] {
     transform:translate(-50%,-50%) translateY(200px);
 }
 
