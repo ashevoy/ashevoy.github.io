@@ -304,15 +304,6 @@ i#voiceIcon.material-icons.voiceOff {
     background-image: linear-gradient(to right,var(--text2c),var(--text2c),94%,white);
 }
 
-#mailList {
-    font-size: 0px;
-}
-
-#mailList::after {
-    font-size: 22px;
-    content: "nothing in here apart from ur good old cat friend ᓚᘏᗢ"
-}
-
 #hiddenClasses {
   display: flex !important;
   flex-direction: column;
