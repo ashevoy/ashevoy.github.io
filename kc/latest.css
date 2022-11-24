@@ -870,6 +870,10 @@ i#voiceIcon.material-icons.voiceOff {
     height: 280px;
 }
 
+#mainLogoFace {
+    top: 227px;
+}
+
 .newLeaderContainer {
   background-color: rgba(0,0,0,.0747)
 }
@@ -878,9 +882,9 @@ i#voiceIcon.material-icons.voiceOff {
 
 .weapIcon {
     transform: translate(-50%, -50%);
-    position:fixed;
+    position: fixed;
     left: 130px;
-    bottom: 25px;
+    bottom: 13px;
     opacity: 0!important;
     transition-duration: .0747s;
     -webkit-transform: scaleX(-1);
@@ -924,12 +928,11 @@ i#voiceIcon.material-icons.voiceOff {
 .hpBSeg[style*="#cd3732"] {
     background-color: var(--text2c) !important;
 }
-
 #healthValueHolder {
     background-color: transparent;
     padding: 0 !important;
     margin: 0 !important;
-    bottom: calc(10.747% + var(--hpheight));
+    bottom: calc(11.747% + var(--hpheight));
     right: 56.5%;
     transform: translateX(50%);
     position: fixed;
@@ -1076,7 +1079,7 @@ i#voiceIcon.material-icons.voiceOff {
 #timerDisplay {
     position: fixed;
     left: 140px;
-    bottom: 75px;
+    bottom: 60px;
     text-shadow: 1px 0 0 black, -1px 0 0 black, 0 1px 0 black, 0 -1px 0 black, 0.7px 0.7px black, -0.7px -0.7px 0 black, 0.7px -0.7px 0 black, -0.7px 0.7px 0 black !important;
 }
 
