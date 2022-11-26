@@ -190,13 +190,16 @@ element.style {
 }
 
 .badgeBound {
-    background-color: rgba(0,0,0,0);
+    background-color: rgba(0,0,0,.2);
+}
+.badgeBound:hover {
+    background-color: rgba(0,0,0,.55);
 }
 .badgeBound:hover span.material-icons {
     opacity: 1;
 }
 .badgeBound span.material-icons {
-    opacity: 0.2;
+    opacity: 0.05;
 }
 
 #tlInfHold:hover{
