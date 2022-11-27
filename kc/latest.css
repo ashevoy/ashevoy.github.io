@@ -10,6 +10,8 @@
     /* text2c: special text such as fps etc */
     --linkd: #ff4fb9;
     /* linkd: link colour, default is ff4fb9 */
+    --ammoMaxOpacity: 0;
+    /* ammomaxopacity: show opacity of the max ammo (default 0) */
     --hpval: #89FFFF;
     --amval: #9D76B3;
     /* hp and ammo val colour, default fff */
