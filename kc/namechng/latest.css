@@ -1074,7 +1074,24 @@ i#voiceIcon.material-icons.voiceOff {
 }
 
 #ammoMax {
-    display: none;
+    color: var(--amval);
+    text-shadow: 2px 0 0 #000000, -2px 0 0 #000000, 0 2px 0 #000000, 0 -2px 0 #000000, 1px 1px #000000, -1px -1px 0 #000000, 1px -1px 0 #000000, -1px 1px 0 #000000 !important;
+    font-size: 20px;
+    opacity: var(--ammoMaxOpacity);
+}
+
+#bottomRight {
+    position: fixed;
+    bottom: calc(39px + 10.747% + var(--ammoheight) + 15px);
+    right: 43.5%;
+    z-index: 3;
+}
+
+#powerUpHolder {
+    position: absolute;
+    bottom: 20px;
+    margin-right: 0px;
+    margin-bottom: 0px;
 }
 
 #ammoIcon {
