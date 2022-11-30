@@ -11,15 +11,15 @@
     /* mainc: backgrounds colour - default: 302c29 */
     --textc: #ffffff;
     /* textc: basic text colour - default is ffffff */
-    --text2c: #3dccee;
+    --text2c: #ff4fb9;
     /* text2c: special text such as fps etc */
-    --linkd: #3dccee;
+    --linkd: #ff4fb9;
     /* linkd: link colour, default is ff4fb9 */
     --ammoMaxOpacity: 0;
     /* ammomaxopacity: show opacity of the max ammo (default 0) */
-    --hpval: #fd08bd;
-    --amval: #fd08bd;
-    /* hp and ammo val colour, default fff */
+    --hpval: #ff4fb9;
+    --amval: #ff4fb9;
+    /* hp and ammo val colour, default ff4fb9 */
     --hpheight: 0px;
     --ammoheight: 0px;
     /* change the height of the hp and ammo (adds pixels) */
