@@ -37,22 +37,25 @@
     /* chatholder: replace this with any custom chat holder message you want 2 add, keep the apostrophes */
 }
 
+#loadInfoLHolder {
+    display: none;
+}
+
 #loadTipsHolder {
     color: var(--text-color);
-    font-size: 0;
+    font-size: 20px;
+    text-shadow: 2px 0 0 black, -2px 0 0 black, 0 2px 0 black, 0 -2px 0 black, 1px 1px black, -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black !important;
+    bottom: 250px;
 }
 
 #loadTipsHolder::before {
-    content: "css by ashevoy!";
+    content: "CSS by ashevoy! / IGN: dj62 / ashevoy.github.io 30/11/2022 update - redownload main_custom.css for all customisation features to be up to date :D";
     display: block;
-    font-size: 24px;
-  text-shadow: 2px 0 0 black, -2px 0 0 black, 0 2px 0 black, 0 -2px 0 black, 1px 1px black, -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black !important;
-}
-
-#loadTipsHolder::after {
-    content: "NEW UPDATE - 8 nov 2022 - rd main_custom for lots of customisation for hp bar. ashevoy.github.io";
-    font-size: 16px;
+    font-size: 23px;
     text-shadow: 2px 0 0 black, -2px 0 0 black, 0 2px 0 black, 0 -2px 0 black, 1px 1px black, -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black !important;
+    position: relative;
+    bottom: -200px!important;
+    width: 650px;
 }
 
 ::-webkit-scrollbar {
@@ -1455,14 +1458,6 @@ i#voiceIcon.material-icons.voiceOff {
     color: var(--text2c);
     vertical-align: bottom;
     font-size: 20px;
-}
-
-#mainLogo {
-    height: 280px;
-}
-
-#mainLogoFace {
-    top: 227px;
 }
 
 .newLeaderContainer {
