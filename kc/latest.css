@@ -49,7 +49,7 @@
 }
 
 #loadTipsHolder::before {
-    content: "CSS by ashevoy! / IGN: dj62 / ashevoy.github.io 30/11/2022 update - redownload main_custom.css for all customisation features to be up to date :D";
+    content: "CSS by ashevoy! / IGN: dj62 / ashevoy.github.io";
     display: block;
     font-size: 23px;
     text-shadow: 2px 0 0 black, -2px 0 0 black, 0 2px 0 black, 0 -2px 0 black, 1px 1px black, -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black !important;
