@@ -1329,13 +1329,17 @@ i#voiceIcon.material-icons.voiceOff {
 
 div#mapInfoHolder:hover {
     opacity: 1;
-    transition-duration: 0.2747s;
-    transition-delay: 0.1747s;
+    transition-duration: 0.10747s;
+    transition-delay: 0.0747s;
 }
 
 #mapInfoHolder {
     opacity: 0;
-    transition-duration: 0.2747s;
+    transition-delay: 0.2747s;
+    transition-duration: 0.1747s;
+    padding-right: 15px;
+    padding-top: 24vh;
+    clip-path: polygon(0% 0, 69% 0%, 73% 60%, 100% 60%, 100% 100%, 0% 100%);
 }
 
 #termsInfo {
