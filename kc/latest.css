@@ -2,60 +2,64 @@
    if you like this css make sure to share it to more people it'd be so appreciated really :) */
 
 :root {
-    --mainc: #302c29;
-    /* mainc: backgrounds colour - default: 302c29 */
-    --textc: #ffffff;
-    /* textc: basic text colour - default is ffffff */
-    --text2c: #ff4fb9;
-    /* text2c: special text such as fps etc */
-    --linkd: #ff4fb9;
-    /* linkd: link colour, default is ff4fb9 */
-    --ammoMaxOpacity: 0;
-    /* ammomaxopacity: show opacity of the max ammo (default 0) */
-    --hpval: #89FFFF;
-    --amval: #9D76B3;
+    --backgroundColour: #302c29;
+    /* backgrounds and buttons colour - default: 302c29 */
+    --textColour: #ffffff;
+    /* basic text colour - default is ffffff */
+    --specialTextColour: #ff4fb9;
+    /* special text such as fps etc */
+    --linkColour: #ff4fb9;
+    /* link colour, default is ff4fb9 */
+    --showMaxAmmo: 0;
+    /* showmaxammo: show opacity of the max ammo (default 0) */
+    --hpValueColour: #ffffff;
+    --ammoValueColour: #ffffff;
     /* hp and ammo val colour, default fff */
-    --hpheight: 0px;
-    --ammoheight: 0px;
+    --hpNumberHeight: 0px;
+    --ammoNumberHeight: 0px;
     /* change the height of the hp and ammo (adds pixels) */
-    --hpbarheight: 16px;
-    --hpbarwidth: 240px;
-    --hpbarx: 50%;
-    --hpbary: 7%;
-    --hpbaroutlinewidth: 2px;
-    --hpbaropacity: 1;
+    --hpBarHeight: 16px;
+    --hpBarWidth: 240px;
+    --hpBarPositionX: 50%;
+    --hpBarPositionY: 7%;
+    --hpBarOutlineWidth: 2px;
+    --hpBarOpacity: 1;
     /* hpbar(element): self explanatory. */
-    --classpickeropacity: 1;
-    --idleclassopacity: 1;
-    /* classpickeropacity: the class picker on the right of the menu's opacity. it'll still show when hovering above it. default is 1 (shown) */
-    /* idleclassopacity: the classes you aren't hovering over's opacities. default is 0.5 */
-    --customreload: ' ';
-    /* customreload: replace this with a custom reload message, keep the apostrophes */
-    --curgameinf: " ";
-    /* curgameinf: replace this with a custom message to put at the top left, keep quote marks */
-    --chatholder: 'annoy people';
-    /* chatholder: replace this with any custom chat holder message you want 2 add, keep the apostrophes */
+    /* hpbaropacity: hp bar opacity, 0 for hidden 1 for shown */
+    --classPickerOpacity: 0;
+    --hoverClassPickerOpacity: 0.5;
+    /* the class picker on the right of the menu's opacity. it'll still show when hovering above it. default is 0 (hidden) */
+    /* the classes you aren't hovering over's opacities. default is 0.5. if you put the class picker opacity to 1 i recommend making this 1 as well. */
+    --customReloadMessage: ' ';
+    /* replace this with a custom reload message, keep the apostrophes */
+    --customTopLeftMessage: " ";
+    /* replace this with a custom message to put at the top left, keep quote marks */
+    --customChatHolder: 'annoy people';
+    /* replace this with any custom chat holder message you want 2 add, keep the apostrophes */
+    --showChangelog: 1;
+    /* putting this to 0 will hide the changelog during the loading. */
 }
 
-#loadInfoLHolder {
+div#loadInfoLHolder {
     display: none;
 }
 
 #loadTipsHolder {
-    color: var(--text-color);
+    color: var(--textColour);
     font-size: 20px;
     text-shadow: 2px 0 0 black, -2px 0 0 black, 0 2px 0 black, 0 -2px 0 black, 1px 1px black, -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black !important;
     bottom: 250px;
 }
 
 #loadTipsHolder::before {
-    content: "CSS by ashevoy! / IGN: dj62 / ashevoy.github.io";
+    content: "CSS by ashevoy! / IGN: dj62 / ashevoy.github.io 30/11/2022 update - redownload main_custom.css for all customisation features to be up to date :D";
     display: block;
     font-size: 23px;
     text-shadow: 2px 0 0 black, -2px 0 0 black, 0 2px 0 black, 0 -2px 0 black, 1px 1px black, -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black !important;
     position: relative;
     bottom: -200px!important;
     width: 650px;
+    opacity: var(--showChangelog);
 }
 
 ::-webkit-scrollbar {
@@ -96,7 +100,7 @@
 }
 
 a {
-  color: var(--linkd);
+  color: var(--linkColour);
 }
 
 .lC-cube {
@@ -132,45 +136,45 @@ a {
 }
 
 element.style {
-    border: 6 px solid var(--mainc) !important;
+    border: 6 px solid var(--backgroundColour) !important;
     height: 40 px;
-    background-color: var(--mainc);
+    background-color: var(--backgroundColour);
 }
 
 .buttonP {
-    border: 4px solid var(--mainc)!important;
-    background-color: var(--mainc)!important;
-    box-shadow: inset 0 -7px 0 0 var(--mainc)!important;
+    border: 4px solid var(--backgroundColour)!important;
+    background-color: var(--backgroundColour)!important;
+    box-shadow: inset 0 -7px 0 0 var(--backgroundColour)!important;
 }
 
 .buttonR {
-    border: 4px solid var(--mainc)!important;
-    background-color: var(--mainc)!important;
-    box-shadow: inset 0 -7px 0 0 var(--mainc)!important;
+    border: 4px solid var(--backgroundColour)!important;
+    background-color: var(--backgroundColour)!important;
+    box-shadow: inset 0 -7px 0 0 var(--backgroundColour)!important;
 }
 
 .buttonPI {
-    border: 4px solid var(--mainc)!important;
-    background-color: var(--mainc)!important;
-    box-shadow: inset 0 -7px 0 0 var(--mainc)!important;
+    border: 4px solid var(--backgroundColour)!important;
+    background-color: var(--backgroundColour)!important;
+    box-shadow: inset 0 -7px 0 0 var(--backgroundColour)!important;
 }
 
 .buttonG {
-    border: 4px solid var(--mainc)!important;
-    background-color: var(--mainc)!important;
-    box-shadow: inset 0 -7px 0 0 var(--mainc)!important;
+    border: 4px solid var(--backgroundColour)!important;
+    background-color: var(--backgroundColour)!important;
+    box-shadow: inset 0 -7px 0 0 var(--backgroundColour)!important;
 }
 
 .buttonB {
-    border: 4px solid var(--mainc)!important;
-    background-color: var(--mainc)!important;
-    box-shadow: inset 0 -7px 0 0 var(--mainc)!important;
+    border: 4px solid var(--backgroundColour)!important;
+    background-color: var(--backgroundColour)!important;
+    box-shadow: inset 0 -7px 0 0 var(--backgroundColour)!important;
 }
 
 .buttonO {
-    border: 4px solid var(--mainc)!important;
-    background-color: var(--mainc)!important;
-    box-shadow: inset 0 -7px 0 0 var(--mainc)!important;
+    border: 4px solid var(--backgroundColour)!important;
+    background-color: var(--backgroundColour)!important;
+    box-shadow: inset 0 -7px 0 0 var(--backgroundColour)!important;
 }
 
 #policeButton {
@@ -185,7 +189,7 @@ element.style {
 * {
     outline: none;
     font-family: gamefont;
-    color: var(--textc);
+    color: var(--textColour);
     -webkit-touch-callout: none;
     -webkit-user-select: none;
     -khtml-user-select: none;
@@ -223,9 +227,9 @@ element.style {
 }
 
 #chatInputHolder::before{
-    content: var(--chatholder);
+    content: var(--customChatHolder);
     position: absolute;
-    color: var(--textc);
+    color: var(--textColour);
     bottom: 17px;
     left: 70px;
     opacity: 0.5;
@@ -318,8 +322,16 @@ i#voiceIcon.material-icons.voiceOff {
     font-size: 15px;
 }
 
+#mLevelContV[onclick="playSelect();windows[5].switchTab(1)"] {
+    opacity: 1
+}
+
+#mLevelContV[onclick="playSelect();windows[5].switchTab(1)"]:hover {
+  cursor: pointer;
+}
+
 .progressBarInner {
-    background-image: linear-gradient(to right,var(--text2c),var(--text2c),94%,white);
+    background-image: linear-gradient(to right,var(--specialTextColour),var(--specialTextColour),94%,white);
 }
 
 #mailList::after {
@@ -327,7 +339,6 @@ i#voiceIcon.material-icons.voiceOff {
     margin-top: 4px;
     display: inherit;
 }
-
 
 #menuClassSubtext {
     text-shadow: none;
@@ -376,7 +387,7 @@ i#voiceIcon.material-icons.voiceOff {
     font-size: 13px;
     left: 50px;
     top: 45px;
-    text-shadow: 3px 2px 1px var(--mainc), -2px 2px 1px var(--mainc), 3px -2px 1px var(--mainc), -2px -2px 1px var(--mainc);
+    text-shadow: 3px 2px 1px var(--backgroundColour), -2px 2px 1px var(--backgroundColour), 3px -2px 1px var(--backgroundColour), -2px -2px 1px var(--backgroundColour);
     transition-duration: .2s;
 }
 
@@ -868,14 +879,15 @@ i#voiceIcon.material-icons.voiceOff {
   width: unset;
   align-items: center;
   justify-content: center;
-  opacity: var(--classpickeropacity);
+  opacity: var(--classPickerOpacity);
   transition-duration: 0.2747s;
+  transition-delay: 0.1747s;
 }
 
 #hiddenClasses:hover {
   opacity: 1;
-  transition-delay: 0.1747s;
   transition-duration: 0.0747s;
+  transition-delay: 0.03747s;
 }
 
 #menuClassPicker0[onclick="selectClass(0)"] {
@@ -889,7 +901,7 @@ i#voiceIcon.material-icons.voiceOff {
   margin-right: 10px;
   padding: 5px;
   transition-duration: 0.0747s;
-  opacity: var(--idleclassopacity);
+  opacity: var(--hoverClassPickerOpacity);
 }
 
 #menuClassPicker0[onclick="selectClass(0)"]:hover {
@@ -910,7 +922,7 @@ i#voiceIcon.material-icons.voiceOff {
   margin-right: 10px;
   padding: 5px;
   transition-duration: 0.0747s;
-  opacity: var(--idleclassopacity);
+  opacity: var(--hoverClassPickerOpacity);
 }
 
 #menuClassPicker1[onclick="selectClass(1)"]:hover {
@@ -931,7 +943,7 @@ i#voiceIcon.material-icons.voiceOff {
   margin-right: 10px;
   padding: 5px;
   transition-duration: 0.0747s;
-  opacity: var(--idleclassopacity);
+  opacity: var(--hoverClassPickerOpacity);
 }
 
 #menuClassPicker2[onclick="selectClass(2)"]:hover {
@@ -952,7 +964,7 @@ i#voiceIcon.material-icons.voiceOff {
   margin-right: 10px;
   padding: 5px;
   transition-duration: 0.0747s;
-  opacity: var(--idleclassopacity);
+  opacity: var(--hoverClassPickerOpacity);
 }
 
 #menuClassPicker3[onclick="selectClass(3)"]:hover {
@@ -973,7 +985,7 @@ i#voiceIcon.material-icons.voiceOff {
   margin-right: 10px;
   padding: 5px;
   transition-duration: 0.0747s;
-  opacity: var(--idleclassopacity);
+  opacity: var(--hoverClassPickerOpacity);
 }
 
 #menuClassPicker4[onclick="selectClass(4)"]:hover {
@@ -994,7 +1006,7 @@ i#voiceIcon.material-icons.voiceOff {
   margin-right: 10px;
   padding: 5px;
   transition-duration: 0.0747s;
-  opacity: var(--idleclassopacity);
+  opacity: var(--hoverClassPickerOpacity);
 }
 
 #menuClassPicker5[onclick="selectClass(5)"]:hover {
@@ -1015,7 +1027,7 @@ i#voiceIcon.material-icons.voiceOff {
   margin-right: 10px;
   padding: 5px;
   transition-duration: 0.0747s;
-  opacity: var(--idleclassopacity);
+  opacity: var(--hoverClassPickerOpacity);
 }
 
 #menuClassPicker6[onclick="selectClass(6)"]:hover {
@@ -1036,7 +1048,7 @@ i#voiceIcon.material-icons.voiceOff {
   margin-right: 10px;
   padding: 5px;
   transition-duration: 0.0747s;
-  opacity: var(--idleclassopacity);
+  opacity: var(--hoverClassPickerOpacity);
 }
 
 #menuClassPicker7[onclick="selectClass(7)"]:hover {
@@ -1057,7 +1069,7 @@ i#voiceIcon.material-icons.voiceOff {
   margin-right: 10px;
   padding: 5px;
   transition-duration: 0.0747s;
-  opacity: var(--idleclassopacity);
+  opacity: var(--hoverClassPickerOpacity);
 }
 
 #menuClassPicker8[onclick="selectClass(8)"]:hover {
@@ -1078,7 +1090,7 @@ i#voiceIcon.material-icons.voiceOff {
   margin-right: 10px;
   padding: 5px;
   transition-duration: 0.0747s;
-  opacity: var(--idleclassopacity);
+  opacity: var(--hoverClassPickerOpacity);
 }
 
 #menuClassPicker9[onclick="selectClass(9)"]:hover {
@@ -1098,7 +1110,7 @@ i#voiceIcon.material-icons.voiceOff {
   margin-right: 10px;
   padding: 5px;
   transition-duration: 0.0747s;
-  opacity: var(--idleclassopacity);
+  opacity: var(--hoverClassPickerOpacity);
 }
 
 #menuClassPicker10[onclick="selectClass(10)"]:hover {
@@ -1119,7 +1131,7 @@ i#voiceIcon.material-icons.voiceOff {
   margin-right: 10px;
   padding: 5px;
   transition-duration: 0.0747s;
-  opacity: var(--idleclassopacity);
+  opacity: var(--hoverClassPickerOpacity);
 }
 
 #menuClassPicker11[onclick="selectClass(11)"]:hover {
@@ -1140,7 +1152,7 @@ i#voiceIcon.material-icons.voiceOff {
   margin-right: 10px;
   padding: 5px;
   transition-duration: 0.0747s;
-  opacity: var(--idleclassopacity);
+  opacity: var(--hoverClassPickerOpacity);
 }
 
 #menuClassPicker12[onclick="selectClass(12)"]:hover {
@@ -1161,7 +1173,7 @@ i#voiceIcon.material-icons.voiceOff {
   margin-right: 10px;
   padding: 5px;
   transition-duration: 0.0747s;
-  opacity: var(--idleclassopacity);
+  opacity: var(--hoverClassPickerOpacity);
 }
 
 #menuClassPicker13[onclick="selectClass(13)"]:hover {
@@ -1182,7 +1194,7 @@ i#voiceIcon.material-icons.voiceOff {
   margin-right: 10px;
   padding: 5px;
   transition-duration: 0.0747s;
-  opacity: var(--idleclassopacity);
+  opacity: var(--hoverClassPickerOpacity);
 }
 
 #menuClassPicker14[onclick="selectClass(14)"]:hover {
@@ -1203,7 +1215,7 @@ i#voiceIcon.material-icons.voiceOff {
   margin-right: 10px;
   padding: 5px;
   transition-duration: 0.0747s;
-  opacity: var(--idleclassopacity);
+  opacity: var(--hoverClassPickerOpacity);
 }
 
 #menuClassPicker15[onclick="selectClass(15)"]:hover {
@@ -1324,7 +1336,7 @@ div#mapInfoHolder:hover {
     width: 100%;
     margin-top: 18px;
     text-align: center;
-    background-color: var(--linkd);
+    background-color: var(--linkColour);
     border-radius: 6px;
 }
 
@@ -1347,14 +1359,14 @@ div#mapInfoHolder:hover {
     font-size: 16px;
     box-sizing: border-box;
     border: none;
-    background-color: var(--mainc);
+    background-color: var(--backgroundColour);
     border-radius: 4px;
     padding: 6px 10px 5px;
 }
 
 .inputGrey2 {
     border: none;
-    background: var(--mainc);
+    background: var(--backgroundColour);
     padding: 6px;
     padding-bottom: 6px;
     float: right;
@@ -1364,7 +1376,7 @@ div#mapInfoHolder:hover {
 }
 
 #menuWindow.dark {
-    background-color: var(--mainc);
+    background-color: var(--backgroundColour);
     -webkit-box-shadow: none;
     -moz-box-shadow: none;
     box-shadow: 2px 2px 8px rgb(0 0 0 / 50%);
@@ -1380,7 +1392,7 @@ div#mapInfoHolder:hover {
 
 .pubHed {
     background: rgb(0 0 0);
-    color: var(--textc)!important;
+    color: var(--textColour)!important;
     margin-left: -15px;
     margin-top: -15px;
     width: calc(100% + -10px);
@@ -1401,7 +1413,7 @@ div#mapInfoHolder:hover {
     top: 40%;
     left: 50%;
     transform: translate(-50%,-60%);
-    color: var(--textc);
+    color: var(--textColour);
     box-shadow: 2px 2px 8px rgb(0 0 0 / 50%);
     background-color: #000000;
     width: 400px;
@@ -1427,12 +1439,12 @@ div#mapInfoHolder:hover {
     margin-top: 40px;
     font-size: 22px;
     cursor: pointer;
-    color: var(--textc);
+    color: var(--textColour);
     margin-bottom: 20px;
 }
 
 #menuPingDisplay .material-icons {
-    color: var(--text2c);
+    color: var(--specialTextColour);
     vertical-align: bottom;
     font-size: 20px;
 }
@@ -1463,17 +1475,17 @@ div#mapInfoHolder:hover {
 }
 
 #healthBar {
-    width: var(--hpbarwidth);
-    height: var(--hpbarheight);
+    width: var(--hpBarWidth);
+    height: var(--hpBarHeight);
     display: inline-flex;
     justify-content: center;
     background-color: rgba(0,0,0,0.3);
     border-radius: 0px;
     position: fixed;
-    left: calc(var(--hpbarx) - 120px);
-    bottom: calc(var(--hpbary) - 5px);
-    opacity: var(--hpbaropacity);
-    outline: var(--hpbaroutlinewidth) solid var(--mainc);
+    left: calc(var(--hpBarPositionX) - 120px);
+    bottom: calc(var(--hpBarPositionY) - 5px);
+    opacity: var(--hpBarOpacity);
+    outline: var(--hpBarOutlineWidth) solid var(--backgroundColour);
 }
 
 .healthBarSeg {
@@ -1489,13 +1501,14 @@ div#mapInfoHolder:hover {
 }
 
 .hpBSeg[style*="#cd3732"] {
-    background-color: var(--text2c) !important;
+    background-color: var(--specialTextColour) !important;
 }
+
 #healthValueHolder {
     background-color: transparent;
     padding: 0 !important;
     margin: 0 !important;
-    bottom: calc(11.747% + var(--hpheight));
+    bottom: calc(11.747% + var(--hpNumberHeight));
     right: 56.5%;
     transform: translateX(50%);
     position: fixed;
@@ -1504,7 +1517,7 @@ div#mapInfoHolder:hover {
 #healthValue {
     font-size: 32px !important;
     text-shadow: 2px 0 0 #000000, -2px 0 0 #000000, 0 2px 0 #000000, 0 -2px 0 #000000, 1px 1px #000000, -1px -1px 0 #000000, 1px -1px 0 #000000, -1px 1px 0 #000000 !important;
-    color: var(--hpval);
+    color: var(--hpValueColour);
 }
 
 #maxHP {
@@ -1526,7 +1539,7 @@ div#mapInfoHolder:hover {
 
 #ingameFPS {
     visibility:visible;
-    color: var(--text2c) !important;
+    color: var(--specialTextColour) !important;
 }
 #ingameFPS:after {
     content:' fps';
@@ -1542,7 +1555,7 @@ div#mapInfoHolder:hover {
 
 #bottomRight {
     position: fixed;
-    bottom: calc(39px + 10.747% + var(--ammoheight));
+    bottom: calc(39px + 10.747% + var(--ammoNumberHeight));
     right: 43.5%;
     z-index: 3;
 }
@@ -1568,21 +1581,21 @@ div#mapInfoHolder:hover {
 
 #ammoVal {
   font-size: 32px;
-  color: var(--amval);
+  color: var(--ammoValueColour);
   text-shadow: 2px 0 0 #000000, -2px 0 0 #000000, 0 2px 0 #000000, 0 -2px 0 #000000, 1px 1px #000000, -1px -1px 0 #000000, 1px -1px 0 #000000, -1px 1px 0 #000000 !important;
   display: flex!important;
 }
 
 #ammoMax {
-    color: var(--amval);
+    color: var(--ammoValueColour);
     text-shadow: 2px 0 0 #000000, -2px 0 0 #000000, 0 2px 0 #000000, 0 -2px 0 #000000, 1px 1px #000000, -1px -1px 0 #000000, 1px -1px 0 #000000, -1px 1px 0 #000000 !important;
     font-size: 20px;
-    opacity: var(--ammoMaxOpacity);
+    opacity: var(--showMaxAmmo);
 }
 
 #bottomRight {
     position: fixed;
-    bottom: calc(39px + 10.747% + var(--ammoheight) + 15px);
+    bottom: calc(39px + 10.747% + var(--ammoNumberHeight) + 15px);
     right: 43.5%;
     z-index: 3;
 }
@@ -1612,11 +1625,11 @@ div#mapInfoHolder:hover {
 }
 
 #reloadMsg::before{
-    content: var(--customreload);
+    content: var(--customReloadMessage);
     font-size: 20px;
     left: 50%;
     top: 52%;
-    color: var(--text2c);
+    color: var(--specialTextColour);
     text-shadow: 1px 1px black, -1px -1px black, -1px 1px black, 1px -1px black;
 }
 
@@ -1625,9 +1638,9 @@ div#mapInfoHolder:hover {
 }
 
 #curGameInfo::before {
-    content: var(--curgameinf);
+    content: var(--customTopLeftMessage);
     font-size: 20px;
-    color: var(--text2c);
+    color: var(--specialTextColour);
 }
 
 #kCInfo[style="color:#292929"] {
@@ -1636,11 +1649,11 @@ div#mapInfoHolder:hover {
 
 #pingDisplay .material-icons, #ingressDisplay .material-icons, #egressDisplay .material-icons {
     font-size: 24px;
-    color: var(--text2c)
+    color: var(--specialTextColour)
 }
 
 #pingIcon {
-    color: var(--text2c) !important;
+    color: var(--specialTextColour) !important;
 }
 
 #timerIcon {
@@ -1652,7 +1665,7 @@ div#mapInfoHolder:hover {
   position: fixed;
   transform: rotateZ(-90deg) translate(-12px, -22px);
   font-size: 12px;
-  color: var(--text2c);
+  color: var(--specialTextColour);
   text-shadow: 0.7px 0 0 black, -0.7px 0 0 black, 0 0.7px 0 black, 0 -0.7px 0 black, 0.45px 0.45px black, -0.45px -0.45px 0 black, 0.45px -0.45px 0 black, -0.45px 0.45px 0 black !important;
 }
 
@@ -1664,15 +1677,15 @@ div#mapInfoHolder:hover {
 }
 
 .leaderName {
-  color: var(--textc);
+  color: var(--textColour);
 }
 
 .leaderCounter, .leaderNameM, .leaderScore {
-  color: var(--text2c);
+  color: var(--specialTextColour);
 }
 
 .leaderNameF {
-  color: var(--text2c);
+  color: var(--specialTextColour);
   opacity: 0.5;
 }
 
@@ -1683,7 +1696,7 @@ div#mapInfoHolder:hover {
 
 .countIcon {
     background-color: transparent;
-    color: var(--textc);
+    color: var(--textColour);
     text-shadow: 2px 0 0 #000000, -2px 0 0 #000000, 0 2px 0 #000000, 0 -2px 0 #000000, 1px 1px #000000, -1px -1px 0 #000000, 1px -1px 0 #000000, -1px 1px 0 #000000 !important;
     font-size: 16px;
   }
@@ -1693,7 +1706,7 @@ div#mapInfoHolder:hover {
 }
 
 #killsVal, #deathsVal, #streakVal, #myScoreVal, #kdVal {
-    color: var(--textc);;
+    color: var(--textColour);;
 }
 
 .countIcon .material-icons {
@@ -1757,19 +1770,19 @@ div#mapInfoHolder:hover {
     content: 'kdr'!important;
 }
 
-.endTableN[style="color: var(--textc)"]:before {
+.endTableN[style="color: var(--textColour)"]:before {
     content:"\2192";
     font-size:25px;
     margin-right:10px;
 }
 
 .reportBut {
-    color: var(--linkd);
+    color: var(--linkColour);
     text-shadow: none;
 }
 
 .shareBut {
-    color: var(--linkd) !important;
+    color: var(--linkColour) !important;
     text-shadow: none;
 }
 
