@@ -1327,6 +1327,28 @@ i#voiceIcon.material-icons.voiceOff {
   right: 0%;
 }
 
+div#mapInfoHolder:hover {
+    opacity: 1;
+    transition-duration: 0.2747s;
+    transition-delay: 0.1747s;
+}
+
+#mapInfoHolder {
+    opacity: 0;
+    transition-duration: 0.2747s;
+}
+
+#termsInfo {
+    background-color: transparent;
+    padding: 0;
+    border-top-left-radius: 0;
+    margin-right: 0;
+}
+
+.verticalSeparatorInline {
+    display: none;
+}
+
 #uiBase.onMenu #spectateHUD {
   display: flex;
   justify-content: center;
