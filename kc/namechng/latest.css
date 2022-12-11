@@ -1339,7 +1339,7 @@ div#mapInfoHolder:hover {
     transition-duration: 0.1747s;
     padding-right: 15px;
     padding-top: 24vh;
-    clip-path: polygon(0% 0, 69% 0%, 73% 60%, 100% 60%, 100% 100%, 0% 100%);
+    clip-path: polygon(0% 0, 69% 0%, 73% 65%, 100% 65%, 100% 100%, 0% 100%);
 }
 
 #termsInfo {
