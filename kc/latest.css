@@ -269,6 +269,11 @@ element.style {
     background-size: 3000% 100%;
 }
 
+.chatMsg .click[style="color:#FBC02D"] {
+    color: #fbc02d!important;
+    background-image: none;
+}
+
 #chatList{
     border-radius: 0;
     background: transparent
