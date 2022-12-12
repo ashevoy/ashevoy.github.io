@@ -40,6 +40,8 @@
     /* replace this with a custom message to put at the top left, keep quote marks */
     --customChatHolder: 'annoy people';
     /* replace this with any custom chat holder message you want 2 add, keep the apostrophes */
+    --customTopOfServerBrowserMsg: " ";
+    /* self explanatory too. shows a custom message at top of server browser lol */
     --showChangelog: 1;
     /* putting this to 0 will hide the changelog during the loading. */
 }
@@ -180,6 +182,12 @@ element.style {
     border: 4px solid var(--backgroundColour)!important;
     background-color: var(--backgroundColour)!important;
     box-shadow: inset 0 -7px 0 0 var(--backgroundColour)!important;
+}
+
+.serverHeader:after {
+    content: var(--customTopOfServerBrowserMsg);
+    position: absolute;
+    left: 0.747%;
 }
 
 #policeButton {
