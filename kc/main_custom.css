@@ -40,7 +40,7 @@
     /* the classes you aren't hovering over's opacities. default is 0.5. if you put the class picker opacity to 1 i recommend making this 1 as well. */
     --customReloadMessage: ' ';
     /* replace this with a custom reload message, keep the apostrophes */
-    --customTopLeftMessage: " ";
+    --customTopLeftMessage: "Ephemeral";
     /* replace this with a custom message to put at the top left, keep quote marks */
     --customChatHolder: 'annoy people';
     /* replace this with any custom chat holder message you want 2 add, keep the apostrophes */
