@@ -41,6 +41,8 @@
     /* replace this with a custom reload message, keep the apostrophes */
     --customTopLeftMessage: " ";
     /* replace this with a custom message to put at the top left, keep quote marks */
+    --customTopOfServerBrowserMsg: " ";
+    /* self explanatory too. shows a custom message at top of server browser lol */
     --customChatHolder: 'annoy people';
     /* replace this with any custom chat holder message you want 2 add, keep the apostrophes */
     --showChangelog: 1;
