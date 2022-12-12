@@ -1,3 +1,5 @@
+/* gato main custom, does not have a custom loading image */
+
 /* download instructions: do ctrl + s on this page you are currently on and put it in your resource swapper. if you need more help there are many tutorials online */
 
 /* this css was made by ashevoy/dj62. ashevoy.github.io for more info abt this atrocity. love u all <3
@@ -49,16 +51,6 @@
     --showChangelog: 1;
     /* putting this to 0 will hide the changelog during the loading. */
 }
-
-#lC-cont::before {
-    background-image: url(https://cdn.discordapp.com/attachments/628964831529140254/995845829392875581/LOOK_AT_THIS_FUCKING_CAT.gif);
-}
-/* custom loading gif/image (look at this fuckin cat) */
-
-#initLoader {
-  background-image: url(https://cdn.discordapp.com/attachments/727526422381461514/1016047361224613918/STYLIZED_BUNDLE_mi0_ENVIRONMENT_CINEMATIC.png);
-}
-/* custom background for loading screen - credit to zbg for that image */
 
 /* font change stuff, do not touch the font-family value */
 @font-face {
