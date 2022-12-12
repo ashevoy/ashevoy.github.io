@@ -15,6 +15,8 @@
     /* special text such as fps etc */
     --linkColour: #ff4fb9;
     /* link colour, default is ff4fb9 */
+    --fontThickness: 500;
+    /* self explanatory, thickness of the font */
     --showMaxAmmo: 0;
     /* showmaxammo: show opacity of the max ammo (default 0) */
     --hpValueColour: #ffffff;
@@ -68,5 +70,5 @@
 /* font change stuff, do not touch the font-family value */
 @font-face {
   font-family: gamefont;
-  src: url(https://ashevoy.github.io/Montserrat-Medium.ttf);
+  src: url(https://ashevoy.github.io/fontvariable.ttf);
 }
