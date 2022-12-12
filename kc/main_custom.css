@@ -57,3 +57,13 @@
   font-family: gamefont;
   src: url(https://ashevoy.github.io/fontvariable.ttf);
 }
+
+#lC-cont::before {
+    background-image: var(--spinnerImage, url("https://cdn.discordapp.com/attachments/628964831529140254/995845829392875581/LOOK_AT_THIS_FUCKING_CAT.gif"));
+}
+/* custom loading gif/image (look at this fuckin cat) */
+
+#initLoader {
+  background-image: var(--loadingBgImage, url("https://cdn.discordapp.com/attachments/727526422381461514/1016047361702760509/IDK.png"));
+}
+/* custom background for loading screen - credit to zbg for that image */
