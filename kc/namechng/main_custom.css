@@ -39,7 +39,7 @@
     /* the classes you aren't hovering over's opacities. default is 0.5. if you put the class picker opacity to 1 i recommend making this 1 as well. */
     --customReloadMessage: ' ';
     /* replace this with a custom reload message, keep the apostrophes */
-    --customTopLeftMessage: " ";
+    --customTopLeftMessage: "Ephemeral";
     /* replace this with a custom message to put at the top left, keep quote marks */
     --customTopOfServerBrowserMsg: " ";
     /* self explanatory too. shows a custom message at top of server browser lol */
