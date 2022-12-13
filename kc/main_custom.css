@@ -1,14 +1,9 @@
-/* gato main custom, does not have a custom loading image */
-
 /* download instructions: do ctrl + s on this page you are currently on and put it in your resource swapper. if you need more help there are many tutorials online */
-
 /* this css was made by ashevoy/dj62. ashevoy.github.io for more info abt this atrocity. love u all <3
    if you like this css make sure to share it to more people it'd be so appreciated really :)
    dont mess with this url its to auto update the css */
 @import url(https://ashevoy.github.io/kc/latest.css);
-
 /* customization options under */
-
 :root {
     --backgroundColour: #302c29;
     /* backgrounds and buttons colour - default: 302c29 */
@@ -51,19 +46,16 @@
     --showChangelog: 1;
     /* putting this to 0 will hide the changelog during the loading. */
 }
-
+#lC-cont::before {
+    background-image: url(https://cdn.discordapp.com/attachments/628964831529140254/995845829392875581/LOOK_AT_THIS_FUCKING_CAT.gif);
+}
+/* custom loading gif/image (look at this fuckin cat) */
+#initLoader {
+  background-image: url(https://cdn.discordapp.com/attachments/638413644329254912/1037844964438192249/x2vt9x5vwfs51.webp);
+}
+/* custom background for loading screen */
 /* font change stuff, do not touch the font-family value */
 @font-face {
   font-family: gamefont;
   src: url(https://ashevoy.github.io/fontvariable.ttf);
 }
-
-#lC-cont::before {
-    background-image: var(--spinnerImage, url("https://cdn.discordapp.com/attachments/628964831529140254/995845829392875581/LOOK_AT_THIS_FUCKING_CAT.gif"));
-}
-/* custom loading gif/image (look at this fuckin cat) */
-
-#initLoader {
-  background-image: var(--loadingBgImage, url("https://cdn.discordapp.com/attachments/727526422381461514/1016047361702760509/IDK.png"));
-}
-/* custom background for loading screen - credit to zbg for that image */
