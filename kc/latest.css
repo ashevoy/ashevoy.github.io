@@ -280,6 +280,8 @@ element.style {
     animation: chalbg 10s linear infinite;
     color: white !important;
     background-size: 3000% 100%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 .chatMsg .click[style="color:#FBC02D"] {
