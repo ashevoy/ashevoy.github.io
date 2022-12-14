@@ -278,10 +278,9 @@ element.style {
 .chatMsg span[style="color:#FBC02D"] {
     background-image: linear-gradient(to right, #6666ff, #00ffe1, #6fff93, #91ff3c, #ffde3b, #ff5558, #ff3399, #fb86ff, #a02bff);
     animation: chalbg 10s linear infinite;
-    color: white !important;
     background-size: 3000% 100%;
+    color: transparent !important;
     -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
 }
 
 .chatMsg .click[style="color:#FBC02D"] {
