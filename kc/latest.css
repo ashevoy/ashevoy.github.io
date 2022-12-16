@@ -1756,6 +1756,14 @@ div#mapInfoHolder:hover {
   right:calc(50% + 70px);
 }
 
+#giftTagHolder {
+    vertical-align: bottom;
+    display: block;
+    position: fixed;
+    margin-right: 0px;
+    margin-bottom: 0px;
+}
+
 #krTagHolder {
     vertical-align: middle;
     display: block;
