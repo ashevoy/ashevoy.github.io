@@ -1757,11 +1757,14 @@ div#mapInfoHolder:hover {
 }
 
 #giftTagHolder {
-    vertical-align: bottom;
+    vertical-align: middle;
     display: block;
+    margin-right: -747px;
+    margin-bottom: 40px;
     position: fixed;
-    margin-right: 0px;
-    margin-bottom: 0px;
+    bottom: 0.30747%;
+    left: 11.20747%;
+    background: transparent;
 }
 
 #krTagHolder {
