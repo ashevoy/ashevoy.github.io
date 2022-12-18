@@ -46,7 +46,9 @@
     --showChangelog: 1;
     /* putting this to 0 will hide the changelog during the loading. */
     --btmLeftIconBorderRadius: 5px;
+   /* self explanatory. */
     --btmLeftIconRendering: pixelated;
+   /* self explanatory. */
 }
 #lC-cont::before {
     background-image: url(https://cdn.discordapp.com/attachments/628964831529140254/995845829392875581/LOOK_AT_THIS_FUCKING_CAT.gif);
