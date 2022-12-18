@@ -1336,7 +1336,7 @@ div#mapInfoHolder:hover {
     transition-delay: 0.2747s;
     transition-duration: 0.1747s;
     padding-right: 15px;
-    padding-top: 24vh;
+    padding-top: 14vh;
     clip-path: polygon(0% 0, 69% 0%, 73% 65%, 100% 65%, 100% 100%, 0% 100%);
 }
 
