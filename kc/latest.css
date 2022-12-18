@@ -44,6 +44,8 @@
     /* self explanatory too. shows a custom message at top of server browser lol */
     --showChangelog: 1;
     /* putting this to 0 will hide the changelog during the loading. */
+    --btmLeftIconBorderRadius: 5px;
+    --btmLeftIconRendering: pixelated;
 }
 
 div#loadInfoLHolder {
@@ -197,6 +199,50 @@ element.style {
 #policeButton:hover {
     opacity: 1;
     transition-duration: 0.1747s;
+}
+
+#profilePicM {
+    border-radius: 5px;
+    width: 220px;
+    height: 220px;
+}
+
+.pfpAction {
+    border-radius: 0px;
+}
+
+.setBodH {
+    width: 960px!important;
+}
+
+.xpBarB {
+    background-image: linear-gradient(to right,var(--specialTextColour),var(--specialTextColour),94%,white);
+}
+.clsStatXPBarC {
+    background-image: linear-gradient(to right,var(--specialTextColour),var(--specialTextColour),94%,white);
+}
+.clsStatXPBarV {
+    font-size: 15px;
+    font-variation-settings: 'wght' 747;
+    text-shadow: 2px 0 0 #000000, -2px 0 0 #000000, 0 2px 0 #000000, 0 -2px 0 #000000, 1px 1px #000000, -1px -1px 0 #000000, 1px -1px 0 #000000, -1px 1px 0 #000000 !important;
+    top: 3px;
+}
+
+.pSt {
+    font-size: 16px;
+}
+
+.pSt strong {
+    color: rgba(255,255,255,.747);
+    font-size: 14px;
+}
+
+.bigMenTab {
+    font-size: 20px!important;
+}
+
+.clsStatLvl {
+    font-size: 20px;
 }
 
 * {
@@ -1489,6 +1535,11 @@ div#mapInfoHolder:hover {
 }
 
 /* c s s   b y   a s h e v o y   i g n : d j 6 2 */
+
+#hudClassImg {
+    image-rendering: var(--btmLeftIconRendering);
+    border-radius: var(--btmLeftIconBorderRadius);
+}
 
 .weapIcon {
     transform: translate(-50%, -50%);
