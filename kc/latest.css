@@ -1530,6 +1530,22 @@ div#mapInfoHolder:hover {
     font-size: 20px;
 }
 
+.leaderItem img[style="margin-top:5px;font-size:28px;vertical-align:middle;height:21px;margin-left:2px;"] {
+    margin: 0;
+    height: 18px!important;
+}
+
+.leaderItem .material-icons {
+    margin: 0;
+    font-size: 18px!important;
+}
+
+.leaderItem .gatoBadge {
+    height: 21px!important;
+    width: 21px!important;
+    transform: translate(2px, 3px);
+}
+
 .newLeaderContainer {
   background-color: rgba(0,0,0,.0747)
 }
