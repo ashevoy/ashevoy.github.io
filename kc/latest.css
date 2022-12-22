@@ -60,7 +60,7 @@ div#loadInfoLHolder {
 }
 
 #loadTipsHolder::before {
-    content: "CSS by ashevoy! / IGN: dj62 / ashevoy.github.io 30/11/2022 update - redownload main_custom.css for all customisation features to be up to date :D";
+    content: "CSS by ashevoy! / IGN: dj62 / ashevoy.github.io 22/11/2022 update - just as a note, i've revamped how ammo shows in the code so you might have to do some tweaking with the variables.";
     display: block;
     font-size: 23px;
     text-shadow: 2px 0 0 black, -2px 0 0 black, 0 2px 0 black, 0 -2px 0 black, 1px 1px black, -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black !important;
@@ -1666,26 +1666,24 @@ div#mapInfoHolder:hover {
   display: none!important;
 }
 
-#ammoDisplay {
-  background-color: transparent!important;
-  background-position-y: -20px;
-  border-radius: 0px;
-  padding: 0;
-  padding-bottom: 12px;
-  padding-top: 0;
-  padding-left: 0;
-  padding-right: 0 !important;
-  position: fixed;
-  justify-content: center;
-  text-align: center;
-  transform: translateX(-50%);
+div#ammoDisplay {
+    transform: unset;
+    position: fixed;
+    right: 41%;
+    bottom: calc(13.5747% + var(--ammoNumberHeight) - 50px);
+    width: 55px;
+    height: 2.747%;
+    margin: 0;
+    padding: 0;
 }
 
 #ammoVal {
-  font-size: 32px;
-  color: var(--ammoValueColour);
-  text-shadow: 2px 0 0 #000000, -2px 0 0 #000000, 0 2px 0 #000000, 0 -2px 0 #000000, 1px 1px #000000, -1px -1px 0 #000000, 1px -1px 0 #000000, -1px 1px 0 #000000 !important;
-  display: flex!important;
+    font-size: 32px;
+    color: var(--ammoValueColour);
+    text-shadow: 2px 0 0 #000000, -2px 0 0 #000000, 0 2px 0 #000000, 0 -2px 0 #000000, 1px 1px #000000, -1px -1px 0 #000000, 1px -1px 0 #000000, -1px 1px 0 #000000 !important;
+    display: inline-block;
+    position: fixed;
+    bottom: 11.747%;
 }
 
 #ammoMax {
@@ -1826,23 +1824,29 @@ div#mapInfoHolder:hover {
 #giftTagHolder {
     vertical-align: middle;
     display: block;
-    margin-right: -747px;
+    margin-left: 0;
+    margin-right: 0px;
     margin-bottom: 40px;
     position: fixed;
     bottom: 0.30747%;
-    left: 11.20747%;
+    right: calc(99.5% - 320px);
     background: transparent;
+    transform: unset;
+    z-index: 0!important;
 }
 
 #krTagHolder {
     vertical-align: middle;
     display: block;
-    margin-right: -747px;
+    margin-left: 0;
+    margin-right: 0px;
     margin-bottom: 40px;
     position: fixed;
     bottom: 0.30747%;
-    left: 11.20747%;
+    right: calc(99.5% - 320px);
     background: transparent;
+    transform: unset;
+    z-index: 0!important;
 }
 
 .killStreakCnt {
