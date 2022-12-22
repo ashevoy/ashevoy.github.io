@@ -1684,6 +1684,7 @@ div#ammoDisplay {
     display: inline-block;
     position: fixed;
     bottom: 11.747%;
+    right: 42.5%;
 }
 
 #ammoMax {
