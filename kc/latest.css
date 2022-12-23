@@ -1672,7 +1672,7 @@ div#ammoDisplay {
     transform: unset;
     position: fixed;
     right: 42%;
-    bottom: calc(13.5747% + var(--ammoReloadBgHeight - 40px);
+    bottom: calc(13.5747% + var(--ammoReloadBgHeight) - 40px);
     width: 50px;
     height: 2.747%;
     margin: 0;
