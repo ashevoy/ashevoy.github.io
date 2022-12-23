@@ -1671,10 +1671,10 @@ div#mapInfoHolder:hover {
 div#ammoDisplay {
     transform: unset;
     position: fixed;
-    right: 42%;
+    right: 43%;
     bottom: calc(13.5747% + var(--ammoReloadBgHeight) - 40px);
     width: 50px;
-    height: 2.747%;
+    height: 2.3747ex;
     margin: 0;
     padding: 0;
     border-radius: 0;
