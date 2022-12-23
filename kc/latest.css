@@ -46,6 +46,8 @@
     /* putting this to 0 will hide the changelog during the loading. */
     --btmLeftIconBorderRadius: 5px;
     --btmLeftIconRendering: pixelated;
+    --ammoReloadBgHeight: 0px;
+    /* change the height of the hp reload bar (adds pixels) */
 }
 
 div#loadInfoLHolder {
@@ -1658,7 +1660,7 @@ div#mapInfoHolder:hover {
 #bottomRight {
     position: fixed;
     bottom: calc(39px + 10.747% + var(--ammoNumberHeight));
-    right: 43.5%;
+    right: 43.1%;
     z-index: 3;
 }
 
@@ -1670,7 +1672,7 @@ div#ammoDisplay {
     transform: unset;
     position: fixed;
     right: 42%;
-    bottom: calc(13.5747% + var(--ammoNumberHeight) - 40px);
+    bottom: calc(13.5747% + var(--ammoReloadBgHeight - 40px);
     width: 50px;
     height: 2.747%;
     margin: 0;
@@ -1684,8 +1686,8 @@ div#ammoDisplay {
     text-shadow: 2px 0 0 #000000, -2px 0 0 #000000, 0 2px 0 #000000, 0 -2px 0 #000000, 1px 1px #000000, -1px -1px 0 #000000, 1px -1px 0 #000000, -1px 1px 0 #000000 !important;
     display: inline-block;
     position: fixed;
-    bottom: 11.747%;
-    right: 42.5%;
+    bottom: calc(11.747% + var(--ammoNumberHeight));
+    right: 43%;
 }
 
 #ammoMax {
