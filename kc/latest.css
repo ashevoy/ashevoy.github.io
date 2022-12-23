@@ -122,7 +122,7 @@ a {
     display: none;
 }
 
-/* #lC-cont::before {
+#lC-cont::before {
     content: " ";
     display: block;
     width: 128px;
@@ -132,15 +132,16 @@ a {
     background-size: 75%;
     background-repeat: no-repeat;
     background-position: center;
-} */
+}
 
-/* frog spot */
+/* frog spot 
 
 #initLoader {
   background-image: url(https://cdn.discordapp.com/attachments/727526422381461514/1016047361224613918/STYLIZED_BUNDLE_mi0_ENVIRONMENT_CINEMATIC.png);
   background-size: cover;
   background-repeat: no-repeat;
 }
+*/
 
 .adsbygoogle.adsbygoogle-noablate {
     display: none !important;
