@@ -1693,9 +1693,17 @@ div#ammoDisplay {
 
 #ammoMax {
     color: var(--ammoValueColour);
-    text-shadow: 2px 0 0 #000000, -2px 0 0 #000000, 0 2px 0 #000000, 0 -2px 0 #000000, 1px 1px #000000, -1px -1px 0 #000000, 1px -1px 0 #000000, -1px 1px 0 #000000 !important;
+    text-shadow: 1px 0 0 #000000, -1px 0 0 #000000, 0 1px 0 #000000, 0 -1px 0 #000000, 0.5px 0.5px #000000, -0.5px -0.5px 0 #000000, 0.5px -0.5px 0 #000000, -0.5px 0.5px 0 #000000 !important;
     font-size: 20px;
     opacity: var(--showMaxAmmo);
+    clip-path: polygon(0.5ch 0, 36% 0%, 36% 100%, 0.5ch 100%);
+    width: 100px!important;
+    position: fixed;
+    bottom: calc(20px + 11.34747%);
+    text-align: left;
+    transform: translate(0px, calc(-1 * var(--ammoNumberHeight)));
+    font-variation-settings: 'wght' 666;
+    right: calc(43% - 100px);
 }
 
 #bottomRight {
