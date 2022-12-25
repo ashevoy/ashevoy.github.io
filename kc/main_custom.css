@@ -55,11 +55,11 @@
 #lC-cont::before {
     background-image: url(https://cdn.discordapp.com/attachments/628964831529140254/995845829392875581/LOOK_AT_THIS_FUCKING_CAT.gif);
 }
-/* custom loading gif/image (look at this fuckin cat) */
+/* custom loading gif/image (look at this fuckin cat)
 #initLoader {
   background-image: url(https://cdn.discordapp.com/attachments/638413644329254912/1037844964438192249/x2vt9x5vwfs51.webp);
 }
-/* custom background for loading screen */
+custom background for loading screen */
 /* font change stuff, do not touch the font-family value */
 @font-face {
   font-family: gamefont;
