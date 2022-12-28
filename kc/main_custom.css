@@ -31,7 +31,7 @@
     --hpBarOpacity: 1;
     /* hpbar(element): self explanatory. */
     /* hpbaropacity: hp bar opacity, 0 for hidden 1 for shown */
-    --classPickerOpacity: 0;
+    --classPickerOpacity: 1;
     --hoverClassPickerOpacity: 0.5;
     /* the class picker on the right of the menu's opacity. it'll still show when hovering above it. default is 0 (hidden) */
     /* the classes you aren't hovering over's opacities. default is 0.5. if you put the class picker opacity to 1 i recommend making this 1 as well. */
