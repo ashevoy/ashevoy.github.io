@@ -143,6 +143,21 @@ a {
 }
 */
 
+@keyframes pulsee {
+    0% {
+        opacity: 0.01;
+    }
+    100% {
+        opacity: 0.894;
+    }
+}
+
+#loadGamNm {
+    text-shadow: 2px 0 0 black, -2px 0 0 black, 0 2px 0 black, 0 -2px 0 black, 1px 1px black, -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black !important;
+    color: white;
+    animation: 0.747s cubic-bezier(0.28, 0, 0.03, 0.8) 0s infinite alternate none running pulsee;
+}
+
 .adsbygoogle.adsbygoogle-noablate {
     display: none !important;
 }
