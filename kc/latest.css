@@ -263,6 +263,171 @@ element.style {
     font-size: 20px;
 }
 
+.bpClaimed .material-icons {
+    visibility: visible;
+    font-size: 90px!important;
+    position: absolute;
+    left: 85px;
+    top: 110px;
+    clip-path: polygon(0% 36%, 100% 36%, 100% 100%, 0 100%);
+}
+
+.bpClaimed {
+clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%, 0% 23%, 16% 23%, 16% 77%, 84% 77%, 84% 23%, 0% 23%);
+}
+
+.bpXPBar {
+    background-color: var(--specialTextColour);
+}
+
+.bpInfoBalloon div span {
+    color: var(--specialTextColour)!important;
+}
+
+.material-icons[style="color:#fbc02d;font-size:42px;vertical-align:bottom"] {
+    color: var(--specialTextColour)!important;
+}
+
+.bpBtn.skip {
+    border-color: var(--specialTextColour);
+}
+
+.chalXPBarC {
+    background-image: linear-gradient(to right,var(--specialTextColour),94%,white);
+}
+
+.chalRewV .material-icons[style="color:#cc51f8;font-size:29px;vertical-align:top;"] {
+    font-size: 0px!important;
+}
+
+.chalRewV .material-icons[style="color:#cc51f8;font-size:29px;vertical-align:top;"]::after {
+    content: "JN";
+    font-size: 18px;
+    font-family: gamefont;
+    position: relative;
+    top: 10px;
+}
+
+.bpBG {
+    visibility: hidden;
+}
+
+.chalCard {
+    width: calc(50% - 50px);
+    margin-left: 6px;
+    margin-right: 6px;
+    margin-top: 10px!important;
+    border-radius: 0px;
+    border: 4px solid transparent;
+}
+
+.chalImgC {
+    filter: none!important;
+}
+
+.challComplB {
+    background: #00000050;
+}
+
+.chalRight {
+    width: calc(84% - 50px);
+    font-size: 22px;
+    margin-top: 0px;
+}
+
+.chalExpr {
+    float: left;
+    position: fixed;
+}
+
+.chalXPBar {
+    border-radius: 0px!important;
+    margin-top: 50px;
+    padding-left: 0px;
+}
+
+.chalXPVal {
+    text-transform: uppercase;
+    text-shadow: 3px 0 0 black, -3px 0 0 black, 0 3px 0 black, 0 -3px 0 black, 2px 2px black, -2px -2px 0 black, 2px -2px 0 black, -2px 2px 0 black !important;
+}
+
+.chalXPBarC {
+    background-image: linear-gradient(to right,var(--specialTextColour),94%,white);
+    border-radius: 0px;
+}
+
+.chalRews {
+    transform: translate(-110px, -74px);
+    text-align: left;
+    background: 0;
+    border-left: 0;
+    width: 300px;
+}
+
+.chalRews::before {
+    content: "Reward: ";
+    font-size: 18px;
+    color: rgba(255,255,255,.656565);
+}
+
+.chalRewV {
+    font-size: 18px;
+    color: #b0b0b0!important;
+    display: contents;
+}
+
+.chalRewV span[style="color:white"] {
+    font-size: 0px;
+}
+
+.chalRewV::after {
+    content: " ";
+}
+
+.altManage {
+    position: absolute!important;
+    right: -20%!important;
+    top: 55%!important;
+    opacity: 0;
+}
+
+.altManage:hover {
+    opacity: 1;
+}
+
+#mailCount {
+    font-variation-settings: 'wght' 747;
+    font-size: 13px;
+}
+
+#mailContainer {
+    position: relative;
+    right: 76%;
+}
+
+.mainJunkInfo {
+    margin-top: -26px;
+    transform: translate(40px, 0px);
+    font-size: 20px;
+}
+
+.krInfo {
+    font-size: 20px;
+    margin-top: -20px;
+    transform: translate(40px, 0px);
+}
+
+#menuAccountUsername {
+    transform: translate(42px, 0px);
+    font-variation-settings: 'wght' 747;
+    margin-right: 2px;
+    font-size: 20px;
+}
+
+img#menuMiniProfilePic {
+    image-rendering: var(--btmLeftIconRendering);
+}
+
 * {
     outline: none;
     font-family: gamefont;
