@@ -308,8 +308,12 @@ clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%, 0% 23%, 16% 23%, 16% 77%,
     top: 10px;
 }
 
-.chalRews:hover .chalRewSkn {
+.chalRewSkn {
+    opacity: 0;
+}
+.chalRewV:hover .chalRewSkn {
     opacity: 1;
+    transition-duration: .747s;
 }
 
 .bpBG {
