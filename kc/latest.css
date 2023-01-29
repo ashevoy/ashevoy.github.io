@@ -413,7 +413,7 @@ clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%, 0% 23%, 16% 23%, 16% 77%,
 
 #mailContainer {
     position: relative;
-    right: 76%;
+    right: calc(100% - 80px);
 }
 
 .mainJunkInfo {
