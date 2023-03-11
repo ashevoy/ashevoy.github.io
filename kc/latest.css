@@ -2,6 +2,7 @@
    if you like this css make sure to share it to more people it'd be so appreciated really :) */
 
 /* PETITION TO ADD FROGS TO KRUNKER !!!! */
+/* edit: thak u krunker for adding then yayy */
 
 :root {
     --backgroundColour: #302c29;
@@ -227,6 +228,10 @@ element.style {
 
 .pfpAction {
     border-radius: 0px;
+}
+
+#specMapOverlay {
+    visibility: hidden;
 }
 
 .setBodH[style="display:inline-block;padding-top:10px;vertical-align:top;width:1004px;margin-left:15px;margin-top:0px;"] {
