@@ -553,6 +553,12 @@ i#voiceIcon.material-icons.voiceOff {
     display: none;
 }
 
+#menuJNKCount {
+    display: inline-block;
+    color: rgba(255,255,255,.6);
+    transform: translate(40px, 0px);
+}
+
 #menuJNKCount span {
   display: none;
 }
@@ -1576,12 +1582,20 @@ div#mapInfoHolder:hover {
     transition-delay: 0.0747s;
 }
 
+/* s7 update */
+
 #mapInfoHolder {
     opacity: 0;
     transition-delay: 0.2747s;
     transition-duration: 0.1747s;
-    padding-right: 15px;
-    padding-top: 14vh;
+}
+
+div#streamContainer {
+    visibility: hidden;
+}
+
+div#menuClassContainer {
+    transform: scale(0.7) translate(20%, 20%);
 }
 
 #termsInfo {
