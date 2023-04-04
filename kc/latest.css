@@ -179,10 +179,20 @@ element.style {
     box-shadow: inset 0 -7px 0 0 var(--backgroundColour)!important;
 }
 
+.buttonP:hover {
+    border: 4px solid var(--backgroundColour)!important;
+    color: cornsilk!important;
+}
+
 .buttonR {
     border: 4px solid var(--backgroundColour)!important;
     background-color: var(--backgroundColour)!important;
     box-shadow: inset 0 -7px 0 0 var(--backgroundColour)!important;
+}
+
+.buttonR:hover {
+    border: 4px solid var(--backgroundColour)!important;
+    color: cornsilk!important;
 }
 
 .buttonPI {
@@ -191,10 +201,20 @@ element.style {
     box-shadow: inset 0 -7px 0 0 var(--backgroundColour)!important;
 }
 
+.buttonPI:hover {
+    border: 4px solid var(--backgroundColour)!important;
+    color: cornsilk!important;
+}
+
 .buttonG {
     border: 4px solid var(--backgroundColour)!important;
     background-color: var(--backgroundColour)!important;
     box-shadow: inset 0 -7px 0 0 var(--backgroundColour)!important;
+}
+
+.buttonG:hover {
+    border: 4px solid var(--backgroundColour)!important;
+    color: cornsilk!important;
 }
 
 .buttonB {
@@ -203,10 +223,24 @@ element.style {
     box-shadow: inset 0 -7px 0 0 var(--backgroundColour)!important;
 }
 
+.buttonB:hover {
+    border: 4px solid var(--backgroundColour)!important;
+    color: cornsilk!important;
+}
+
 .buttonO {
     border: 4px solid var(--backgroundColour)!important;
     background-color: var(--backgroundColour)!important;
     box-shadow: inset 0 -7px 0 0 var(--backgroundColour)!important;
+}
+
+.buttonO:hover {
+    border: 4px solid var(--backgroundColour)!important;
+    color: cornsilk!important;
+}
+
+.quickJoin:hover {
+    border: 2px solid #fff;
 }
 
 .serverHeader:after {
@@ -215,8 +249,9 @@ element.style {
     left: 0.747%;
 }
 
-#policeButton {
-    opacity: 0;
+div#policeButton {
+    opacity: 1;
+    border: 4px solid var(--backgroundColour)!important;
 }
 
 #policeButton:hover {
