@@ -51,6 +51,21 @@
     /* change the height of the hp reload bar (adds pixels) */
 }
 
+#deathUIBottom {
+    backdrop-filter: blur(3px);
+    animation: none;
+    background: rgb(0 0 0/3%);
+}
+
+#uiBase.onDeathScrn #chatHolder {
+    animation: none;
+    transform: translate(-13%, -24%)
+}
+
+.death-row-weapon-text[style="color:#292929"] {
+    text-shadow: 1px 1px white, -1px -1px white, 1px -1px white, -1px 1px white;
+}
+
 div#homeStoreAd {
     display: none;
 }
