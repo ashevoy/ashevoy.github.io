@@ -753,7 +753,7 @@ i#voiceIcon.material-icons.voiceOff {
     content: " • AK";
 }
 .classCard[onclick="selectClass(0)"] .classWeap:after {
-    content: "100HP • 28 • 23 DMG • 130ms • 1.5s • Sec";
+    content: "100HP • 28 • 23 DMG • 120ms • 1.5s • Sec";
     font-size: 14px;
 }
 .classCard[onclick="selectClass(0)"] .classImgC {
@@ -809,7 +809,7 @@ i#voiceIcon.material-icons.voiceOff {
     content: " • SMG";
 }
 .classCard[onclick="selectClass(2)"] .classWeap:after {
-    content: "100HP • 34 • 18 DMG • 95ms • 1s • WJ";
+    content: "90HP • 30 • 18 DMG • 95ms • 1s • WJ";
     font-size: 14px;
 }
 .classCard[onclick="selectClass(2)"] .classImgC {
