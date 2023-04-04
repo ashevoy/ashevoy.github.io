@@ -51,6 +51,10 @@
     /* change the height of the hp reload bar (adds pixels) */
 }
 
+div#homeStoreAd {
+    display: none;
+}
+
 div#loadInfoLHolder {
     display: none;
 }
@@ -475,9 +479,9 @@ img#menuMiniProfilePic {
 }
 
 #tlInfHold{
-    opacity: 0;
+    opacity: 0.4;
     transition-duration: 0.1747s;
-    transition-delay: 0.1747s;
+    transition-delay: 0s;
 }
 
 #chatInput::placeholder{
