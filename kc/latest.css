@@ -1,8 +1,7 @@
 /* this css was made by ashevoy/dj62. ashevoy.github.io for more info abt this atrocity. love u all <3
    if you like this css make sure to share it to more people it'd be so appreciated really :) */
 
-/* PETITION TO ADD FROGS TO KRUNKER !!!! */
-/* edit: thak u krunker for adding then yayy */
+/* REVERT PREMIUM CHANGES, MAKE IT KR AGAIN. IM NOT KIDDING DEVS WHAT THE HELL WERE YOU THINKING */
 
 :root {
     --backgroundColour: #302c29;
@@ -49,6 +48,39 @@
     --btmLeftIconRendering: pixelated;
     --ammoReloadBgHeight: 0px;
     /* change the height of the hp reload bar (adds pixels) */
+}
+
+.death-row-weapon-text {
+    transform: translate(-3px, 204px)!important;
+    z-index: 200!important;
+    text-shadow: 1px 1px #00000019, -1px -1px #00000019, -1px 1px #00000019, 1px -1px #00000019, 2px 0px #00000019, -2px 0px #00000019, 0px 2px #00000019, 0px -2px #00000019;
+}
+
+.death-row-right .death-row-weapon-text {
+    transform: translate(-50px, 204px)!important;
+}
+
+.death-row-class-level {
+    font-size: 18px;
+    filter: drop-shadow(0px 0px 4px #00000099);
+}
+
+.bpCol[style="filter:grayscale(100%)"]:hover {
+    filter: grayscale(0%)!important;
+    transition-duration: .4747s;
+}
+
+label.switchsml {
+    width: 40px;
+    height: 24px;
+}
+
+.sliderSml:before {
+    height: 20px;
+    width: 20px;
+    left: 3px;
+    transition: .2s;
+    -webkit-transition: .2s;
 }
 
 #deathUIBottom {
