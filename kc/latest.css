@@ -50,14 +50,18 @@
     /* change the height of the hp reload bar (adds pixels) */
 }
 
-.death-row-weapon-text {
-    transform: translate(0px, 204px)!important;
-    z-index: 200!important;
-    text-shadow: 1px 1px #00000019, -1px -1px #00000019, -1px 1px #00000019, 1px -1px #00000019, 2px 0px #00000019, -2px 0px #00000019, 0px 2px #00000019, 0px -2px #00000019;
+.death-row-right .death-row-weapon-text {
+    left: 56.6%;
+    position: absolute;
+    transform: translate(0px, 234px)!important;
 }
 
-.death-row-right .death-row-weapon-text {
-    transform: translate(0px, 204px)!important;
+.death-row-weapon-text {
+    left: 33%;
+    position: absolute;
+    text-shadow: rgba(0, 0, 0, 0.098) 1px 1px, rgba(0, 0, 0, 0.098) -1px -1px, rgba(0, 0, 0, 0.098) -1px 1px, rgba(0, 0, 0, 0.098) 1px -1px, rgba(0, 0, 0, 0.098) 2px 0px, rgba(0, 0, 0, 0.098) -2px 0px, rgba(0, 0, 0, 0.098) 0px 2px, rgba(0, 0, 0, 0.098) 0px -2px;
+    transform: translate(0px, 234px) !important;
+    z-index: 200 !important;
 }
 
 .death-row-class-level {
