@@ -1680,8 +1680,13 @@ div#mapInfoHolder:hover {
     transition-duration: 0.1747s;
 }
 
-div#streamContainer {
-    visibility: hidden;
+#streamContainer {
+	opacity: 0;
+}
+
+#streamContainer {
+	opacity: 1;
+	transition-duration: .2s;
 }
 
 div#menuClassContainer {
