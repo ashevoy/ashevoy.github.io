@@ -1680,11 +1680,13 @@ div#mapInfoHolder:hover {
     transition-duration: 0.1747s;
 }
 
-#streamContainer {
-	opacity: 0;
-}
 
 #streamContainer {
+    opacity: 0;
+    transform: translate(-050px, -210px) scale(0.6);
+}
+
+#streamContainer:hover {
 	opacity: 1;
 	transition-duration: .2s;
 }
