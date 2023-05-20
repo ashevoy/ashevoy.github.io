@@ -1718,6 +1718,7 @@ img#menuClassIcn {
 #streamContainer {
     transform: translate(-20px, -160px) scale(0.4);
     background: 0;
+    opacity: 0;
 }
 
 #streamContainer:hover {
