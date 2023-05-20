@@ -1674,12 +1674,46 @@ div#mapInfoHolder:hover {
 
 /* s7 update */
 
+#customizeButton {
+    display: inline-block;
+    width: 449px;
+    text-align: center;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 21px;
+    font-size: 27px!important;
+    pointer-events: all;
+    padding-bottom: 28px;
+    line-height: 40px;
+}
+
+canvas#classPreviewCanvas {
+    transform: translate(-20px, 90px);
+}
+
+#menuClassContainer div[style="display:inline-block;position:relative"] {
+    display: block!important;
+    top: 70px;
+}
+
+img#menuClassIcn {
+    background: 0;
+    border: 0;
+    filter: drop-shadow(2px 2px 5px #88888866) drop-shadow(-2px -2px 5px #88888866) drop-shadow(2px -2px 5px #88888866) drop-shadow(-2px 2px 5px #88888866);
+    bottom: 70px;
+}
+
+.terms {
+    font-size: 13px;
+}
+
 #mapInfoHolder {
+    right: -0.666%;
+    bottom: -19px;
     opacity: 0;
     transition-delay: 0.2747s;
     transition-duration: 0.1747s;
 }
-
 
 #streamContainer {
     opacity: 0;
