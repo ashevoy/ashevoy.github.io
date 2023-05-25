@@ -117,6 +117,10 @@ div#loadInfoLHolder {
     bottom: 250px;
 }
 
+.weapStreakHolder {
+    display: none!important;
+}
+
 #loadTipsHolder::before {
     content: "CSS by ashevoy! / IGN: dj62 / ashevoy.github.io 22/11/2022 update - just as a note, i've revamped how ammo shows in the code so you might have to do some tweaking with the variables.";
     display: block;
