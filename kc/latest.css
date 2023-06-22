@@ -1269,7 +1269,7 @@ i#voiceIcon.material-icons.voiceOff {
   right: 0px;
   top: unset;
   height: calc(100% - 100px);
-  bottom: 50%;
+  bottom: 50%!important;
   transform: translate(0, 50%);
   margin-right: 10px;
   width: unset;
