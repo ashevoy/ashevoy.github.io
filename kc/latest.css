@@ -1921,25 +1921,6 @@ div#menuClassContainer {
     border-radius: var(--btmLeftIconBorderRadius);
 }
 
-.weapIcon {
-    transform: translate(-50%, -50%);
-    position: fixed;
-    left: 130px;
-    bottom: 13px;
-    opacity: 0!important;
-    transition-duration: .0747s;
-    -webkit-transform: scaleX(-1);
-    transform: scaleX(-1) scale(0.747);
-}
-
-.weapIcon[style*="1"] {
-    opacity: 1 !important;
-}
-
-.weapIcon[style*="0.7"] {
-    transform:translate(-50%,-50%) translateY(200px);
-}
-
 #healthBar {
     width: var(--hpBarWidth);
     height: var(--hpBarHeight);
@@ -2281,3 +2262,158 @@ div#ammoDisplay {
     visibility: visible!important;
     content: ''!important;
 }
+
+
+/* 7.1.1 fixes
+TOP RIGHT LB */
+
+#leaderboardHolder {
+    background: 0;
+}
+#leaderContainer {
+    background: 0;
+}
+.statIcon {
+    background: 0;
+}
+#scoreCount .material-icons {
+    display: none;
+}
+.greyInner {
+    background: 0;
+}
+
+/* TOP LEFT CHANGES */
+#topLeftMap {
+    position: fixed;
+    transform: scale(0.6666);
+    left: 10%;
+    bottom: -2.6%;
+    opacity: 0.3333;
+}
+#timerVal {
+    font-size: 36px;
+}
+#timerHolder {
+    position: fixed;
+    bottom: 72px;
+    left: 6.666%;
+} 
+/* chat */
+.greyInlineInner {
+    background: 0;
+}
+#chatSwitch {
+    right: 8px;
+    position: relative;
+}
+#chatInput {
+    position: relative;
+    right: 26px;
+    top: 6px;
+}
+#chatInputHolder::before {
+    font-size: 15px!important;
+    left: 80px;
+}
+
+/* weapon swapper */
+.weapItemInner {
+    background: 0;
+}
+.weapStreakInner {
+    background: 0;
+}
+.weapItem {
+    background: 0;
+    text-align: left;
+    position: fixed;
+    left: 6%;
+    opacity: 0!important;
+    transition-duration: .0747s;
+}
+.weapIcon {
+    width: 110px;
+    height: 55px;
+    transform: scaleX(-1);
+}
+.weapItem[style*="1"] {
+    opacity: 1 !important;
+}
+.weapItem[style*="0.5"] {
+    transform: translate(-50%,-50%) translateY(200px);
+}
+
+.weapSkin {
+    transform: translate(10px, 0px);
+} 
+
+/* pain staking bottom left fixes */
+
+#bottomLeftPlayer {
+    background: 0;
+}
+#bottomLeftPlayerLeft {
+    background: 0;
+    width: 100px;
+    height: 100px;
+}
+#bottomLeftPlayerRight{
+    background: 0;
+}
+#bottomLeftTeamType {
+    display: none;
+}
+#bottomLeftTeamName {
+    display: none;
+}
+
+.nHpBSeg {
+    border-radius: 0px;
+}
+.nHealthBarSeg {
+    background: 0;
+    margin-left: -1px;
+}
+#bottomLeftHealthBar {
+    background: 0;
+    column-gap: 0px;
+    padding: 0;
+    outline: var(--hpBarOutlineWidth) solid var(--backgroundColour);
+}
+#bottomLeftPlayerMid {
+    position: fixed;
+    right: calc(50% - 125px);
+    top: 90%;
+}
+#bottomLeftChallIcon {
+    display: none;
+}
+#bottomLeftHealth {
+    font-size: 32px;
+    text-align: center;
+    color: var(--ammoValueColour);
+    text-shadow: 2px 0 0 #000000, -2px 0 0 #000000, 0 2px 0 #000000, 0 -2px 0 #000000, 1px 1px #000000, -1px -1px 0 #000000, 1px -1px 0 #000000, -1px 1px 0 #000000 !important;
+    position: fixed;
+    bottom: calc(39px + 10.747% + var(--ammoNumberHeight) + 15px);
+    left: 43.5%;
+}
+
+#bottomRight {
+    bottom: calc(39px + 10.747% + var(--ammoNumberHeight) + 15px);
+    right: 42.8%;
+}
+#ammoHolder {
+    background: 0;
+}
+#ammoMax {
+    transform: translate(-15px, 26px);
+}
+ 
+#pingText:after {
+    content:'  ';
+}
+#matchInfo {
+    display: none;
+}
+
