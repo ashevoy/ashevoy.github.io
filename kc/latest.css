@@ -1916,7 +1916,7 @@ div#menuClassContainer {
 
 /* c s s   b y   a s h e v o y   i g n : d j 6 2 */
 
-#hudClassImg {
+#bottomLeftClassImg {
     image-rendering: var(--btmLeftIconRendering);
     border-radius: var(--btmLeftIconBorderRadius);
 }
