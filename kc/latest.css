@@ -2275,6 +2275,8 @@ TOP RIGHT LB */
 }
 .statIcon {
     background: 0;
+     text-shadow: 2px 0 0 #000000, -2px 0 0 #000000, 0 2px 0 #000000, 0 -2px 0 #000000, 1px 1px #000000, -1px -1px 0 #000000, 1px -1px 0 #000000, -1px 1px 0 #000000 !important;
+    font-size: 16px;
 }
 #scoreCount .material-icons {
     display: none;
@@ -2331,6 +2333,7 @@ TOP RIGHT LB */
     left: 6%;
     opacity: 0!important;
     transition-duration: .0747s;
+    text-shadow: 1px 0 0 #333, -1px 0 0 #333, 0 1px 0 #333, 0 -1px 0 #333, 1px 1px #333, -1px -1px 0 #333, 1px -1px 0 #333, -1px 1px 0 #333 !important;
 }
 .weapIcon {
     width: 110px;
@@ -2345,8 +2348,11 @@ TOP RIGHT LB */
 }
 
 .weapSkin {
-    transform: translate(10px, 0px);
-} 
+    transform: translate(8px, 13px);
+    font-size: 17px;
+    max-width: 196px;
+    background: 0px center;
+}
 
 /* pain staking bottom left fixes */
 
@@ -2368,6 +2374,7 @@ TOP RIGHT LB */
     display: none;
 }
 
+
 .nHpBSeg {
     border-radius: 0px;
 }
@@ -2376,7 +2383,7 @@ TOP RIGHT LB */
     margin-left: -1px;
 }
 #bottomLeftHealthBar {
-    background: 0;
+    background: 0px rgba(0,0,0,.2);
     column-gap: 0px;
     padding: 0;
     outline: var(--hpBarOutlineWidth) solid var(--backgroundColour);
@@ -2396,8 +2403,9 @@ TOP RIGHT LB */
     text-shadow: 2px 0 0 #000000, -2px 0 0 #000000, 0 2px 0 #000000, 0 -2px 0 #000000, 1px 1px #000000, -1px -1px 0 #000000, 1px -1px 0 #000000, -1px 1px 0 #000000 !important;
     position: fixed;
     bottom: calc(39px + 10.747% + var(--ammoNumberHeight) + 15px);
-    left: 43.5%;
+    left: 43%;
 }
+
 
 #bottomRight {
     bottom: calc(39px + 10.747% + var(--ammoNumberHeight) + 15px);
@@ -2407,7 +2415,7 @@ TOP RIGHT LB */
     background: 0;
 }
 #ammoMax {
-    transform: translate(-15px, 26px);
+    transform: translate(-15px, 20px);
 }
  
 #pingText:after {
@@ -2415,5 +2423,67 @@ TOP RIGHT LB */
 }
 #matchInfo {
     display: none;
+}
+
+
+/* more fixes */
+
+#topLeftBottom::before {
+    content: var(--customTopLeftMessage);
+    font-size: 20px;
+    color: var(--specialTextColour);
+}
+
+#topLeftBottom {
+    transform: translate(5px, 1px);
+}
+
+#pingDisplay, #fpsDisplay, #pingText, #ingameFPS {
+    font-size: 20px;
+}
+
+.weapSkin::before {
+	content: "["
+}
+.weapSkin::after {
+	content: "]"
+}
+
+.weapSkin[style="color:#fff53d"] {
+    background-image: linear-gradient(to right, #6666ff, #00ffe1, #6fff93, #91ff3c, #ffde3b, #ff5558, #ff3399, #fb86ff, #a02bff);
+    animation: chalbg 5s linear infinite;
+    background-size: 3000% 100%;
+    color: transparent !important;
+    -webkit-background-clip: text;
+    text-shadow: none!important;
+}
+
+.whiteShad {
+    text-shadow: -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff, 1px 1px 0 #fff, -2px -2px 0 #999, 2px -2px 0 #999, -2px 2px 0 #999, 2px 2px 0 #999;
+}
+
+.weapStreakHolder {
+    transform: translate(-3px, 36px);
+    position: absolute;
+    left: 0px;
+    bottom: 0px;
+}
+
+#specControlHolder:hover {
+    opacity: 1;
+}
+
+#specControlHolder {
+    opacity: 0;
+    transform: scale(2) translate(-464px, -30px);
+}
+
+#timerHolder::before {
+  content: "TIME";
+  position: fixed;
+  transform: rotateZ(-90deg) translate(-15px, -75px);
+  font-size: 12px;
+  color: var(--specialTextColour);
+  text-shadow: 0.7px 0 0 black, -0.7px 0 0 black, 0 0.7px 0 black, 0 -0.7px 0 black, 0.45px 0.45px black, -0.45px -0.45px 0 black, 0.45px -0.45px 0 black, -0.45px 0.45px 0 black !important;
 }
 
