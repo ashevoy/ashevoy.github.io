@@ -1,6 +1,8 @@
 /* this css was made by ashevoy/dj62. ashevoy.github.io for more info abt this atrocity. love u all <3
    if you like this css make sure to share it to more people it'd be so appreciated really :) */
 
+/* also this code is a mess if youre reading this im  sorry */
+
 /* REVERT PREMIUM CHANGES, MAKE IT KR AGAIN. IM NOT KIDDING DEVS WHAT THE HELL WERE YOU THINKING */
 
 :root {
@@ -423,11 +425,16 @@ clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%, 0% 23%, 16% 23%, 16% 77%,
     top: 10px;
 }
 
-.chalRewSkn {
-    opacity: 0;
+.chalRews {
+    border: 0!important;
 }
-.chalRews:hover .chalRewSkn {
+
+.chalRewSkn {
     opacity: 1;
+    background-color: #00000000;
+    border: none!important;
+    filter: drop-shadow(2px 2px 5px #88888866) drop-shadow(-2px -2px 5px #88888866) drop-shadow(2px -2px 5px #88888866) drop-shadow(-2px 2px 5px #88888866);
+    transform: translate(225px, -50px);
 }
 
 .bpBG {
@@ -2428,7 +2435,7 @@ TOP RIGHT LB */
 
 /* more fixes */
 
-#topLeftBottom::before {
+#topLeftBottom::after {
     content: var(--customTopLeftMessage);
     font-size: 20px;
     color: var(--specialTextColour);
