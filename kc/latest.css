@@ -2009,7 +2009,7 @@ div#menuClassContainer {
 
 #bottomRight {
     position: fixed;
-    bottom: calc(39px + 10.747% + var(--ammoNumberHeight));
+    bottom: calc(39px + 10.747% + var(--ammoNumberHeight) + 8px);
     right: 43.1%;
     z-index: 3;
 }
