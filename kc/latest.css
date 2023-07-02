@@ -2007,12 +2007,6 @@ div#menuClassContainer {
     display: none !important;
 }
 
-#bottomRight {
-    position: fixed;
-    bottom: calc(39px + 10.747% + var(--ammoNumberHeight) + 8px);
-    right: 43.1%;
-    z-index: 3;
-}
 
 #bhHolder {
   display: none!important;
@@ -2057,7 +2051,7 @@ div#ammoDisplay {
 
 #bottomRight {
     position: fixed;
-    bottom: calc(39px + 10.747% + var(--ammoNumberHeight) + 15px);
+    bottom: calc(39px + 10.747% + var(--ammoNumberHeight) + 8px);
     right: 43.5%;
     z-index: 3;
 }
@@ -2411,12 +2405,6 @@ TOP RIGHT LB */
     position: fixed;
     bottom: calc(39px + 10.747% + var(--ammoNumberHeight) + 15px);
     left: 43%;
-}
-
-
-#bottomRight {
-    bottom: calc(39px + 10.747% + var(--ammoNumberHeight) + 15px);
-    right: 42.8%;
 }
 #ammoHolder {
     background: 0;
