@@ -2485,3 +2485,24 @@ TOP RIGHT LB */
 .killStreakItemInner {
     background: 0!important;
 }
+
+
+#matchInfo.topLeftOld {
+    display: none!important;
+}
+#timerIcon.topLeftOld {
+    display: none;
+}
+#timerHolder.topLeftOld {
+    background: 0;
+}
+#timerInner.topLeftOld {
+    background: 0;
+    padding: 0;
+    margin: 0;
+}
+#timerVal.topLeftOld {
+    padding-left: 3px;
+    font-size: 32px!important;
+    text-shadow: -1px -1px 0 #202020, 1px -1px 0 #202020, -1px 1px 0 #202020, 1px 1px 0 #202020!important;
+}
