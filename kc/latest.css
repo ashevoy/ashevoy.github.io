@@ -2506,3 +2506,11 @@ TOP RIGHT LB */
     font-size: 32px!important;
     text-shadow: -1px -1px 0 #202020, 1px -1px 0 #202020, -1px 1px 0 #202020, 1px 1px 0 #202020!important;
 }
+
+.greyInlineInnerMid {
+    background: 0;
+}
+
+.nHealthBarSeg {
+    height: 22px;
+}
