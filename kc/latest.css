@@ -2514,3 +2514,7 @@ TOP RIGHT LB */
 .nHealthBarSeg {
     height: 22px;
 }
+
+#topRightAdHolder {
+    display: none!important;
+}
