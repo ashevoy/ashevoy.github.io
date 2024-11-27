@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&family=Instrument+Sans:ital,wght@0,400..700;1,400..700&display=swap');
+:root {
+    --spectralon: #FFF;
+    --cream: #ffffe7;
+    --vantablack: #000;
+    --scarlet: #ed2c46;
+    --amber: #ffbf00;
+    --cerulean: #20b8ff;
+    --shadow: #0005;
+}
+
+* {
+    font-family: "Instrument Sans", sans-serif;
+    color: var(--vantablack);
+}
+
+nav > a {
+    margin-right: 60px;
+    padding-top:10px;
+    padding-bottom: 10px;
+}
+a {
+    color:#000;
+    font-size: 22px;
+    text-decoration: none;
+}
+
+a:hover {
+    color: var(--scarlet);
+}
+
+.titlevoy  {
+    font-family: "Bricolage Grotesque", sans-serif;
+    font-size: 52px;
+    color: var(--vantablack);
+    text-shadow: 1px 1px 0px var(--scarlet);
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-left: 10px;
+    padding-bottom: 0px;
+    padding-top: 0px;
+    font-weight: 600;
+}
+
+.titlevoy:hover {
+    color: var(--spectralon);
+    text-shadow: 0px 0px 10px var(--shadow), 1px 1px 0px var(--scarlet);
+}
+
+body > nav {
+    display: flex;
+    border-bottom: 1px solid black;
+    box-shadow: 0px 0px 30px var(--shadow);
+    align-items: center;
+}
+
+figure {
+    margin: 0px;
+}
+header>div {
+    display: flex;
+    flex-direction: row;
+    margin-top:20px;
+}
+header > div > figure {
+    margin-left:20px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: left;
+}
+header > div > figure > a> img {
+    border-radius: 50%;
+    border: 3px solid var(--amber);
+}
+header>div>figure>figcaption>a {
+    font-size: 18px;
+    text-align: center;
+    position: relative;
+    top:-10px;
+}
+header>div>aside {
+    margin-left:10px;
+}
+
+h2 {
+    font-family: "Bricolage Grotesque", sans-serif;
+    font-size: 36px;
+    color: var(--vantablack);
+    text-shadow: 1px 1px 0px var(--scarlet);
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-left: 0px;
+    padding-bottom: 0px;
+    padding-top: 0px;
+    font-weight: 600;
+}
+
+
+body {
+    background-color: var(--spectralon);
+    margin: 0px;
+}
