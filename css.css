@@ -80,7 +80,11 @@ header>div>figure>figcaption>a {
     top:-10px;
 }
 header>div>aside {
-    margin-left:10px;
+    margin-left:22px;
+}
+
+div > aside > p {
+    font-size: 20px;
 }
 
 h2 {
@@ -96,6 +100,12 @@ h2 {
     font-weight: 600;
 }
 
+h6 {
+    margin-top:0px;
+    margin-bottom:0px;
+    font-family: "Bricolage Grotesque", sans-serif;
+    font-size:16px;
+}
 
 body {
     background-color: var(--spectralon);
