@@ -263,7 +263,7 @@ main>h2 {
 }
 .projBtnPic {
     filter: saturate(0.9);
-    width:400px;
+    width:380px;
 }
 .projBtnPic:hover {
     filter: saturate(1.2);
