@@ -9,3 +9,14 @@ function choosePic() {
      document.getElementById("ephPic").src = ephBg[randomNum];
      document.getElementById("zomPic").src = zomBg[randomNumt];
 }
+
+function copyPasteDisc() {
+     // Get the text field
+     var copyText = "inezia";
+   
+     // Select the text field
+     copyText.select();
+   
+      // Copy the text inside the text field
+     navigator.clipboard.writeText(copyText.value);
+   } 

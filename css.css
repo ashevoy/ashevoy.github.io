@@ -7,9 +7,11 @@
     --amber: #ffbf00;
     --cerulean: #20b8ff;
     --shadow: #0005;
+    --buttonfontsize: 28px;
+    --buttonfontsizeSmall: 36px;
 }
 
-@media screen and (min-width: 1600px)
+@media screen and (min-width: 1700px)
 {
     .mDi {
         display: none;
@@ -21,8 +23,11 @@
         margin-left: 5%;
         margin-right: 5%;
     }
+    a, .textInButton {
+        font-size: var(--buttonfontsize);
+    }
 }
-@media screen and (max-width: 1600px) and (min-width: 1200px)
+@media screen and (max-width: 1700px) and (min-width: 1300px)
 {
     .hDi {
         display: none;
@@ -34,9 +39,12 @@
         margin-left: 2.5%;
         margin-right: 2.5%;
     }
+    a, .textInButton {
+        font-size: var(--buttonfontsize);
+    }
     
 }
-@media screen and (max-width: 1200px)
+@media screen and (max-width: 1300px)
 {
     .hDi {
         display: none;
@@ -51,11 +59,17 @@
         margin-left: 10%;
         margin-right: 10%;
     }
+    a, .textInButton {
+        font-size: var(--buttonfontsizeSmall);
+    }
 }
 @media screen and (max-width:900px) {
     #socials {
         margin-left: 1%;
         margin-right: 1%;
+    }
+    a, .textInButton {
+        font-size: var(--buttonfontsizeSmall);
     }
 }
 
@@ -71,6 +85,14 @@ body > nav {
     background-color: white;
     z-index: 100;
 }
+.betaTextTitle {
+    position: absolute;
+    font-family: "Bricolage Grotesque", sans-serif;
+    font-size: 15px;
+    font-weight: 600;
+    left: 215px;
+    top: 44px;
+}
 
 nav > a {
     margin-right: 60px;
@@ -79,7 +101,6 @@ nav > a {
 }
 a, .textInButton {
     color:#000;
-    font-size: 22px;
     text-decoration: none;
 }
 
@@ -87,11 +108,14 @@ a:hover {
     color: var(--scarlet);
 }
 
+.drSh {
+    text-shadow: 1px 1px 0px var(--scarlet), 2px 2px 0px var(--amber);;
+}
+
 .titlevoy  {
     font-family: "Bricolage Grotesque", sans-serif;
     font-size: 52px;
     color: var(--vantablack);
-    text-shadow: 1px 1px 0px var(--scarlet);
     margin-top: 5px;
     margin-bottom: 5px;
     margin-left: 10px;
@@ -102,7 +126,7 @@ a:hover {
 
 .titlevoy:hover {
     color: var(--spectralon);
-    text-shadow: 0px 0px 10px var(--shadow), 1px 1px 0px var(--scarlet);
+    text-shadow: 0px 0px 10px var(--shadow), 1px 1px 0px var(--scarlet), 2px 2px 0px var(--amber);;
 }
 
 body > nav {
@@ -143,14 +167,12 @@ header>div>aside {
 }
 
 div > aside > p {
-    font-size: 20px;
+    font-size: 26px;
 }
-
 h2 {
     font-family: "Bricolage Grotesque", sans-serif;
-    font-size: 36px;
+    font-size: 50px;
     color: var(--vantablack);
-    text-shadow: 1px 1px 0px var(--scarlet);
     margin-top: 5px;
     margin-bottom: 5px;
     margin-left: 0px;
@@ -201,6 +223,7 @@ body {
 }
 .logoBtn span {
     color:var(--spectralon);
+    font-size: (--buttonfontsize);
 }
 
 .flexrowMiddle {
@@ -216,9 +239,10 @@ body {
 .textInButton {
     margin-left: 5px;
     margin-right: 5px;
+    font-size: (--buttonfontsize);
 }
 .stib {
-    font-size: 22px;
+    font-size: var(--buttonfontsize);
 }
 .mari {
     margin-right:5px;
@@ -277,5 +301,11 @@ footer {
     background-color: var(--vantablack);
 }
 footer > p, footer>p>a {
-    color:white;
+    color:rgb(190, 190, 190);
+    font-size: 20px;
+    text-align: center;
+    
+}
+footer>p>a {
+    text-decoration: underline;
 }
