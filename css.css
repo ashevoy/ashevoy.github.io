@@ -17,6 +17,10 @@
     .sDi {
         display: none;
     }
+    #socials {
+        margin-left: 5%;
+        margin-right: 5%;
+    }
 }
 @media screen and (max-width: 1600px) and (min-width: 1200px)
 {
@@ -26,7 +30,10 @@
     .sDi {
         display: none;
     }
-    
+    #socials {
+        margin-left: 2.5%;
+        margin-right: 2.5%;
+    }
     
 }
 @media screen and (max-width: 1200px)
@@ -40,6 +47,16 @@
     .hDo {
         display: none;
     }
+    #socials {
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+}
+@media screen and (max-width:900px) {
+    #socials {
+        margin-left: 1%;
+        margin-right: 1%;
+    }
 }
 
 
@@ -48,12 +65,19 @@
     color: var(--vantablack);
 }
 
+body > nav {
+    position: sticky;
+    top: 0;
+    background-color: white;
+    z-index: 100;
+}
+
 nav > a {
     margin-right: 60px;
     padding-top:10px;
     padding-bottom: 10px;
 }
-a {
+a, .textInButton {
     color:#000;
     font-size: 22px;
     text-decoration: none;
@@ -112,6 +136,7 @@ header>div>figure>figcaption>a {
     text-align: center;
     position: relative;
     top:-10px;
+    z-index: 1;
 }
 header>div>aside {
     margin-left:22px;
@@ -192,6 +217,12 @@ body {
     margin-left: 5px;
     margin-right: 5px;
 }
+.stib {
+    font-size: 22px;
+}
+.mari {
+    margin-right:5px;
+}
 .logoBtn:hover {
     border: 3px solid var(--amber);
 }
@@ -201,10 +232,7 @@ body {
 .flwr {
     flex-wrap: wrap;
 }
-#socials {
-    margin-left: 5%;
-    margin-right: 5%;
-}
+
 .normg {
     margin-right: 0px;
 }
@@ -213,7 +241,41 @@ header {
 }
 
 
-
 main>h2 {
     text-align: center;
+    margin-top:20px;
+    margin-bottom: 15px;
+}
+.cursp {
+    cursor: pointer;
+}
+
+.thpxvbn {
+    background-color: #FFF;
+    margin: 0;
+    padding: 0;
+}
+
+#projex {
+    margin-left:5%;
+    margin-right:5%;
+    justify-content: space-evenly;
+}
+.projBtnPic {
+    filter: saturate(0.9);
+    width:400px;
+}
+.projBtnPic:hover {
+    filter: saturate(1.2);
+}
+
+footer {
+    margin-top: 100px;
+    padding-top: 50px;
+    padding-bottom: 20px;
+    margin-bottom: -1px;
+    background-color: var(--vantablack);
+}
+footer > p, footer>p>a {
+    color:white;
 }
