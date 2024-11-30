@@ -9,6 +9,40 @@
     --shadow: #0005;
 }
 
+@media screen and (min-width: 1600px)
+{
+    .mDi {
+        display: none;
+    }
+    .sDi {
+        display: none;
+    }
+}
+@media screen and (max-width: 1600px) and (min-width: 1200px)
+{
+    .hDi {
+        display: none;
+    }
+    .sDi {
+        display: none;
+    }
+    
+    
+}
+@media screen and (max-width: 1200px)
+{
+    .hDi {
+        display: none;
+    }
+    .mDi {
+        display: none;
+    }
+    .hDo {
+        display: none;
+    }
+}
+
+
 * {
     font-family: "Instrument Sans", sans-serif;
     color: var(--vantablack);
@@ -58,8 +92,6 @@ figure {
     margin: 0px;
 }
 header>div {
-    display: flex;
-    flex-direction: row;
     margin-top:20px;
 }
 header > div > figure {
@@ -68,6 +100,8 @@ header > div > figure {
     align-items: center;
     flex-direction: column;
     justify-content: left;
+    float: left;
+    margin-right: 22px;
 }
 header > div > figure > a> img {
     border-radius: 50%;
@@ -110,4 +144,76 @@ h6 {
 body {
     background-color: var(--spectralon);
     margin: 0px;
+}
+
+.youtubeBtn {
+    background-color: red;
+}
+.lastfmBtn {
+    background-color: rgb(175, 41, 0);
+}
+.krBtn {
+    background-color: #fdb839;
+}
+.akashaBtn {
+    background-color: #380081;
+}
+.igBtn {
+    background-color: #bd0094;
+}
+.pmcBtn {
+    background-color: #20b8ff;
+}
+.xBtn {
+    background-color: var(--vantablack);
+}
+.logoBtn{
+    border: 3px solid transparent;
+    border-radius: 6px;
+    margin-left: 5px;
+    margin-right: 10px;
+    flex-grow: 1;
+}
+.logoBtn span {
+    color:var(--spectralon);
+}
+
+.flexrowMiddle {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.logoInButton {
+    height: 40px;
+    width: 40px;
+    margin: 5px;
+}
+.textInButton {
+    margin-left: 5px;
+    margin-right: 5px;
+}
+.logoBtn:hover {
+    border: 3px solid var(--amber);
+}
+.krBtn:hover {
+    border: 3px solid #e6e6e6;
+}
+.flwr {
+    flex-wrap: wrap;
+}
+#socials {
+    margin-left: 5%;
+    margin-right: 5%;
+}
+.normg {
+    margin-right: 0px;
+}
+header {
+    padding-bottom: 10px;
+}
+
+
+
+main>h2 {
+    text-align: center;
 }
