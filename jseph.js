@@ -1,12 +1,14 @@
-window.onload = choosePic;
-var ephMenu = new Array("i/ephwpBureau.webp", "i/ephwpDownpour.webp", "i/ephwpFacility.webp", "i/ephwpHabitat.webp", "i/ephwpKanji.webp", "i/ephwpKanjiOld.webp", "i/ephwpLagoon.webp", "i/ephwpSiteOld.webp");
+const slidesContainer = document.getElementById("slides-container");
+const slide = document.querySelector(".slide");
+const prevButton = document.getElementById("slide-arrow-prev");
+const nextButton = document.getElementById("slide-arrow-next");
 
-function choosePic() {
-    var rndm = Math.floor(Math.random() * ephMenu.length);
-    var selectedImage = ephMenu[rndm];
-    var mainEphBack = document.getElementById("mainEphBack");
-    mainEphBack.style.backgroundImage = "url(" + selectedImage + ")";
-    mainEphBack.style.backgroundSize = "cover";
-    mainEphBack.style.backgroundPosition = "center";
-    titeph.style.zIndex = "1000";
-    }
+nextButton.addEventListener("click", () => {
+    const slideWidth = slide.clientWidth;
+    slidesContainer.scrollLeft += slideWidth;
+});
+
+prevButton.addEventListener("click", () => {
+    const slideWidth = slide.clientWidth;
+    slidesContainer.scrollLeft -= slideWidth;
+});
