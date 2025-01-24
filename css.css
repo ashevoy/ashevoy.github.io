@@ -190,7 +190,7 @@ h6 {
 }
 
 body {
-    background-color: var(--spectralon);
+    background-color: var(--cream);
     margin: 0px;
 }
 
@@ -429,8 +429,6 @@ h1.drSh {
 
 #installInst summary {
     cursor: pointer;
-    
-    margin-bottom: 14px;
 }
 #installInst summary span {
     transition-duration: .1s;
@@ -455,16 +453,20 @@ h1.drSh {
     color: var(--cerulean)!important;
 }
 
-#download button a{
-    font-size: 30px;
-    font-family: 'Bricolage Grotesque';
-    font-weight: 900;
+#download button{
+    margin-top: -25px;
+    margin-bottom: 10px;
+    &>a {
+        font-size: 30px;
+        font-family: 'Bricolage Grotesque';
+        font-weight: 900;
+    }
 }
 
 #mainEphContent > section > article {
     padding: 6px 24px;
     margin-bottom: 40px;
-    background-color: var(--cream);
+    background-color: var(--spectralon);
     box-shadow: 10px 10px 0px var(--primaryc), 0px 0px 20px var(--shadow), 10px 10px 20px var(--shadow);
     &>h2 {
         text-transform: capitalize;

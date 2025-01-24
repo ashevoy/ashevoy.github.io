@@ -1,3 +1,12 @@
+window.onload = choosePic;
+
+var ephBg = new Array("i/b/ephwpBureau.webp","i/b/ephwpDownpour.webp","i/b/ephwpFacility.webp","i/b/ephwpHabitat.webp", "i/b/ephwpKanji.webp", "i/b/ephwpLagoon.webp", "i/b/ephwpSiteOld.webp");
+
+function choosePic() {
+     var randomNum = Math.floor(Math.random() * ephBg.length);
+     document.getElementById("mainEphBack").src = ephBg[randomNum];
+}
+
 const modal = document.getElementById("imageModal");
 const modalImage = document.getElementById("modalImage");
 const closeBtn = document.querySelector(".closebtn");
