@@ -351,16 +351,16 @@ h1.drSh {
     flex-direction: row;
     justify-content: space-around;  
 }
-#bigephtxt div button {
+#bigephtxt div button, .creamBtn {
     background-color: var(--cream);
     border: 3px solid transparent;
     border-radius: 6px;
-    box-shadow: 1px 1px 0px var(--scarlet), 2px 2px 0px var(--amber);
+    box-shadow: 1px 1px 0px var(--scarlet), 2px 2px 0px var(--amber), 0px 0px 10px var(--shadow);
 }
-#bigephtxt div button:hover {
+#bigephtxt div button:hover, .creamBtn:hover {
     background-color: var(--creamier);
 }
-#bigephtxt div a {
+#bigephtxt div a, .creamBtn a {
     height: 100%;
     width: 100%;
     font-size: 18px;
@@ -437,9 +437,28 @@ h1.drSh {
     padding: 10px;
     border-radius: 8px;
 }
-#installInst summary span:hover {
+#installInst summary span:hover{
     text-decoration: underline;
     background-color: var(--creamier);
+}
+#installInst[open]>p{
+    background-color: var(--cream);
+    padding: 10px;
+    box-shadow: 6px 6px 0px var(--scarlet), 0px 0px 10px var(--shadow);
+}
+#installInst[open]>p>a{
+    font-size: 15px;
+    color: var(--scarlet);
+    text-decoration: underline;
+}
+#installInst[open]>p>a:hover {
+    color: var(--cerulean);
+}
+
+#download button a{
+    font-size: 30px;
+    font-family: 'Bricolage Grotesque';
+    font-weight: 900;
 }
 
 #mainEphContent > section > article {   
@@ -475,9 +494,8 @@ h3 {
     justify-content: space-between;
 }
 
-#features>p:nth-child(2)
+.lilP
 {
-    margin-top: -10px;
     font-size: 13px;
 }
 
