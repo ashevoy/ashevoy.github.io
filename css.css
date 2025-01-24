@@ -2,11 +2,10 @@
 :root {
     --spectralon: #FFF;
     --cream: #ffffe7;
-    --creamier: #ffffa9;
     --vantablack: #000;
-    --scarlet: #ed2c46;
-    --amber: #ffbf00;
-    --cerulean: #20b8ff;
+    --primaryc: #00FF8C;
+    --secondaryc: #ff81bc;
+    --cerulean: #42c6e7;
     --shadow: #0005;
     --buttonfontsize: 28px;
     --buttonfontsizeSmall: 36px;
@@ -106,11 +105,12 @@ a, .textInButton {
 }
 
 a:hover {
-    color: var(--scarlet);
+    color: var(--cerulean);
+    filter: brightness(.8);
 }
 
 .drSh {
-    text-shadow: 1px 1px 0px var(--scarlet), 2px 2px 0px var(--amber);
+    text-shadow: 3px 3px 0px var(--secondaryc), 0px 0px 6px var(--shadow);
 }
 
 .titlevoy  {
@@ -126,8 +126,8 @@ a:hover {
 }
 
 .titlevoy:hover {
-    color: var(--spectralon);
-    text-shadow: 0px 0px 10px var(--shadow), 1px 1px 0px var(--scarlet), 2px 2px 0px var(--amber);;
+    color: var(--cerulean);
+    text-shadow: 0px 0px 10px var(--shadow), 3px 3px 0px var(--secondaryc);
 }
 
 body > nav {
@@ -154,7 +154,7 @@ header > div > figure {
 }
 header > div > figure > a> img {
     border-radius: 50%;
-    border: 3px solid var(--amber);
+    border: 3px solid var(--secondaryc);
 }
 header>div>figure>figcaption>a {
     font-size: 18px;
@@ -249,7 +249,7 @@ body {
     margin-right:5px;
 }
 .logoBtn:hover {
-    border: 3px solid var(--amber);
+    border: 3px solid var(--secondaryc);
 }
 .krBtn:hover {
     border: 3px solid #e6e6e6;
@@ -339,7 +339,7 @@ h1.drSh {
 }
 #bigephtxt h1 {
     text-align: center; 
-    text-shadow: 0px 0px 5px white, 1px 1px 0px var(--scarlet), 2px 2px 0px var(--amber);
+    text-shadow: 0px 0px 5px white, 1px 1px 0px var(--primaryc), 2px 2px 0px var(--secondaryc);
 }
 #bigephtxt p {
     text-align: center;
@@ -355,10 +355,10 @@ h1.drSh {
     background-color: var(--cream);
     border: 3px solid transparent;
     border-radius: 6px;
-    box-shadow: 1px 1px 0px var(--scarlet), 2px 2px 0px var(--amber), 0px 0px 10px var(--shadow);
+    box-shadow: 3px 3px 0px var(--secondaryc), 0px 0px 10px var(--shadow);
 }
 #bigephtxt div button:hover, .creamBtn:hover {
-    background-color: var(--creamier);
+    color: var(--cerulean);
 }
 #bigephtxt div a, .creamBtn a {
     height: 100%;
@@ -439,20 +439,20 @@ h1.drSh {
 }
 #installInst summary span:hover{
     text-decoration: underline;
-    background-color: var(--creamier);
+    color: var(--cerulean);
 }
 #installInst[open]>p{
     background-color: var(--cream);
     padding: 10px;
-    box-shadow: 6px 6px 0px var(--scarlet), 0px 0px 10px var(--shadow);
+    box-shadow: 6px 6px 0px var(--primaryc), 0px 0px 10px var(--shadow);
 }
 #installInst[open]>p>a{
     font-size: 15px;
-    color: var(--scarlet);
+    color: var(--primaryc);
     text-decoration: underline;
 }
 #installInst[open]>p>a:hover {
-    color: var(--cerulean);
+    color: var(--cerulean)!important;
 }
 
 #download button a{
@@ -461,13 +461,14 @@ h1.drSh {
     font-weight: 900;
 }
 
-#mainEphContent > section > article {   
-    /*
+#mainEphContent > section > article {
     padding: 6px 24px;
     margin-bottom: 40px;
     background-color: var(--cream);
-    box-shadow: 6px 6px 0px var(--amber), 12px 12px 0px var(--scarlet), 0px 0px 10px var(--shadow);
-    */
+    box-shadow: 10px 10px 0px var(--primaryc), 0px 0px 20px var(--shadow), 10px 10px 20px var(--shadow);
+    &>h2 {
+        text-transform: capitalize;
+    }
 }
 
 h3 {
@@ -498,9 +499,25 @@ h3 {
 {
     font-size: 13px;
 }
+.rmMgnTop {
+    margin-top: -10px;
+}
 
 #features ul {
     margin-left: -12px;
+}
+#subdiscordbtn button {
+    margin-right: 20px;
+    margin-bottom: 10px;
+    transform-origin: left;
+    margin-top: -20px;
+    margin-bottom: 20px;
+    &>a{
+        font-size: 25px;
+    }
+}
+#subdiscordbtn p {
+    font-size: 20px;
 }
 #features>div>section>p {
     text-align: center;
@@ -543,4 +560,47 @@ h3 {
     font-size: 30px;
     cursor: pointer;
     font-weight: bold;
+}
+
+#changelog > table, th, td {
+        border: 1px solid;
+    }
+#changelog table {
+        border-collapse: collapse;
+        margin-bottom: 20px;
+    }
+#changelog table td:nth-child(1) {
+    text-align: center;
+}
+#changelog table td:nth-child(2) {
+    text-align: center;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+#changelog table td:nth-child(3) >ul{
+    margin-left: -18px;
+    margin-right: 15px;
+}
+
+.tooltip {
+    border-bottom: 1px dotted black; /* If you want dots under the hoverable text */
+    cursor:help;
+}
+
+.tooltip .tooltipTxt {
+    visibility: hidden;
+    width: 120px;
+    background-color: rgb(187, 187, 187);
+    color: #ffefef;
+    text-align: center;
+    padding: 5px 0;
+    border-radius: 6px;
+    position: absolute;
+    z-index: 1;
+    transition-delay: .3s;
+}
+
+.tooltip:hover .tooltipTxt {
+    visibility: visible;
+    transition-delay: 0s;
 }
