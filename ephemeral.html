@@ -8,11 +8,11 @@
 			<meta name="keywords" content="" />
 	</head>
     <body>
-		<img id="mainEphBack" alt="ephemeral background">
+		<img id="mainEphBack" alt="ephemeral background" src="/i/b">
 		<nav id="topNavBar" class="ephtopnavbar">
 			<a class="titlevoy drSh" href="index.html">voy.moe</a>
 			<span class="betaTextTitle drSh">BETA</span>
-			<a href="eph.html">Ephemeral</a>
+			<a href="ephemeral.html">Ephemeral</a>
 			<a href="redstone.html">Redstone Stuff</a>
 			<a href="others.html">Others</a>
 		</nav>
@@ -21,10 +21,15 @@
 			<h1 class="drSh">Ephemeral CSS</h1>
 			<p class="shad">Faithful custom Krunker CSS theme designed to make the user experience better while providing a purified user interface</p>
 			<div>
-				<button><a href="#story">Why ephemeral?</a></button>
-				<button><a href="#features">Features & Screenshots</a></button>
-				<button><a href="#download">Download</a></button>
-				<button><a href="#Changelog">Logs</a></button>
+				<div class="flrow">
+					<a href="#story"><button>Why ephemeral?</button></a>
+					<a href="#features"><button>Features & Screenshots</button></a>
+					<a href="#documentation"><button>Documentation</button></a>
+				</div>
+				<div class="flrow">
+					<a href="#Changelog"><button>Changelogs</button></a>
+					<a href="#download"><button>Download</button></a>
+				</div>
 			</div>
 		</div>
 		
@@ -135,7 +140,7 @@
 					<div>
 						<section class="borderRight">
 							<h3 class="drSh">File Download</h3>
-							<button class="creamBtn"><a href="kc/main_custom.css" target="_blank">Download CSS File</a></button>
+							<a href="kc/main_custom.css" target="_blank"><button class="creamBtn">Download CSS File</button></a>
 							<details id="installInst">
 								<summary><span>Installation Instructions</span></summary>
 								<p>
@@ -169,7 +174,7 @@
 						</section>
 						<section>
 							<h3 class="drSh">PC7 Client</h3>
-							<button class="creamBtn" style="margin-top: 10px;"><a href="https://pc7client.com/" target="_blank">Download Client</a></button>
+							<a href="https://pc7client.com/" target="_blank"><button class="creamBtn">Download Client</button></a>
 							<p>PC7 is the most popular client nowadays on Krunker. It isn't the one I personally
 								use but I would still recommend it to people as it has quite a lot of features,
 								including many built-in CSSes. Ephemeral is one of them :3
@@ -179,20 +184,26 @@
 							</p>
 						</section>
 					</div>
-					<article id="subdiscordbtn">
-						<p>sometimes, updates will change the main_custom.css file. you'll need to re-download it sometimes.<br>
-							being in the discord will notify you of such changes.<br>
-							you'll also be able to provide precious feedback, ideas, or ask for help if you need it. 
-							i'm active and will respond to whatever you need help with, feel free to @ me in the 
-							"feedback-ideas-help" channel
-						</p>
-						<button class="creamBtn"><a href="https://discord.com/invite/MUJbP3fXrS" target="_blank">Join the discord!!!!!1!1!1</a></button>
+					<hr>
+					<article class="flct">
+							<p class="tac">sometimes, updates will change the main_custom.css file. you'll need to re-download it sometimes.
+								being in the discord will notify you of such changes.<br>
+								you'll also be able to provide precious feedback, ideas, or ask for help if you need it. 
+								i'm active and will respond to whatever you need help with, feel free to @ me in the 
+								"feedback-ideas-help" channel
+							</p>
+							<a href="https://discord.com/invite/MUJbP3fXrS" target="_blank"><button class="creamBtn">Join the discord!!!!!1!1!1</button></a>
 					</article>
+					
 				</article>
 
+				<article id="documentation">
+					<h2 class="drSh">Documentation</h2>
+				</article>
 
 				<article id="changelog" style="margin-top: 20px;">
 					<h2 class="drSh">Changelogs</h2>
+					<p>this is mainly to help if you're gonna be looking in the repo archives for a specific old version</p>
 					<table>
 						<tr>
 							<th>Version</th>
@@ -200,6 +211,19 @@
 								<span class="tooltipTxt">YYYY.MM.DD format</span>
 							</th>
 							<th style="text-align: left; padding-left: 40px;">Logs</th>
+						</tr>
+						<tr>
+							<td>6.9.3
+							</td>
+							<td>2025.01.25
+							</td>
+							<td>
+							<ul><li>Fixed main_custom
+							</li><li>Readded maxAmmo opacity
+							</li><li>Added new variable for custom loading banner
+							</li>
+							</td>
+							</ul>
 						</tr>
 						<tr>
 							<td>6.9.2

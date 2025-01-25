@@ -6,6 +6,7 @@
     --primaryc: #00FF8C;
     --secondaryc: #ff81bc;
     --cerulean: #42c6e7;
+    --sapphire: #7a86f3;
     --shadow: #0005;
     --buttonfontsize: 28px;
     --buttonfontsizeSmall: 36px;
@@ -106,7 +107,6 @@ a, .textInButton {
 
 a:hover {
     color: var(--cerulean);
-    filter: brightness(.8);
 }
 
 .drSh {
@@ -280,6 +280,23 @@ main>h2 {
     margin: 0;
     padding: 0;
 }
+.flrow {
+    display: flex;
+    flex-direction: row;
+    flex-grow: 1;
+}
+.flrow a {
+    flex-grow: 1;
+    flex-basis: 20%;
+}
+.flrow a:nth-child(2) {
+    flex-grow: 1;
+    flex-basis: 30%;
+}
+.flrow a button {
+    width: 100%;
+    font-size: 20px;
+}
 
 #projex {
     margin-left:5%;
@@ -339,43 +356,53 @@ h1.drSh {
 }
 #bigephtxt h1 {
     text-align: center; 
-    text-shadow: 0px 0px 5px white, 1px 1px 0px var(--primaryc), 2px 2px 0px var(--secondaryc);
+    text-shadow: 0px 0px 5px white, 2px 2px 0px var(--secondaryc);
 }
 #bigephtxt p {
     text-align: center;
     font-size: 19px;
     color:var(--spectralon);
 }
-#bigephtxt div {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;  
+
+a>button {
+    transform: translateZ(-10px);
+    pointer-events: none;
 }
-#bigephtxt div button, .creamBtn {
+
+#bigephtxt button, .creamBtn {
     background-color: var(--cream);
     border: 3px solid transparent;
     border-radius: 6px;
     box-shadow: 3px 3px 0px var(--secondaryc), 0px 0px 10px var(--shadow);
 }
-#bigephtxt div button:hover, .creamBtn:hover {
+#bigephtxt button:hover, .creamBtn:hover {
     color: var(--cerulean);
 }
-#bigephtxt div a, .creamBtn a {
-    height: 100%;
-    width: 100%;
+#bigephtxt a, .creamBtn a {
     font-size: 18px;
     padding: 5px;
+    text-align: center;
 }
 
+#dlbtn {
+    margin-top: 15px;
+    width: 100%;
+    &>a {
+        font-size: 22px!important;
+    }
+}
 #mainEphContent {
     position: absolute;
     top: 100%;
-    width: 100vw;
+    width: 100%;
 }
 
 #story h2 {
     margin-top: 15px;
-    margin-bottom: -10px;
+}
+
+#story p:nth-child(1) {
+    margin-top: 0;
 }
 
 #story >div {
@@ -403,11 +430,39 @@ h1.drSh {
     transform: translate(30deg);
 }
 
+#mainEphContent h2 {
+    text-align: center;
+}
+.flct {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.tac {
+    text-align: center;
+}
+#subdcbt {
+    display: relative;
+    left: 50%;
+    transform: translateX(-50%);
+}
+#mainEphContent section {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    margin-bottom: 10px;
+}
+#mainEphContent section button {
+    font-size: 20px;
+    padding: 5px 10px;
+    font-family: "Bricolage Grotesque", sans-serif;
+    font-weight: 800;
+}
 #mainEphContent > section {
-    width: 96vw;
+    width: 94vw;
     padding-top: 1px;
-    margin-top: 8px;    
-    position: relative;
+    margin-top: 8px;
+    position: relative;    
     left: 50%;
     transform: translateX(-50%);
 }
@@ -508,19 +563,7 @@ h3 {
 #features ul {
     margin-left: -12px;
 }
-#subdiscordbtn button {
-    margin-right: 20px;
-    margin-bottom: 10px;
-    transform-origin: left;
-    margin-top: -20px;
-    margin-bottom: 20px;
-    &>a{
-        font-size: 25px;
-    }
-}
-#subdiscordbtn p {
-    font-size: 20px;
-}
+
 #features>div>section>p {
     text-align: center;
     margin-bottom: -10px;
@@ -528,7 +571,7 @@ h3 {
 }
 .smallThumb {
     cursor: pointer;
-    max-width: 23vw;
+    max-width: 24.5%;
     transition: transform 0.2s ease;
 }
 
@@ -605,4 +648,8 @@ h3 {
 .tooltip:hover .tooltipTxt {
     visibility: visible;
     transition-delay: 0s;
+}
+
+a:hover button {
+    color: var(--sapphire);
 }
