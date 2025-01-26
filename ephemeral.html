@@ -7,7 +7,7 @@
 			<meta name="description" content="" />
 			<meta name="keywords" content="" />
 	</head>
-    <body>
+    <body id="ephpg">
 		<img id="mainEphBack" alt="ephemeral background" src="/i/b">
 		<nav id="topNavBar" class="ephtopnavbar">
 			<a class="titlevoy drSh" href="index.html">voy.moe</a>
@@ -87,10 +87,11 @@
 					<h2 class="drSh">Screenshots and features</h2>
 					<p class="lilP rmMgnTop">(click images to make them bigger)</p>
 					<aside>
-						<img src="i/ephSch_menu.webp" class="smallThumb">
-						<img src="i/ephSch_ingame.webp" class="smallThumb">
-						<img src="i/ephSch_classPickLong.webp" class="smallThumb">
-						<img src="i/ephSch_killcard.webp" class="smallThumb">
+						<img src="i/ephSch_menu.webp" class="smallThumb stoic">
+						<img src="i/ephSch_ingame.webp" class="smallThumb stoic">
+						<img src="i/ephSch_classPickLong.webp" class="smallThumb stoic">
+						<img src="i/ephSch_killcard.webp" class="smallThumb stoic">
+						<img src="i/ephScs_dailies.webp" class="smallThumb stoic">
 					</aside>
 
 					<div>
@@ -132,6 +133,14 @@
 								<li>very cool yes yes</li>
 							</ul>
 						</section>
+						<section>
+							<p>challenge menu</p>
+							<ul>
+								<li>everything is shown in a more compact manner:</li>
+								<li>2 per row</li>
+								<li>items are still displayed on the side</li>
+							</ul>
+						</section>
 					</div>
 				</article>
 
@@ -158,7 +167,7 @@
 								<strong>If you're on mac</strong>, the process should be similar in the finder.
 								<br><br>
 								If you want to <strong>install the CSS on your browser</strong>, try installing 
-								<a href=https://chromewebstore.google.com/detail/stylus/clngdbkpkpeebahjckkjfobafhncgmne>Stylus</a>, a free 
+								<a class="intextLnk" target="_blank" href=https://chromewebstore.google.com/detail/stylus/clngdbkpkpeebahjckkjfobafhncgmne>Stylus</a>, a free 
 								extension that lets you add your own custom css rules to a page. Just click the extension, then tick 
 								"write style for krunker..", copy the entire CSS and paste it into the extension window, then click save
 								at the left of the screen. You should normally have a functional CSS.
@@ -198,7 +207,236 @@
 				</article>
 
 				<article id="documentation">
-					<h2 class="drSh">Documentation</h2>
+					<details>
+						<summary>
+							<h2 class="drSh">Variable Documentation</h2>
+						</summary>
+						<article id="docuWrap">
+							<section>
+								<h4>--backgroundColour
+								</h4><img class="smallThumb" src="i/docbackgroundcolour.webp
+								">
+								<p class="h302c29">default: #302c29
+								<br>changes the colour of buttons, background of menus, and some other elements. replace
+									it with a <a href="https://www.fffuel.co/cccolor/" class="intextLnk" target="_blank">hex value</a> of
+									your choice.
+								<br>credit to ariimaw on ig for the art - it was my pfp at the time
+								</p>
+							</section>
+							<section>
+								<h4>--textColour
+								</h4><img class="smallThumb" src="i/docbackgroundcolour.webp
+								">
+								<p class="fff">default: #fff
+								<br>changes the colour of the majority of the text. pretty self explanatory, example: any text that isn't 
+									sky blue on the screenshot above will be changed. replace it with a 
+									<a href="https://www.fffuel.co/cccolor/" class="intextLnk" target="_blank">hex value</a> of
+									your choice.
+								<br>credit to ariimaw on ig for the art - it was my pfp at the time
+								</p>
+							</section>
+							<section>
+								<h4>--specialTextColour
+								</h4><img class="smallThumb" src="i/docspecialtextcolour.webp
+								">
+								<p class="ff4fb9">default: #ff4fb9
+								<br>changes the colour of XP bars, leaderboard people of your own team, fps number, etc. replace it with a 
+									<a href="https://www.fffuel.co/cccolor/" class="intextLnk" target="_blank">hex value</a> of
+									your choice.
+								
+								</p>
+							</section>
+							<section>
+								<h4>--linkColour
+								</h4><img class="smallThumb" src="i/docbackgroundcolour.webp
+								">
+								<p class="ff4fb9">default: #ff4fb9
+								<br>changes the colour of clickable links (cyan text on image above). replace it with 
+									<a href="https://www.fffuel.co/cccolor/" class="intextLnk" target="_blank">hex value</a> of
+									your choice.
+								
+									<br>credit to ariimaw on ig for the art - it was my pfp at the time
+								</p>
+							</section>
+							<section>
+								<h4>--fontThickness
+								</h4><img class="smallThumb" src="i/docfontwidth.webp
+								">
+								<p>default: 500
+								<br>changes the width of the text. 
+								</p>
+							</section>
+							<section>
+								<h4>--showMaxAmmo
+								</h4><img class="smallThumb" src="i/docmaxammo.webp
+								">
+								<p>default: 0
+								<br>Set to 1 to show the Max Ammo of your guns. Recommended in Zombies mode. 
+								</p>
+							</section>
+							<section>
+								<h4>--hpValueColour
+								</h4><img class="smallThumb" src="i/docammohpthing.webp
+								">
+								<p class="fff">default: #FFF
+								<br>Colour of your HP number. 
+								</p>
+							</section>
+							<section>
+								<h4>--ammoValueNumber
+								</h4><img class="smallThumb" src="i/docammohpthing.webp
+								">
+								<p class="fff">default: #FFF
+								<br>Colour of your Ammo value. 
+								</p>
+							</section>
+							<section>
+								<h4>--hpNumberHeight
+								</h4>
+								<p>default: 0
+								<br>bring up the height of the hp value. if you input 20px, it'll go up by 20px. 
+								if you want to make them go down, enter (-1px * [number of px u want to go down]px)
+								</p>
+							</section>
+							<section>
+								<h4>--ammoNumberHeight
+								</h4>
+								<p>default: 0
+								<br>bring up the height of the ammo value. if you input 20px, it'll go up by 20px. 
+								if you want to make them go down, enter (-1px * [number of px u want to go down]px)
+								</p>
+							</section>
+							<section>
+								<h4>--hpBarHeight
+								</h4>
+								<p>default: 16px
+								<br>height of the hp bar
+								</p>
+							</section>
+							<section>
+								<h4>--hpBarWidth
+								</h4>
+								<p>default: 240px
+								<br>width of the hp bar
+								</p>
+							</section>
+							<section>
+								<h4>--hpBarPositionX
+								</h4>
+								<p>default: 50%
+								<br>hp bar's horizontal position on the screen
+								</p>
+							</section>
+							<section>
+								<h4>--hpBarPositionY
+								</h4>
+								<p>default: 7%
+								<br>hp bar's vertical position on the screen
+								</p>
+							</section>
+							<section>
+								<h4>--hpBarOutlineWidth
+								</h4>
+								<p>default: 2px
+								<br>width of the stroke around the HP bar
+								</p>
+							</section>
+							<section>
+								<h4>--hpBarOpacity
+								</h4>
+								<p>default: 1
+								<br>0 to hide the hp bar. (crazy to think that used to be the default value lol.)
+								</p>
+							</section>
+							<section>
+								<h4>--classPickerOpacity
+								</h4><img class="smallThumb" src="i/docclasshover.webp
+								">
+								<p>default: 1
+								<br>Opacity of the class picker on the side when not hovered on. 
+								</p>
+							</section>
+							<section>
+								<h4>--hoverClassPickerOpacity
+								</h4><img class="smallThumb" src="i/docclasshover.webp
+								">
+								<p>default: 0.5
+								<br>Opacity of the class picker on the side when hovered on. 
+								</p>
+							</section>
+							<section>
+								<h4>--customReloadMessage
+								</h4><img class="smallThumb" src="i/doccustomreload.webp
+								">
+								<p>default: ' '
+								<br>custom reload message that shows under your crosshair when you have 0 ammo left in the current selected weapon 
+								</p>
+							</section>
+							<section>
+								<h4>--customTopLeftMessage
+								</h4><img class="smallThumb" src="i/doccustomtopleft.webp
+								">
+								<p>default: 'Ephemeral'
+								<br>custom message that shows at the top left under your FPS / Ping and above found items. it takes the colour of special text
+								</p>
+							</section>
+							<section>
+								<h4>--customChatHolder
+								</h4><img class="smallThumb" src="i/doccustomchat.webp
+								">
+								<p>default: 'annoy people'
+								<br>custom message that shows instead of the boring old "enter message"
+								</p>
+							</section>
+							<section>
+								<h4 style="font-size: 16px; margin-bottom: 30px;">--customTopOfServerBrowserMsg
+								</h4><img class="smallThumb" src="i/doccustomTopOfServerBrowserMsg.webp
+								">
+								<p>default: ' '
+								<br>custom message that shows at the top of the server browser (works both on legacy and new server browser)
+								</p>
+							</section>
+							<section>
+								<h4>--showChangelog
+								</h4>
+								<p>default: 1
+								<br>useless since s7. will be fixed when i stop being lazy i suppose, it's not important
+								</p>
+							</section>
+							<section>
+								<h4 style="font-size: 16px; margin-bottom: 30px;">--btmLeftIconBorderRadius
+								</h4><img class="smallThumb" src="i/doccustomradius.webp
+								">
+								<p>default: 5px
+								<br>the higher this value is set, the more rounded the picture at the bottom left will be
+								<br>credit to ariimaw on ig for the art - it was my pfp at the time
+								</p>
+							</section>
+							<section>
+								<h4 style="font-size: 16px; margin-bottom: 30px;">--btmLeftIconRendering
+								</h4><img class="smallThumb" src="i/docRendering.webp
+								">
+								<p>default: pixelated
+								<br>this changes how your bottom left picture is shown. `pixelated` is better for default pfps (class images) and very low res images, while you'd set it to `-webkit-optimize-contrast` if it is higher res (basically only set it to that if you have premium and a profile picture)
+								<br>credit to ariimaw on ig for the art - it was my pfp at the time
+								</p>
+							</section>
+							<section>
+								<h4>--ammoReloadBgHeight
+								</h4>
+								<p>default: 0px
+								<br>height of reload bar
+								</p>
+							</section>
+							<section>
+								<h4>--loadingImageBack
+								</h4>
+								<p>default: url()
+								<br>put between the brackets a url containing your image. i recommend not using discord as the links need to be renewed.
+								</p>
+							</section>
+						</article>
+					</details>
 				</article>
 
 				<article id="changelog" style="margin-top: 20px;">

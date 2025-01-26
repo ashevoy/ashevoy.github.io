@@ -12,6 +12,10 @@
     --buttonfontsizeSmall: 36px;
 }
 
+::selection {
+    background-color: var(--secondaryc);
+}
+
 @media screen and (min-width: 1700px)
 {
     .mDi {
@@ -190,7 +194,8 @@ h6 {
 }
 
 body {
-    background-color: var(--cream);
+    background-image: url(i/hhholographic-2.webp);
+    background-size: cover;
     margin: 0px;
 }
 
@@ -364,7 +369,7 @@ h1.drSh {
     color:var(--spectralon);
 }
 
-a>button {
+#ephpg a>button {
     transform: translateZ(-10px);
     pointer-events: none;
 }
@@ -499,12 +504,12 @@ a>button {
     padding: 10px;
     box-shadow: 6px 6px 0px var(--primaryc), 0px 0px 10px var(--shadow);
 }
-#installInst[open]>p>a{
+.intextLnk{
     font-size: 15px;
     color: var(--primaryc);
     text-decoration: underline;
 }
-#installInst[open]>p>a:hover {
+.intextLnk:hover {
     color: var(--cerulean)!important;
 }
 
@@ -521,7 +526,7 @@ a>button {
 #mainEphContent > section > article {
     padding: 6px 24px;
     margin-bottom: 40px;
-    background-color: var(--spectralon);
+    background-color: #FFF2;
     box-shadow: 10px 10px 0px var(--primaryc), 0px 0px 20px var(--shadow), 10px 10px 20px var(--shadow);
     &>h2 {
         text-transform: capitalize;
@@ -537,13 +542,10 @@ h3 {
     flex-direction: column;
     align-items: center;
 }
-#features section img {
-    width: 29vw;
-}
 
 #features>div {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
 }
 
 #features aside {
@@ -571,8 +573,11 @@ h3 {
 }
 .smallThumb {
     cursor: pointer;
-    max-width: 24.5%;
     transition: transform 0.2s ease;
+}
+
+.stoic {
+    max-width: 19.7%;
 }
 
 .smallThumb:hover {
@@ -652,4 +657,82 @@ h3 {
 
 a:hover button {
     color: var(--sapphire);
+}
+
+#documentation summary {
+    display: block;
+    cursor:pointer;
+}
+#documentation summary:hover {
+    color: var(--secondaryc);
+}
+
+#documentation summary::after {
+    margin-left: 1ch;
+    display:inline-block;
+    position: relative;
+    bottom: 60px;
+    right: 2%;
+    font-size: 40px;
+    content: '>';
+    transition: 0.2s;
+}
+
+#documentation details[open] > summary::after {
+    transform: rotate(90deg);
+}   
+
+h4 {
+    font-size: 22px;
+}
+
+#documentation article {
+    position: relative;
+    bottom: 40px;
+}
+
+#docuWrap {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 23px;
+}
+#docuWrap section {
+    box-shadow: 3px 3px var(--secondaryc), 0px 0px 7px var(--shadow), 3px 3px 7px var(--shadow);
+    &>h4 {
+        margin-top: 14px;
+    }
+}
+
+#docuWrap section img {
+    width: 90%;
+    margin-top: -20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px var(--shadow);
+}
+
+#docuWrap section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+#docuWrap section p {
+    margin-top: 7px;
+    font-size: 14px;
+    padding: 0px 5px 5px 5px;
+}
+
+.h302c29::first-line {
+    background-color: #302c29;
+    color: #FFF;
+}
+.ff4fb9::first-line {
+    background-color: #ff4fb9;
+}
+.fff::first-line {
+    background-color: #FFF;
+}
+
+#documentation summary:hover {
+    background-color: #FFFA;
 }
