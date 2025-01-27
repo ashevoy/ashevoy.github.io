@@ -6,15 +6,17 @@
 			<title>ashevoy <3</title>
 			<meta name="description" content="" />
 			<meta name="keywords" content="" />
+			<link rel="icon" href="./i/fav.webp" type="image/x-icon">
 	</head>
     <body id="ephpg">
 		<img id="mainEphBack" alt="ephemeral background" src="/i/b">
 		<nav id="topNavBar" class="ephtopnavbar">
-			<a class="titlevoy drSh" href="index.html">voy.moe</a>
+			<a class="titlevoy drSh" href="./index">voy.moe</a>
 			<span class="betaTextTitle drSh">BETA</span>
-			<a href="ephemeral.html">Ephemeral</a>
-			<a href="redstone.html">Redstone Stuff</a>
-			<a href="others.html">Others</a>
+			<a href="./ephemeral">Ephemeral</a>
+			<a href="./redstone">Redstone Stuff</a>
+			<a href="./others">Others</a>
+			
 		</nav>
         
 		<div id="bigephtxt">
@@ -39,6 +41,12 @@
 					<h2 class="drSh">Ephemeral</h2>
 					<div>
 						<div>
+							<aside class="floatri">
+								<figure>
+									<img src="i/oldEphScreen.jpg" alt="eph back in the day baby">
+									<figcaption>A screenshot from a very early version.</figcaption>
+								</figure>
+							</aside>
 							<p>
 								Well well well this project started forever ago now damn.
 							</p>
@@ -73,12 +81,6 @@
 								terms of sonority.
 							</p>
 						</div>
-						<aside>
-							<figure>
-								<img src="i/oldEphScreen.jpg" alt="eph back in the day baby">
-								<figcaption>A screenshot from a very early version.</figcaption>
-							</figure>
-						</aside>
 					</div>
 				</article>
 				
@@ -90,7 +92,7 @@
 						<img src="i/ephSch_menu.webp" class="smallThumb stoic">
 						<img src="i/ephSch_ingame.webp" class="smallThumb stoic">
 						<img src="i/ephSch_classPickLong.webp" class="smallThumb stoic">
-						<img src="i/ephSch_killcard.webp" class="smallThumb stoic">
+						<img src="i/ephSch_killcard.webp" class="smallThumb stoic hidemobile">
 						<img src="i/ephScs_dailies.webp" class="smallThumb stoic">
 					</aside>
 
@@ -125,9 +127,9 @@
 								</li>
 							</ul>
 						</section>
-						<section>
-							<p>killcard</p>
-							<ul>
+						<section class="hidemobile">
+							<p class="hidemobile">killcard</p>
+							<ul class="hidemobile">
 								<li>bigger level</li>
 								<li>less obtrusive</li>
 								<li>very cool yes yes</li>
@@ -149,7 +151,7 @@
 					<div>
 						<section class="borderRight">
 							<h3 class="drSh">File Download</h3>
-							<a href="kc/main_custom.css" target="_blank"><button class="creamBtn">Download CSS File</button></a>
+							<a class="mdlbtns" href="kc/main_custom.css" target="_blank"><button class="creamBtn"><span class="dlbtn"><span>Download CSS </span><img class="dllogo" src="i/logocss.webp"></span></button></a>
 							<details id="installInst">
 								<summary><span>Installation Instructions</span></summary>
 								<p>
@@ -183,7 +185,7 @@
 						</section>
 						<section>
 							<h3 class="drSh">PC7 Client</h3>
-							<a href="https://pc7client.com/" target="_blank"><button class="creamBtn">Download Client</button></a>
+							<a class="mdlbtns" href="https://pc7client.com/" target="_blank"><button class="creamBtn"><span class="dlbtn"><span>Download Client </span><img class="dllogo" src="i/pc7logo-1.webp"></span></button></a>
 							<p>PC7 is the most popular client nowadays on Krunker. It isn't the one I personally
 								use but I would still recommend it to people as it has quite a lot of features,
 								including many built-in CSSes. Ephemeral is one of them :3
@@ -201,8 +203,8 @@
 								i'm active and will respond to whatever you need help with, feel free to @ me in the 
 								"feedback-ideas-help" channel
 							</p>
-							<a href="https://discord.com/invite/MUJbP3fXrS" target="_blank"><button class="creamBtn">Join the discord!!!!!1!1!1</button></a>
-					</article>
+							<a class="mdlbtns marbot" href="https://discord.com/invite/MUJbP3fXrS" target="_blank"><button class="creamBtn">Join the discord!!!!!1!1!1</button></a>
+						</article>
 					
 				</article>
 
@@ -439,7 +441,19 @@
 					</details>
 				</article>
 
-				<article id="changelog" style="margin-top: 20px;">
+				<article id="knownIssues" class="flct">
+					<h2 class="drSh">Known Issues</h2>
+					<p class="lilP margin0">report them anytime on <a class="intextLnk" href="https://discord.com/invite/MUJbP3fXrS">my discord</a></p>
+					<ul>
+						<li>When at certain UI scales, some elements don't display properly
+						</li><li>Some variables don't fully work as expected since S7
+						</li><li>Ammo positionings are still fucked
+						</li><li>billboard / in-game render font gets changed too
+						</li>
+					</ul>
+				</article>
+
+				<article id="changelog" class="flct">
 					<h2 class="drSh">Changelogs</h2>
 					<p>this is mainly to help if you're gonna be looking in the repo archives for a specific old version</p>
 					<table>

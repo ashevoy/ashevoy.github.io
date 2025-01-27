@@ -16,68 +16,6 @@
     background-color: var(--secondaryc);
 }
 
-@media screen and (min-width: 1700px)
-{
-    .mDi {
-        display: none;
-    }
-    .sDi {
-        display: none;
-    }
-    #socials {
-        margin-left: 5%;
-        margin-right: 5%;
-    }
-    a, .textInButton {
-        font-size: var(--buttonfontsize);
-    }
-}
-@media screen and (max-width: 1700px) and (min-width: 1300px)
-{
-    .hDi {
-        display: none;
-    }
-    .sDi {
-        display: none;
-    }
-    #socials {
-        margin-left: 2.5%;
-        margin-right: 2.5%;
-    }
-    a, .textInButton {
-        font-size: var(--buttonfontsize);
-    }
-    
-}
-@media screen and (max-width: 1300px)
-{
-    .hDi {
-        display: none;
-    }
-    .mDi {
-        display: none;
-    }
-    .hDo {
-        display: none;
-    }
-    #socials {
-        margin-left: 10%;
-        margin-right: 10%;
-    }
-    a, .textInButton {
-        font-size: var(--buttonfontsizeSmall);
-    }
-}
-@media screen and (max-width:900px) {
-    #socials {
-        margin-left: 1%;
-        margin-right: 1%;
-    }
-    a, .textInButton {
-        font-size: var(--buttonfontsizeSmall);
-    }
-}
-
 
 * {
     font-family: "Instrument Sans", sans-serif;
@@ -292,11 +230,7 @@ main>h2 {
 }
 .flrow a {
     flex-grow: 1;
-    flex-basis: 20%;
-}
-.flrow a:nth-child(2) {
-    flex-grow: 1;
-    flex-basis: 30%;
+    flex-basis: 25%;
 }
 .flrow a button {
     width: 100%;
@@ -327,7 +261,8 @@ footer > p, footer>p>a {
     color:rgb(190, 190, 190);
     font-size: 20px;
     text-align: center;
-    
+    margin-top: 3px;
+    margin-bottom: 3px;
 }
 footer>p>a {
     text-decoration: underline;
@@ -379,12 +314,13 @@ h1.drSh {
     border: 3px solid transparent;
     border-radius: 6px;
     box-shadow: 3px 3px 0px var(--secondaryc), 0px 0px 10px var(--shadow);
+    height: 100%;
 }
 #bigephtxt button:hover, .creamBtn:hover {
     color: var(--cerulean);
 }
 #bigephtxt a, .creamBtn a {
-    font-size: 18px;
+    font-size: 16px;
     padding: 5px;
     text-align: center;
 }
@@ -410,11 +346,6 @@ h1.drSh {
     margin-top: 0;
 }
 
-#story >div {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-}
-
 #story figure {
     display: flex;
     flex-direction: column;
@@ -422,7 +353,9 @@ h1.drSh {
 }
 
 #story figure img {
-    width: 45vw;
+    width: 40vw;
+    margin-left: 6px;
+    margin-bottom: 6px;
 }
 
 #story p {
@@ -470,6 +403,10 @@ h1.drSh {
     position: relative;    
     left: 50%;
     transform: translateX(-50%);
+}
+
+.floatri {
+    float: right;
 }
 
 #download > div {
@@ -523,7 +460,11 @@ h1.drSh {
     }
 }
 
-#mainEphContent > section > article {
+#mainBlockIndex p {
+    padding-right: 10px;
+}
+
+#mainEphContent > section > article, .trollme {
     padding: 6px 24px;
     margin-bottom: 40px;
     background-color: #FFF2;
@@ -612,13 +553,19 @@ h3 {
     font-weight: bold;
 }
 
+
 #changelog > table, th, td {
-        border: 1px solid;
-    }
+    border: 1px solid;
+}
+
 #changelog table {
-        border-collapse: collapse;
-        margin-bottom: 20px;
-    }
+    border-collapse: collapse;
+    margin-bottom: 20px;
+    width: 100%;
+}
+.margin0 {
+    margin: 0;
+}
 #changelog table td:nth-child(1) {
     text-align: center;
 }
@@ -682,6 +629,25 @@ a:hover button {
     transform: rotate(90deg);
 }   
 
+.mdlbtns:hover>button>span>span {
+    color: var(--sapphire);
+}
+.mdlbtns{
+    transition-duration: .1s;
+}
+.mdlbtns:hover {
+    transform: scale(1.03);
+    transition-duration: .1s;
+}
+.mdlbtns {
+    padding: 10px;
+    margin: -10px;
+}
+
+.marbot {
+    margin-bottom: 0px;
+}
+
 h4 {
     font-size: 22px;
 }
@@ -735,4 +701,112 @@ h4 {
 
 #documentation summary:hover {
     background-color: #FFFA;
+}
+
+.dlbtn {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.dllogo {
+    width:35px;
+    display: inline;
+    margin-left: 10px;
+    margin-right: 4px;
+}
+
+@media screen and (max-aspect-ratio: 16/9) {
+    #mainEphBack {
+        height: 100%;
+        position: absolute;
+        bottom: 0px;
+    }
+}
+
+
+@media screen and (min-width: 1700px)
+{
+    .mDi {
+        display: none;
+    }
+    .sDi {
+        display: none;
+    }
+    #socials {
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+    a, .textInButton {
+        font-size: var(--buttonfontsize);
+    }
+}
+@media screen and (max-width: 1700px) and (min-width: 1300px)
+{
+    .hDi {
+        display: none;
+    }
+    .sDi {
+        display: none;
+    }
+    #socials {
+        margin-left: 2.5%;
+        margin-right: 2.5%;
+    }
+    a, .textInButton {
+        font-size: var(--buttonfontsize);
+    }
+}
+@media screen and (min-width: 1100px)
+{
+    #bigephtxt button {
+        font-size: 20px;
+    }
+}
+@media screen and (max-width: 1300px)
+{
+    .hDi {
+        display: none;
+    }
+    .mDi {
+        display: none;
+    }
+    .hDo {
+        display: none;
+    }
+    #socials {
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+    a, .textInButton {
+        font-size: var(--buttonfontsizeSmall);
+    }
+    #docuWrap {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 20px;
+    }
+}
+@media screen and (max-width:900px) {
+    #socials {
+        margin-left: 1%;
+        margin-right: 1%;
+    }
+    a, .textInButton {
+        font-size: var(--buttonfontsizeSmall);
+    }
+    .hidemobile {
+        display: none;
+    }
+    
+    #features div{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 0px 1fr;
+    }
+
+    #docuWrap {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
+    }
 }
