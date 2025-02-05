@@ -1,4 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&family=Instrument+Sans:ital,wght@0,400..700;1,400..700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Mono:wght@100..900&display=swap');
 :root {
     --spectralon: #FFF;
     --cream: #ffffe7;
@@ -65,6 +67,65 @@ a:hover {
     padding-bottom: 0px;
     padding-top: 0px;
     font-weight: 600;
+}
+
+.noto-sans-mono, code {
+    font-family: "Noto Sans Mono", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.noSnd
+{
+    background-color: #0004;
+}
+
+#tablesWrapper {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin-left: 5%;
+    margin-right: 5%;
+    justify-content: space-evenly;
+}
+
+.soundsTable {
+    border-collapse: collapse;
+    width: 90%;
+    margin-bottom: 15px;
+    height:min-content;
+}
+.soundsTable thead {
+    font-size: 24px;
+}
+.soundsTable a {
+    color: #380081
+}
+.relicIn {
+    color: #ed4242;
+    border: 1px solid #000;
+}
+.defIn {
+    color: #74f81c;
+    border: 1px solid #000!important;
+}
+.unobIn {
+    -webkit-animation: rainbow 0.5s linear infinite;
+    animation: rainbow 0.5s linear infinite;
+    border: 1px solid #000;
+}
+.mastLunIn {
+    -webkit-animation: rainbow 2s cubic-bezier(0.215, 0.610, 0.355, 1) infinite;
+    animation: rainbow 2s cubic-bezier(0.215, 0.610, 0.355, 1) infinite;
+    border: 1px solid #000;
+    filter: grayscale(1) brightness(0.6);
+}
+@keyframes rainbow{
+    0%, 100%{color: Crimson;}
+	20%{color: orange;}
+	40%{color: yellow;}
+	60%{color: lime;}
+	80%{color: MediumBlue;}
 }
 
 .titlevoy:hover {
@@ -242,6 +303,7 @@ main>h2 {
     margin-right:5%;
     justify-content: space-evenly;
 }
+
 .projBtnPic {
     filter: saturate(0.9);
     width:380px;
@@ -254,8 +316,8 @@ footer {
     margin-top: 100px;
     padding-top: 50px;
     padding-bottom: 20px;
-    margin-bottom: -1px;
     background-color: var(--vantablack);
+    width: 100%;
 }
 footer > p, footer>p>a {
     color:rgb(190, 190, 190);
@@ -268,6 +330,16 @@ footer>p>a {
     text-decoration: underline;
 }
 
+#holder8831 {
+    margin-top: 20px;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+}
+#holder8831 *+* {
+    margin-left: 5px;
+}
 #mainEphBack {
     position: absolute;
     bottom: 0;
@@ -378,6 +450,10 @@ h1.drSh {
 }
 .tac {
     text-align: center;
+}
+
+.highP {
+    font-size: 20px;
 }
 #subdcbt {
     display: relative;
