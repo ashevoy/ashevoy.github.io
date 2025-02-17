@@ -2542,3 +2542,18 @@
   #topRightAdHolder {
     display: none!important;
   }
+
+#menuKRCount {
+    display: inline-block;
+    color: rgba(255, 255, 255, 0.6);
+    vertical-align: super;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.matchVoteMap, .matchVoteMode {
+    font-size: 17px;
+}
+.matchVoteTotal {
+    font-size: 22px;
+}
