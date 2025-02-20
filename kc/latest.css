@@ -51,6 +51,7 @@
     --ammoReloadBgHeight: 0px;
     /* change the height of the hp reload bar (adds pixels) */
     --loadingImageBack: url();
+    --displayNowPlayingCredits: 1;
 }
 
 #uiBase:not([class]) #instructionsUpdateBG,
@@ -2556,4 +2557,22 @@
 }
 .matchVoteTotal {
     font-size: 22px;
+}
+
+#mapInfo::after {
+    display: block;
+    content: "Ephemeral CSS by ashevoy | voy.moe/ephemeral";
+    opacity: var(--displayNowPlayingCredits);
+}
+
+#weapHolder {
+    right: unset;
+    transform: translateX(120px);
+}
+
+#timerHolder.topLeftOld {
+    margin: 0!important;
+    right: unset;
+    left: 0px;
+    transform: translate(130px, -7px);
 }
