@@ -53,6 +53,10 @@ much love. feel free to share.
   --ammoReloadBgHeight: 0px;
   /* change the height of the hp reload bar (adds pixels) */
   --loadingImageBack: url();
+
+  --displayNowPlayingCredits: 1;
+  /* set the opacity of the bottom thingamajig with the css name and author. set to 0 to hide it. */
+  
 }
 
 /*
