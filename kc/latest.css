@@ -2559,20 +2559,24 @@
     font-size: 22px;
 }
 
-#mapInfo::after {
-    display: block;
-    content: "Ephemeral CSS by ashevoy | voy.moe/ephemeral";
-    opacity: var(--displayNowPlayingCredits);
-}
-
 #weapHolder {
-    right: unset;
-    transform: translateX(120px);
+    transform: translateX(130px);
 }
 
 #timerHolder.topLeftOld {
-    margin: 0!important;
     right: unset;
     left: 0px;
-    transform: translate(130px, -7px);
+    transform: translate(140px, -7px);
+    margin: 0px;
 }
+
+div#botRightHider::after {
+    content: 'css available at voy.moe';
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    opacity: calc(0.23 * var(--displayNowPlayingCredits));
+    font-size: 16px;
+}
+
+
