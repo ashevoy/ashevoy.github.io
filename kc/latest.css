@@ -2560,6 +2560,7 @@
 }
 
 #weapHolder {
+   right: unset;
     transform: translateX(130px);
 }
 
