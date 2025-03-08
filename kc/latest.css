@@ -1,10 +1,6 @@
 /* this css was made by ashevoy/dj62. voy.moe for more info abt this atrocity. love u all <3
    if you like this css make sure to share it to more people it'd be so appreciated really :) */
 
-/* also this code is a mess if youre reading this im  sorry */
-
-/* REVERT PREMIUM CHANGES, MAKE IT KR AGAIN. IM NOT KIDDING DEVS WHAT THE HELL WERE YOU THINKING */
-
 :root {
     --backgroundColour: #302c29;
     /* backgrounds and buttons colour - default: 302c29 */
@@ -63,25 +59,54 @@
     background-repeat: no-repeat !important;
     z-index: 99999999;
 }
-
-.death-row-right .death-row-weapon-text {
-    left: 56.6%;
-    position: absolute;
-    transform: translate(0px, 234px)!important;
-  }
-  
-  .death-row-weapon-text {
-    left: 33%;
-    position: absolute;
+.death-row-weapon-text {
     text-shadow: rgba(0, 0, 0, 0.098) 1px 1px, rgba(0, 0, 0, 0.098) -1px -1px, rgba(0, 0, 0, 0.098) -1px 1px, rgba(0, 0, 0, 0.098) 1px -1px, rgba(0, 0, 0, 0.098) 2px 0px, rgba(0, 0, 0, 0.098) -2px 0px, rgba(0, 0, 0, 0.098) 0px 2px, rgba(0, 0, 0, 0.098) 0px -2px;
-    transform: translate(0px, 234px) !important;
     z-index: 200 !important;
-  }
-  
-  .death-row-class-level {
+}
+
+.death-row-class-level {
     font-size: 18px;
     filter: drop-shadow(0px 0px 4px #00000099);
-  }
+}
+
+.death-row-left .death-row-weapon-text, .death-row-right .death-row-weapon-text {
+    position: absolute !important;
+    left: 120px !important;
+    bottom: -105px !important;
+    transform: unset !important;
+    text-align: left !important;
+    font-size: 1.1rem !important;
+}
+
+.death-row-weapon {
+    width: 100% !important;
+    display: block !important;
+}
+
+.death-row-left, .death-row-right {
+    position: relative !important;
+}
+
+.death-row-weapon {
+    display: flex !important;
+    align-items: end !important;
+}
+
+.auth-actions.svelte-13ld0w6 {
+    background: #0003;
+}
+
+button.io-button.io-button--accept.svelte-13ld0w6 {
+    background-color: #ffffff10;
+    border: 2px solid white;
+}
+
+p.migrate-warning.svelte-1xpxeyo:hover::after {
+    content: ':.|:;';
+    text-decoration: line-through;
+    margin-left: 9px;
+    opacity: 0.15;
+}
   
   .bpCol[style="filter:grayscale(100%)"]:hover {
     filter: grayscale(0%)!important;
