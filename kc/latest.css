@@ -868,7 +868,7 @@ p.migrate-warning.svelte-1xpxeyo:hover::after {
     content: " • AK";
   }
   .classCard[onclick="selectClass(0)"] .classWeap:after {
-    content: "100HP • 28 • 23 DMG • 120ms • 1.5s • Sec";
+    content: "100HP • 30 • 23 DMG • 120ms • 1.5s • Sec";
     font-size: 14px;
   }
   .classCard[onclick="selectClass(0)"] .classImgC {
@@ -924,7 +924,7 @@ p.migrate-warning.svelte-1xpxeyo:hover::after {
     content: " • SMG";
   }
   .classCard[onclick="selectClass(2)"] .classWeap:after {
-    content: "90HP • 30 • 18 DMG • 95ms • 1s • WJ";
+    content: "100HP • 30 • 18 DMG • 95ms • 1s • WJ";
     font-size: 14px;
   }
   .classCard[onclick="selectClass(2)"] .classImgC {
@@ -1036,7 +1036,7 @@ p.migrate-warning.svelte-1xpxeyo:hover::after {
     content: " • Semi";
   }
   .classCard[onclick="selectClass(6)"] .classWeap:after {
-    content: "90HP • 8 • 35 DMG • 150ms • 1.5s • Sec";
+    content: "90HP • 8 • 35 DMG • 140ms • 1.2s • Sec";
     font-size: 14px;
   }
   .classCard[onclick="selectClass(6)"] .classImgC {
@@ -1204,7 +1204,7 @@ p.migrate-warning.svelte-1xpxeyo:hover::after {
     content: " • Famas";
   }
   .classCard[onclick="selectClass(12)"] .classWeap:after {
-    content: "100HP • 30 • 28(x3) DMG • 280ms • 1.2s • Sec";
+    content: "100HP • 24 • 28(x3) DMG • 280ms • 1.2s • Sec";
     font-size: 14px;
   }
   .classCard[onclick="selectClass(12)"] .classImgC {
