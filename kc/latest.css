@@ -1674,11 +1674,11 @@ p.migrate-warning.svelte-1xpxeyo:hover::after {
   
   #uiBase.onMenu #spectButton {
     position: absolute;
-    top: calc(0.7% + 64px);
+    top: calc(0.7% + 64px) !important;
     left: calc(100% - 64px);
     text-align: center;
     align-content: center;
-  }
+}
   
   #uiBase.onMenu #spectateUI {
     display: block !important;
@@ -1723,7 +1723,12 @@ p.migrate-warning.svelte-1xpxeyo:hover::after {
     margin-top: 10px !important;
     text-align: center;
   }
-  
+
+   .headerBarRight {
+       right: 0 !important;
+       padding-left: 20px;
+       border-radius: 0px 0px 0px 6px;
+   }
   
   /* useless atm but might come in handy one day so keeping it lol */
   #mapInfoHolder::before {
