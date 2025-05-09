@@ -48,11 +48,16 @@
     /* change the height of the hp reload bar (adds pixels) */
     --loadingImageBack: url();
     --displayNowPlayingCredits: 1;
+    --displayMapInfo: 0;
 }
 
 @font-face {
   font-family: gamefont;
   src: url(https://voy.moe/fontvariable.ttf);
+}
+
+div#mapInfoHld {
+    opacity: var(--displayMapInfo);
 }
        
 #uiBase:not([class]) #instructionsUpdateBG,
