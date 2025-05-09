@@ -277,7 +277,11 @@ p.migrate-warning.svelte-1xpxeyo:hover::after {
     color: white;
     animation: 0.747s cubic-bezier(0.28, 0, 0.03, 0.8) 0s infinite alternate none running pulsee;
   }
-  
+
+.youNewDiv[onclick="playSelect(),showAccountUpdatesPopup()"] {
+    display: none;
+}
+
   .adsbygoogle.adsbygoogle-noablate {
     display: none !important;
   }
