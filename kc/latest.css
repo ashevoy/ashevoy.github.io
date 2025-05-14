@@ -307,14 +307,14 @@ p.migrate-warning.svelte-1xpxeyo:hover::after {
     border: 4px solid var(--backgroundColour)!important;
     color: cornsilk!important;
   }
-  
-  .buttonR {
-    border: 4px solid var(--backgroundColour)!important;
-    background-color: var(--backgroundColour)!important;
-    box-shadow: inset 0 -7px 0 0 var(--backgroundColour)!important;
-  }
-  
-  .buttonR:hover {
+
+.buttonR, #menuBtnRanked{
+    border: 4px solid var(--backgroundColour) !important;
+    background-color: var(--backgroundColour) !important;
+    box-shadow: inset 0 -7px 0 0 var(--backgroundColour) !important;
+}
+
+  .buttonR:hover, #menuBtnRanked:hover{
     border: 4px solid var(--backgroundColour)!important;
     color: cornsilk!important;
   }
