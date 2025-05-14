@@ -308,6 +308,10 @@ p.migrate-warning.svelte-1xpxeyo:hover::after {
     color: cornsilk!important;
   }
 
+div#menuBtnRanked:not(:hover) {
+    border: 4px solid var(--backgroundColour) !important;
+}
+
 .buttonR, #menuBtnRanked{
     border: 4px solid var(--backgroundColour) !important;
     background-color: var(--backgroundColour) !important;
