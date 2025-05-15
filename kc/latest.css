@@ -49,6 +49,8 @@
     --loadingImageBack: url();
     --displayNowPlayingCredits: 1;
     --displayMapInfo: 0;
+    --displayStreams: none; 
+       /*^^ set to "none" to not display, set to "block" to display them */
 }
 
 @font-face {
@@ -59,7 +61,36 @@
 div#mapInfoHld {
     opacity: var(--displayMapInfo);
 }
-       
+
+
+#streamContainerNew {
+    display: var(--displayStreams);
+}
+
+.streams-header h2 {
+    width: 150px;
+}
+
+.streams-overlay .toggle-button {
+    position: relative;
+    top: 30px;
+}
+.streams-overlay.closed * {
+    position: absolute;
+    left: 0px;
+}
+
+.streams-overlay {
+    position: absolute;
+    left: 420px;
+    top: 90px !important;
+}
+
+.streams-overlay.small {
+    position: absolute;
+    top: 220px !important;
+}
+
 #uiBase:not([class]) #instructionsUpdateBG,
 #uiBase:not([class]) #instructionHolder,
 #uiBase:not([class]) #loadingBg1,
