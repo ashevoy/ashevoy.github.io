@@ -58,6 +58,19 @@
   src: url(https://voy.moe/fontvariable.ttf);
 }
 
+.menBtnIcn[style="color:#5ce05a"] {
+    visibility: hidden;
+    position: relative;
+}
+
+.menBtnIcn[style="color:#5ce05a"]::after {
+  content: "star_border";
+  visibility: visible;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
 div#mapInfoHld {
     opacity: var(--displayMapInfo);
 }
