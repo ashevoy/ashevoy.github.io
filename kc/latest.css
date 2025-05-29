@@ -10,6 +10,8 @@
     /* special text such as fps etc */
     --linkColour: #ff4fb9;
     /* link colour, default is ff4fb9 */
+    --rankedColour: #1fc57a;
+    /* ranked colour, default #1fc57a */
     --fontThickness: 500;
     /* self explanatory, thickness of the font - default 500 */
     --showMaxAmmo: 0;
@@ -63,12 +65,46 @@
     position: relative;
 }
 
+
+@font-face {
+  font-family: 'Material Symbols Outlined';
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://fonts.gstatic.com/icon/font?kit=kJF1BvYX7BgnkSrUwT8OhrdQw4oELdPIeeII9v6oDMzByHX9rA6RzaxHMPdY43zj-jCxv3fzvRNU22ZXGJpEpjC_1v-p_4MrImHCIJIZrDCvHOejdd8fw1Jfrr8d3x6ryTg&skey=b8dc2088854b122f&v=v247) format('woff2');
+}
+
 .menBtnIcn[style="color:#5ce05a"]::after {
-  content: "star_border";
-  visibility: visible;
-  position: absolute;
-  top: 0;
-  left: 0;
+    content: "swords";
+    visibility: visible;
+    position: absolute;
+    font-family: 'Material Symbols Outlined';
+    font-weight: normal;
+    font-style: normal;
+    top: 0;
+    left: 0;
+    color: var(--rankedColour);
+    -moz-font-feature-settings: 'liga';
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.rankedMenuModal .season-banner, .rankedMenuModal .start-button {
+    background-color: var(--rankedColour);
+}
+
+.rankedMenuModal td, .rankedMenuModal th {
+    text-align: left !important;
+}
+.rankedMenuModal th {
+    color: var(--rankedColour) !important;
+}
+.rankedMenuModal .page-button {
+    border-color: var(--rankedColour) !important;
+}
+.rankedMenuModal .page-button:hover {
+    background-color: rgba(255, 255, 255, 0.05) !important;
+}
+.rankedMenuModal .page-indicator {
+    color: var(--rankedColour);  
 }
 
 div#mapInfoHld {
