@@ -16,6 +16,8 @@ much love. feel free to share.
   /* special text such as fps etc */
   --linkColour: #ff4fb9;
   /* link colour, default is ff4fb9 */
+  --rankedColour: #1fc57a;
+  /* ranked colour default 1fc57a */
   --fontThickness: 500;
   /* self explanatory, thickness of the font - default 500 */
   --showMaxAmmo: 0;
