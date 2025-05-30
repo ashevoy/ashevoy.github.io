@@ -116,6 +116,10 @@
 .rankedMenuModal .stats-section .highlight .stat-value:not(:invalid) {
     color: var(--rankedColour);
 }
+.rankedMenuModal .start-button:not(:invalid):hover {
+    background-color: var(--rankedColour);
+    box-shadow: none;
+}
 
 div#mapInfoHld {
     opacity: var(--displayMapInfo);
