@@ -87,24 +87,34 @@
     -moz-osx-font-smoothing: grayscale;
 }
 
-.rankedMenuModal .season-banner, .rankedMenuModal .start-button {
+.rankedMenuModal .season-banner, .rankedMenuModal .start-button:not(:invalid) {
+    background-color: var(--rankedColour);
+}
+.rankedMenuModal .season-banner:not(:invalid), .rankedMenuModal .start-button:not(:invalid):hover {
     background-color: var(--rankedColour);
 }
 
 .rankedMenuModal td, .rankedMenuModal th {
     text-align: left !important;
 }
-.rankedMenuModal th {
+.rankedMenuModal th:not(:invalid) {
     color: var(--rankedColour) !important;
 }
-.rankedMenuModal .page-button {
+.rankedMenuModal .page-button:not(:invalid) {
     border-color: var(--rankedColour) !important;
 }
-.rankedMenuModal .page-button:hover {
+.rankedMenuModal .page-button:not(:invalid):hover {
     background-color: rgba(255, 255, 255, 0.05) !important;
 }
-.rankedMenuModal .page-indicator {
+.rankedMenuModal .page-indicator:not(:invalid) {
     color: var(--rankedColour);  
+}
+.rankedMenuModal .stats-section .highlight:not(:invalid) {
+    background-color: color-mix(in srgb, var(--rankedColour) 7%, transparent);
+    border: var(--rankedColour);
+}
+.rankedMenuModal .stats-section .highlight .stat-value:not(:invalid) {
+    color: var(--rankedColour);
 }
 
 div#mapInfoHld {
