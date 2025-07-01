@@ -53,6 +53,8 @@
     --displayMapInfo: 0;
     --displayStreams: none; 
        /*^^ set to "none" to not display, set to "block" to display them */
+
+    --menuClassPickFontSize: 32px;
 }
 
 @font-face {
@@ -1654,8 +1656,221 @@ div#menuBtnRanked:not(:hover) {
   
   #menuClassPicker10[onclick="selectClass(10)"] {
   display: block;
-  width: 40px;
-  height: 40px;
+
+#menuClassPicker0[onclick="selectClass(0)"] {
+  display: block;
+  width: var(--menuClassPickFontSize);
+  height: var(--menuClassPickFontSize);
+  transform: scale(1);
+  content: url(https://storage.googleapis.com/assets.krunker.io/textures/classes/icon_0.png);
+  pointer-events: auto;
+  image-rendering: pixelated;
+  margin-right: 10px;
+  padding: 5px;
+  transition-duration: 0.0747s;
+  opacity: var(--hoverClassPickerOpacity);
+}
+
+#menuClassPicker0[onclick="selectClass(0)"]:hover {
+  cursor: pointer;
+  transform: scale(1.25);
+  transition-duration: 0.0747s;
+  opacity: 1;
+}
+
+#menuClassPicker1[onclick="selectClass(1)"] {
+  display: block;
+  width: var(--menuClassPickFontSize);
+  height: var(--menuClassPickFontSize);
+  transform: scale(1);
+  content: url(https://storage.googleapis.com/assets.krunker.io/textures/classes/icon_1.png);
+  pointer-events: auto;
+  image-rendering: pixelated;
+  margin-right: 10px;
+  padding: 5px;
+  transition-duration: 0.0747s;
+  opacity: var(--hoverClassPickerOpacity);
+}
+
+#menuClassPicker1[onclick="selectClass(1)"]:hover {
+  cursor: pointer;
+  transform: scale(1.25);
+  transition-duration: 0.0747s;
+  opacity: 1;
+}
+
+#menuClassPicker2[onclick="selectClass(2)"] {
+  display: block;
+  width: var(--menuClassPickFontSize);
+  height: var(--menuClassPickFontSize);
+  transform: scale(1);
+  content: url(https://storage.googleapis.com/assets.krunker.io/textures/classes/icon_2.png);
+  pointer-events: auto;
+  image-rendering: pixelated;
+  margin-right: 10px;
+  padding: 5px;
+  transition-duration: 0.0747s;
+  opacity: var(--hoverClassPickerOpacity);
+}
+
+#menuClassPicker2[onclick="selectClass(2)"]:hover {
+  cursor: pointer;
+  transform: scale(1.25);
+  transition-duration: 0.0747s;
+  opacity: 1;
+}
+
+#menuClassPicker3[onclick="selectClass(3)"] {
+  display: block;
+  width: var(--menuClassPickFontSize);
+  height: var(--menuClassPickFontSize);
+  transform: scale(1);
+  content: url(https://storage.googleapis.com/assets.krunker.io/textures/classes/icon_3.png);
+  pointer-events: auto;
+  image-rendering: pixelated;
+  margin-right: 10px;
+  padding: 5px;
+  transition-duration: 0.0747s;
+  opacity: var(--hoverClassPickerOpacity);
+}
+
+#menuClassPicker3[onclick="selectClass(3)"]:hover {
+  cursor: pointer;
+  transform: scale(1.25);
+  transition-duration: 0.0747s;
+  opacity: 1;
+}
+
+#menuClassPicker4[onclick="selectClass(4)"] {
+  display: block;
+  width: var(--menuClassPickFontSize);
+  height: var(--menuClassPickFontSize);
+  transform: scale(1);
+  content: url(https://storage.googleapis.com/assets.krunker.io/textures/classes/icon_4.png);
+  pointer-events: auto;
+  image-rendering: pixelated;
+  margin-right: 10px;
+  padding: 5px;
+  transition-duration: 0.0747s;
+  opacity: var(--hoverClassPickerOpacity);
+}
+
+#menuClassPicker4[onclick="selectClass(4)"]:hover {
+  cursor: pointer;
+  transform: scale(1.25);
+  transition-duration: 0.0747s;
+  opacity: 1;
+}
+
+#menuClassPicker5[onclick="selectClass(5)"] {
+  display: block;
+  width: var(--menuClassPickFontSize);
+  height: var(--menuClassPickFontSize);
+  transform: scale(1);
+  content: url(https://storage.googleapis.com/assets.krunker.io/textures/classes/icon_5.png);
+  pointer-events: auto;
+  image-rendering: pixelated;
+  margin-right: 10px;
+  padding: 5px;
+  transition-duration: 0.0747s;
+  opacity: var(--hoverClassPickerOpacity);
+}
+
+#menuClassPicker5[onclick="selectClass(5)"]:hover {
+  cursor: pointer;
+  transform: scale(1.25);
+  transition-duration: 0.0747s;
+  opacity: 1;
+}
+
+#menuClassPicker6[onclick="selectClass(6)"] {
+  display: block;
+  width: var(--menuClassPickFontSize);
+  height: var(--menuClassPickFontSize);
+  transform: scale(1);
+  content: url(https://storage.googleapis.com/assets.krunker.io/textures/classes/icon_6.png);
+  pointer-events: auto;
+  image-rendering: pixelated;
+  margin-right: 10px;
+  padding: 5px;
+  transition-duration: 0.0747s;
+  opacity: var(--hoverClassPickerOpacity);
+}
+
+#menuClassPicker6[onclick="selectClass(6)"]:hover {
+  cursor: pointer;
+  transform: scale(1.25);
+  transition-duration: 0.0747s;
+  opacity: 1;
+}
+
+#menuClassPicker7[onclick="selectClass(7)"] {
+  display: block;
+  width: var(--menuClassPickFontSize);
+  height: var(--menuClassPickFontSize);
+  transform: scale(1);
+  content: url(https://storage.googleapis.com/assets.krunker.io/textures/classes/icon_7.png);
+  pointer-events: auto;
+  image-rendering: pixelated;
+  margin-right: 10px;
+  padding: 5px;
+  transition-duration: 0.0747s;
+  opacity: var(--hoverClassPickerOpacity);
+}
+
+#menuClassPicker7[onclick="selectClass(7)"]:hover {
+  cursor: pointer;
+  transform: scale(1.25);
+  transition-duration: 0.0747s;
+  opacity: 1;
+}
+
+  #menuClassPicker8[onclick="selectClass(8)"] {
+  display: block;
+  width: var(--menuClassPickFontSize);
+  height: var(--menuClassPickFontSize);
+  transform: scale(1);
+  content: url(https://storage.googleapis.com/assets.krunker.io/textures/classes/icon_8.png);
+  pointer-events: auto;
+  image-rendering: pixelated;
+  margin-right: 10px;
+  padding: 5px;
+  transition-duration: 0.0747s;
+  opacity: var(--hoverClassPickerOpacity);
+}
+
+#menuClassPicker8[onclick="selectClass(8)"]:hover {
+  cursor: pointer;
+  transform: scale(1.25);
+  transition-duration: 0.0747s;
+  opacity: 1;
+}
+
+#menuClassPicker9[onclick="selectClass(9)"] {
+  display: block;
+  width: var(--menuClassPickFontSize);
+  height: var(--menuClassPickFontSize);
+  transform: scale(1);
+  content: url(https://storage.googleapis.com/assets.krunker.io/textures/classes/icon_9.png);
+  pointer-events: auto;
+  image-rendering: pixelated;
+  margin-right: 10px;
+  padding: 5px;
+  transition-duration: 0.0747s;
+  opacity: var(--hoverClassPickerOpacity);
+}
+
+#menuClassPicker9[onclick="selectClass(9)"]:hover {
+  cursor: pointer;
+  transform: scale(1.25);
+  transition-duration: 0.0747s;
+  opacity: 1;
+}
+
+#menuClassPicker10[onclick="selectClass(10)"] {
+  display: block;
+  width: var(--menuClassPickFontSize);
+  height: var(--menuClassPickFontSize);
   content: url(https://storage.googleapis.com/assets.krunker.io/textures/classes/icon_10.png);
   pointer-events: auto;
   image-rendering: pixelated;
@@ -1663,19 +1878,19 @@ div#menuBtnRanked:not(:hover) {
   padding: 5px;
   transition-duration: 0.0747s;
   opacity: var(--hoverClassPickerOpacity);
-  }
-  
-  #menuClassPicker10[onclick="selectClass(10)"]:hover {
+}
+
+#menuClassPicker10[onclick="selectClass(10)"]:hover {
   cursor: pointer;
   transform: scale(1.25);
   transition-duration: 0.0747s;
   opacity: 1;
-  }
-  
-  #menuClassPicker11[onclick="selectClass(11)"] {
+}
+
+#menuClassPicker11[onclick="selectClass(11)"] {
   display: block;
-  width: 40px;
-  height: 40px;
+  width: var(--menuClassPickFontSize);
+  height: var(--menuClassPickFontSize);
   transform: scale(1);
   content: url(https://storage.googleapis.com/assets.krunker.io/textures/classes/icon_11.png);
   pointer-events: auto;
@@ -1684,19 +1899,19 @@ div#menuBtnRanked:not(:hover) {
   padding: 5px;
   transition-duration: 0.0747s;
   opacity: var(--hoverClassPickerOpacity);
-  }
-  
-  #menuClassPicker11[onclick="selectClass(11)"]:hover {
+}
+
+#menuClassPicker11[onclick="selectClass(11)"]:hover {
   cursor: pointer;
   transform: scale(1.25);
   transition-duration: 0.0747s;
   opacity: 1;
-  }
-  
-  #menuClassPicker12[onclick="selectClass(12)"] {
+}
+
+#menuClassPicker12[onclick="selectClass(12)"] {
   display: block;
-  width: 40px;
-  height: 40px;
+  width: var(--menuClassPickFontSize);
+  height: var(--menuClassPickFontSize);
   transform: scale(1);
   content: url(https://storage.googleapis.com/assets.krunker.io/textures/classes/icon_12.png);
   pointer-events: auto;
@@ -1705,19 +1920,19 @@ div#menuBtnRanked:not(:hover) {
   padding: 5px;
   transition-duration: 0.0747s;
   opacity: var(--hoverClassPickerOpacity);
-  }
-  
-  #menuClassPicker12[onclick="selectClass(12)"]:hover {
+}
+
+#menuClassPicker12[onclick="selectClass(12)"]:hover {
   cursor: pointer;
   transform: scale(1.25);
   transition-duration: 0.0747s;
   opacity: 1;
-  }
-  
-  #menuClassPicker13[onclick="selectClass(13)"] {
+}
+
+#menuClassPicker13[onclick="selectClass(13)"] {
   display: block;
-  width: 40px;
-  height: 40px;
+  width: var(--menuClassPickFontSize);
+  height: var(--menuClassPickFontSize);
   transform: scale(1);
   content: url(https://storage.googleapis.com/assets.krunker.io/textures/classes/icon_13.png);
   pointer-events: auto;
@@ -1726,19 +1941,19 @@ div#menuBtnRanked:not(:hover) {
   padding: 5px;
   transition-duration: 0.0747s;
   opacity: var(--hoverClassPickerOpacity);
-  }
-  
-  #menuClassPicker13[onclick="selectClass(13)"]:hover {
+}
+
+#menuClassPicker13[onclick="selectClass(13)"]:hover {
   cursor: pointer;
   transform: scale(1.25);
   transition-duration: 0.0747s;
   opacity: 1;
-  }
-  
-  #menuClassPicker14[onclick="selectClass(14)"] {
+}
+
+#menuClassPicker14[onclick="selectClass(14)"] {
   display: block;
-  width: 40px;
-  height: 40px;
+  width: var(--menuClassPickFontSize);
+  height: var(--menuClassPickFontSize);
   transform: scale(1);
   content: url(https://storage.googleapis.com/assets.krunker.io/textures/classes/icon_14.png);
   pointer-events: auto;
@@ -1747,19 +1962,19 @@ div#menuBtnRanked:not(:hover) {
   padding: 5px;
   transition-duration: 0.0747s;
   opacity: var(--hoverClassPickerOpacity);
-  }
-  
-  #menuClassPicker14[onclick="selectClass(14)"]:hover {
+}
+
+#menuClassPicker14[onclick="selectClass(14)"]:hover {
   cursor: pointer;
   transform: scale(1.25);
   transition-duration: 0.0747s;
   opacity: 1;
-  }
-  
-  #menuClassPicker15[onclick="selectClass(15)"] {
+}
+
+#menuClassPicker15[onclick="selectClass(15)"] {
   display: block;
-  width: 40px;
-  height: 40px;
+  width: var(--menuClassPickFontSize);
+  height: var(--menuClassPickFontSize);
   transform: scale(1);
   content: url(https://storage.googleapis.com/assets.krunker.io/textures/classes/icon_15.png);
   pointer-events: auto;
@@ -1768,14 +1983,14 @@ div#menuBtnRanked:not(:hover) {
   padding: 5px;
   transition-duration: 0.0747s;
   opacity: var(--hoverClassPickerOpacity);
-  }
-  
-  #menuClassPicker15[onclick="selectClass(15)"]:hover {
+}
+
+#menuClassPicker15[onclick="selectClass(15)"]:hover {
   cursor: pointer;
   transform: scale(1.25);
   transition-duration: 0.0747s;
   opacity: 1;
-  }
+}
   
   /* spectator stuff and menu timer and settings and just a bunch of things */
   
@@ -1864,7 +2079,7 @@ div#menuBtnRanked:not(:hover) {
     padding-top: 21px;
     font-size: 27px!important;
     pointer-events: all;
-    padding-bottom: 28px;
+    padding-bottom: 21px;
     line-height: 40px;
   }
   
@@ -2723,3 +2938,54 @@ div#botRightHider::after {
 }
 
 
+
+#menuAccountUsername {
+    animation: none;
+    border: 0;
+    padding: 0px;
+}
+
+#menuAccountUsername:hover {
+    transform: translate(42px, 0px);
+}
+
+
+#menuClassContainerInfo {
+    height: 40px;
+}
+
+img#menuClassIcn {
+    top: 0px;
+}
+
+div#subLogoButtons {
+    transform: none;
+    bottom: auto;
+    left: auto;
+    right: 0px;
+}
+
+div#menuServerInfoContainer {
+    padding: 10px;
+    padding-left: 24px;
+    border-radius: 0px 0px 0px 5px;
+    background: var(--backgroundColour);
+}
+
+div#matchInfoHolder {
+    border-bottom: none;
+    margin-bottom: 81.747vh;
+}
+
+div#subLogoButtons {
+    transform: none;
+    bottom: auto;
+    left: auto;
+    right: 0px;
+    width: 100%;
+    text-align: center;
+}
+div#menuRegionLabel {
+    font-size: 17px !important;
+    margin-bottom: 5px;
+}
