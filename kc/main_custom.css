@@ -62,6 +62,9 @@ much love. feel free to share.
 
   --displayStreams: none;
     /*set to none for no display, set to block for display*/
+
+    --menuClassPickFontSize: 32px;
+    /* sets the size of the icons on the right */
 }
 
 @font-face {
