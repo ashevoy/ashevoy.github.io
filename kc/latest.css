@@ -2989,3 +2989,12 @@ div#menuRegionLabel {
     font-size: 17px !important;
     margin-bottom: 5px;
 }
+
+#mailContainer {
+    position: relative;
+    right: calc(100% - 122px);
+}
+
+.itemName.dark:not(:invalid) {
+    text-shadow: 1px 1px #fffa, 1px -1px #fffa, -1px 1px #fffa, -1px -1px #fffa;
+}
