@@ -62,6 +62,16 @@
   src: url(https://voy.moe/fontvariable.ttf);
 }
 
+
+#splash {
+  display: none!important;
+}
+
+.webpush-container {
+  display: none;
+}
+
+
 .menBtnIcn[style="color:#5ce05a"] {
     visibility: hidden;
     position: relative;
